@@ -42,19 +42,14 @@
       color: #f28c28;
       border-bottom: 2px solid #f28c28;
     }
-    .banner {
-    background-image: url('imagenes/banner-pixel.png');
-    background-size: cover;
-    background-position: center top;
-    height: 380px;
-    width: 100%;
-  }
 
-    .banner-img {
+    .banner {
+      background-image: url('imagenes/banner-pixel.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center top;
+      height: 380px;
       width: 100%;
-      display: block;
-      height: 280px;
-      object-fit: cover;
     }
 
     .busqueda-filtros {
@@ -123,12 +118,10 @@
   </style>
 </head>
 <body>
-    <div class="banner"></div>    
+  <div class="banner"></div>
+
   <!-- Header -->
   <header id="header" class="header">
-    <div class="banner">
-      <img src="imagenes/banner-pixel.png" alt="Banner principal de Pixel" class="banner-img">
-    </div>
     <div class="container">
       <nav class="main-nav">
         <ul>
