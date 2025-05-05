@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel - Stickers y Papelería Creativa</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Pixel</h1>
+                <p class="tagline">Stickers y papelería creativa</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Categorías</a>
+                        <div class="dropdown-menu">
+                            <a href="categorias/futbol.html">Fútbol</a>
+                            <a href="categorias/amor.html">Amor</a>
+                            <a href="categorias/animales.html">Animales</a>
+                            <a href="categorias/bebidas.html">Bebidas</a>
+                            <a href="categorias/disney.html">Disney</a>
+                            <a href="categorias/frases.html">Frases</a>
+                        </div>
+                    </li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li class="carrito-toggle">
+                        <span>🛒</span>
+                        <span id="carritoContador" class="carrito-contador">0</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Decora tu mundo con nuestros stickers</h2>
+                <p>Diseños únicos inspirados en la naturaleza y lo que te apasiona</p>
+                <a href="#categorias" class="btn-primary">Ver catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías destacadas -->
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras categorías</h2>
+            <div class="categories-grid">
+                <a href="categorias/futbol.html" class="category-card">
+                    <div class="category-img">
+                        <img src="imagenes/cat-futbol.jpg" alt="Categoría Fútbol">
+                    </div>
+                    <h3>Fútbol</h3>
+                </a>
+                <a href="categorias/amor.html" class="category-card">
+                    <div class="category-img">
+                        <img src="imagenes/cat-amor.jpg" alt="Categoría Amor">
+                    </div>
+                    <h3>Amor</h3>
+                </a>
+                <a href="categorias/animales.html" class="category-card">
+                    <div class="category-img">
+                        <img src="imagenes/cat-animales.jpg" alt="Categoría Animales">
+                    </div>
+                    <h3>Animales</h3>
+                </a>
+                <a href="categorias/bebidas.html" class="category-card">
+                    <div class="category-img">
+                        <img src="imagenes/cat-bebidas.jpg" alt="Categoría Bebidas">
+                    </div>
+                    <h3>Bebidas</h3>
+                </a>
+                <a href="categorias/disney.html" class="category-card">
+                    <div class="category-img">
+                        <img src="imagenes/cat-disney.jpg" alt="Categoría Disney">
+                    </div>
+                    <h3>Disney</h3>
+                </a>
+                <a href="categorias/frases.html" class="category-card">
+                    <div class="category-img">
+                        <img src="imagenes/cat-frases.jpg" alt="Categoría Frases">
+                    </div>
+                    <h3>Frases</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Productos destacados</h2>
+            <div class="products-grid">
+                <div class="product-card" data-product-id="1">
+                    <div class="product-img">
+                        <img src="imagenes/producto1.jpg" alt="Sticker 1">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Zorrito</h3>
+                    <p class="product-category">Animales</p>
+                </div>
+                <div class="product-card" data-product-id="2">
+                    <div class="product-img">
+                        <img src="imagenes/producto2.jpg" alt="Sticker 2">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Messi</h3>
+                    <p class="product-category">Fútbol</p>
+                </div>
+                <div class="product-card" data-product-id="3">
+                    <div class="product-img">
+                        <img src="imagenes/producto3.jpg" alt="Sticker 3">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Corazón</h3>
+                    <p class="product-category">Amor</p>
+                </div>
+                <div class="product-card" data-product-id="4">
+                    <div class="product-img">
+                        <img src="imagenes/producto4.jpg" alt="Sticker 4">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Mickey</h3>
+                    <p class="product-category">Disney</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Sobre Pixel</h2>
+                <p>En Pixel creamos stickers y papelería con diseños únicos inspirados en la naturaleza, acuarelas y lo que te apasiona. Cada pieza está diseñada con amor para que puedas expresarte y decorar tu mundo.</p>
+                <a href="#contacto" class="btn-secondary">Contáctanos</a>
+            </div>
+            <div class="about-image">
+                <img src="imagenes/about-pixel.jpg" alt="Sobre Pixel">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>¿Quieres hacer un pedido o tienes preguntas?</h3>
+                    <p>Escríbenos y te responderemos a la brevedad.</p>
+                    <div class="contact-method">
+                        <span class="icon">📱</span>
+                        <p>WhatsApp: <a href="https://wa.me/1234567890">+12 3456 7890</a></p>
+                    </div>
+                    <div class="contact-method">
+                        <span class="icon">📧</span>
+                        <p>Email: <a href="mailto:hola@pixelstickers.com">hola@pixelstickers.com</a></p>
+                    </div>
+                    <div class="contact-method">
+                        <span class="icon">📍</span>
+                        <p>Instagram: <a href="https://instagram.com/pixel_stickers">@pixel_stickers</a></p>
+                    </div>
+                </div>
+                <div class="contact-image">
+                    <img src="imagenes/contacto-pixel.jpg" alt="Contacto Pixel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Pixel</h2>
+                    <p>Stickers y papelería creativa</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="categorias/futbol.html">Fútbol</a></li>
+                        <li><a href="categorias/amor.html">Amor</a></li>
+                        <li><a href="categorias/animales.html">Animales</a></li>
+                        <li><a href="categorias/bebidas.html">Bebidas</a></li>
+                        <li><a href="categorias/disney.html">Disney</a></li>
+                        <li><a href="categorias/frases.html">Frases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/pixel_stickers" class="social-icon">Instagram</a>
+                        <a href="https://facebook.com/pixelstickers" class="social-icon">Facebook</a>
+                        <a href="https://tiktok.com/@pixel_stickers" class="social-icon">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para ver productos -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product-details">
+                <div class="modal-product-image">
+                    <img src="" alt="Producto" id="modalProductImage">
+                </div>
+                <div class="modal-product-info">
+                    <h2 id="modalProductTitle"></h2>
+                    <p id="modalProductCategory"></p>
+                    <p id="modalProductDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel del Carrito -->
+    <div class="carrito-panel">
+        <div class="carrito-header">
+            <h2>Tu Carrito</h2>
+            <span class="cerrar-carrito">×</span>
+        </div>
+        <div id="carritoLista" class="carrito-lista">
+            <!-- Items del carrito se agregarán dinámicamente -->
+        </div>
+        <div class="carrito-acciones">
+            <button onclick="generarMensajeWhatsApp()" class="btn-primary btn-pedir">Hacer Pedido por WhatsApp</button>
+        </div>
+    </div>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

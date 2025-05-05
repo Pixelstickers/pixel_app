@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Pixel Stickers y Papelería Creativa</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Pixel</h1>
+                <p class="tagline">Stickers y papelería creativa</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">Categorías</a>
+                        <div class="dropdown-menu">
+                            <a href="futbol.html" class="active">Fútbol</a>
+                            <a href="amor.html">Amor</a>
+                            <a href="animales.html">Animales</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="disney.html">Disney</a>
+                            <a href="frases.html">Frases</a>
+                        </div>
+                    </li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categoría Banner -->
+    <section class="category-banner">
+        <div class="container">
+            <h1>Stickers de Fútbol</h1>
+            <p>Celebra tu pasión por el fútbol con nuestros stickers de equipos, jugadores y momentos icónicos</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Filtrar por:</label>
+                    <select id="filterTeam">
+                        <option value="todos">Todos los equipos</option>
+                        <option value="argentina">Selección Argentina</option>
+                        <option value="boca">Boca Juniors</option>
+                        <option value="river">River Plate</option>
+                        <option value="barcelona">FC Barcelona</option>
+                        <option value="madrid">Real Madrid</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Ordenar por:</label>
+                    <select id="sortProducts">
+                        <option value="newest">Más recientes</option>
+                        <option value="popular">Más populares</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos de la categoría -->
+    <section class="category-products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card" data-product-id="f1" data-team="argentina">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/messi1.jpg" alt="Sticker Messi campeón">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Messi Campeón</h3>
+                    <p class="product-category">Selección Argentina</p>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card" data-product-id="f2" data-team="argentina">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/argentina.jpg" alt="Sticker Escudo Argentina">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Escudo AFA</h3>
+                    <p class="product-category">Selección Argentina</p>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card" data-product-id="f3" data-team="boca">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/boca.jpg" alt="Sticker Boca Juniors">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Escudo Boca</h3>
+                    <p class="product-category">Boca Juniors</p>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="product-card" data-product-id="f4" data-team="river">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/river.jpg" alt="Sticker River Plate">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Escudo River</h3>
+                    <p class="product-category">River Plate</p>
+                </div>
+                
+                <!-- Producto 5 -->
+                <div class="product-card" data-product-id="f5" data-team="barcelona">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/barcelona.jpg" alt="Sticker FC Barcelona">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker FC Barcelona</h3>
+                    <p class="product-category">FC Barcelona</p>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="product-card" data-product-id="f6" data-team="madrid">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/madrid.jpg" alt="Sticker Real Madrid">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Real Madrid</h3>
+                    <p class="product-category">Real Madrid</p>
+                </div>
+                
+                <!-- Producto 7 -->
+                <div class="product-card" data-product-id="f7" data-team="argentina">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/dibu.jpg" alt="Sticker Dibu Martínez">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Dibu Martínez</h3>
+                    <p class="product-category">Selección Argentina</p>
+                </div>
+                
+                <!-- Producto 8 -->
+                <div class="product-card" data-product-id="f8" data-team="argentina">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/copa-mundo.jpg" alt="Sticker Copa del Mundo">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Copa del Mundo</h3>
+                    <p class="product-category">Mundial</p>
+                </div>
+                
+                <!-- Producto 9 -->
+                <div class="product-card" data-product-id="f9" data-team="boca">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/bombonera.jpg" alt="Sticker La Bombonera">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker La Bombonera</h3>
+                    <p class="product-category">Boca Juniors</p>
+                </div>
+                
+                <!-- Producto 10 -->
+                <div class="product-card" data-product-id="f10" data-team="river">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/monumental.jpg" alt="Sticker El Monumental">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker El Monumental</h3>
+                    <p class="product-category">River Plate</p>
+                </div>
+                
+                <!-- Producto 11 -->
+                <div class="product-card" data-product-id="f11" data-team="barcelona">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/camp-nou.jpg" alt="Sticker Camp Nou">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Camp Nou</h3>
+                    <p class="product-category">FC Barcelona</p>
+                </div>
+                
+                <!-- Producto 12 -->
+                <div class="product-card" data-product-id="f12" data-team="madrid">
+                    <div class="product-img">
+                        <img src="../imagenes/futbol/bernabeu.jpg" alt="Sticker Santiago Bernabéu">
+                        <div class="overlay">
+                            <button class="btn-view">Ver más</button>
+                        </div>
+                    </div>
+                    <h3>Sticker Santiago Bernabéu</h3>
+                    <p class="product-category">Real Madrid</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto rápido -->
+    <section class="quick-contact">
+        <div class="container">
+            <h2>¿Te interesa algún diseño?</h2>
+            <p>Escríbenos para consultar disponibilidad, precios y formas de envío</p>
+            <a href="https://wa.me/1234567890" class="btn-primary">Contactar por WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Pixel</h2>
+                    <p>Stickers y papelería creativa</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="futbol.html">Fútbol</a></li>
+                        <li><a href="amor.html">Amor</a></li>
+                        <li><a href="animales.html">Animales</a></li>
+                        <li><a href="bebidas.html">Bebidas</a></li>
+                        <li><a href="disney.html">Disney</a></li>
+                        <li><a href="frases.html">Frases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/pixel_stickers" class="social-icon">Instagram</a>
+                        <a href="https://facebook.com/pixelstickers" class="social-icon">Facebook</a>
+                        <a href="https://tiktok.com/@pixel_stickers" class="social-icon">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para ver productos -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product-details">
+                <div class="modal-product-image">
+                    <img src="" alt="Producto" id="modalProductImage">
+                </div>
+                <div class="modal-product-info">
+                    <h2 id="modalProductTitle"></h2>
+                    <p id="modalProductCategory"></p>
+                    <p id="modalProductDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/funciones.js"></script>
+    <script src="../js/categoria-futbol.js"></script>
+</body>
+</html>

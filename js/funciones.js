@@ -1,0 +1,281 @@
+/**
+ * Pixel - Catálogo de Stickers y Papelería Creativa
+ * Funciones JavaScript Globales
+ */
+
+// ========== Navegación ========== //
+
+// Manejar menú móvil
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    
+    if (mobileMenuToggle && mainNav) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    }
+    
+    // Manejar los dropdowns en móvil
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+        
+        if (dropdownToggle && window.innerWidth <= 768) {
+            dropdownToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+    });
+});
+
+// Cerrar el menú cuando se hace clic afuera
+document.addEventListener('click', function(event) {
+    const mainNav = document.querySelector('.main-nav');
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (mainNav && mainNav.classList.contains('active') && 
+        !mainNav.contains(event.target) && 
+        !mobileMenuToggle.contains(event.target)) {
+        mainNav.classList.remove('active');
+        document.body.classList.remove('menu-open');
+    }
+});
+
+// ========== Modal de Productos ========== //
+
+// Datos de productos (simulación)
+const productosData = {
+    // Inicio
+    1: {
+        titulo: "Sticker Zorrito",
+        categoria: "Animales",
+        imagen: "imagenes/producto1.jpg",
+        descripcion: "Sticker de zorrito en estilo acuarela, perfecto para decorar cuadernos, laptops o cualquier superficie lisa. Tamaño: 5x7cm. Resistente al agua y a los rayos UV."
+    },
+    2: {
+        titulo: "Sticker Messi",
+        categoria: "Fútbol",
+        imagen: "imagenes/producto2.jpg",
+        descripcion: "Sticker de Lionel Messi levantando la copa del mundo. Ideal para fanáticos del fútbol y coleccionistas. Tamaño: 6x8cm. Resistente al agua y a los rayos UV."
+    },
+    3: {
+        titulo: "Sticker Corazón",
+        categoria: "Amor",
+        imagen: "imagenes/producto3.jpg",
+        descripcion: "Sticker de corazón con detalles florales en tonos pastel. Perfecto para decoración o regalos románticos. Tamaño: 4x4cm. Resistente al agua y a los rayos UV."
+    },
+    4: {
+        titulo: "Sticker Mickey",
+        categoria: "Disney",
+        imagen: "imagenes/producto4.jpg",
+        descripcion: "Sticker de Mickey Mouse en diseño clásico. Ideal para fans de Disney de todas las edades. Tamaño: 5x5cm. Resistente al agua y a los rayos UV."
+    },
+    
+    // Fútbol
+    f1: {
+        titulo: "Sticker Messi Campeón",
+        categoria: "Selección Argentina",
+        imagen: "../imagenes/futbol/messi1.jpg",
+        descripcion: "Sticker de Lionel Messi levantando la copa del mundo en Qatar 2022. Un recuerdo imborrable para todo argentino. Tamaño: 6x8cm. Resistente al agua y a los rayos UV."
+    },
+    f2: {
+        titulo: "Sticker Escudo AFA",
+        categoria: "Selección Argentina",
+        imagen: "../imagenes/futbol/argentina.jpg",
+        descripcion: "Sticker oficial del escudo de la Asociación del Fútbol Argentino con las tres estrellas. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+    },
+    f3: {
+        titulo: "Sticker Escudo Boca",
+        categoria: "Boca Juniors",
+        imagen: "../imagenes/futbol/boca.jpg",
+        descripcion: "Sticker oficial del escudo de Boca Juniors, el club xeneize. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+    },
+    f4: {
+        titulo: "Sticker Escudo River",
+        categoria: "River Plate",
+        imagen: "../imagenes/futbol/river.jpg",
+        descripcion: "Sticker oficial del escudo de River Plate, el club millonario. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+    },
+    f5: {
+        titulo: "Sticker FC Barcelona",
+        categoria: "FC Barcelona",
+        imagen: "../imagenes/futbol/barcelona.jpg",
+        descripcion: "Sticker oficial del escudo del FC Barcelona. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+    },
+    f6: {
+        titulo: "Sticker Real Madrid",
+        categoria: "Real Madrid",
+        imagen: "../imagenes/futbol/madrid.jpg",
+        descripcion: "Sticker oficial del escudo del Real Madrid Club de Fútbol. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+    },
+    f7: {
+        titulo: "Sticker Dibu Martínez",
+        categoria: "Selección Argentina",
+        imagen: "../imagenes/futbol/dibu.jpg",
+        descripcion: "Sticker del 'Dibu' Martínez, arquero de la selección argentina, con sus icónicos gestos. Tamaño: 6x8cm. Resistente al agua y a los rayos UV."
+    },
+    f8: {
+        titulo: "Sticker Copa del Mundo",
+        categoria: "Mundial",
+        imagen: "../imagenes/futbol/copa-mundo.jpg",
+        descripcion: "Sticker de la Copa del Mundo FIFA en diseño dorado brillante. Tamaño: 5x7cm. Resistente al agua y a los rayos UV."
+    },
+    f9: {
+        titulo: "Sticker La Bombonera",
+        categoria: "Boca Juniors",
+        imagen: "../imagenes/futbol/bombonera.jpg",
+        descripcion: "Sticker del estadio La Bombonera de Boca Juniors. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+    },
+    f10: {
+        titulo: "Sticker El Monumental",
+        categoria: "River Plate",
+        imagen: "../imagenes/futbol/monumental.jpg",
+        descripcion: "Sticker del estadio Monumental de River Plate. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+    },
+    f11: {
+        titulo: "Sticker Camp Nou",
+        categoria: "FC Barcelona",
+        imagen: "../imagenes/futbol/camp-nou.jpg",
+        descripcion: "Sticker del estadio Camp Nou del FC Barcelona. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+    },
+    f12: {
+        titulo: "Sticker Santiago Bernabéu",
+        categoria: "Real Madrid",
+        imagen: "../imagenes/futbol/bernabeu.jpg",
+        descripcion: "Sticker del estadio Santiago Bernabéu del Real Madrid. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+    }
+};
+
+// Funciones de modal
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener elementos del modal
+    const modal = document.getElementById('productModal');
+    const modalProductImage = document.getElementById('modalProductImage');
+    const modalProductTitle = document.getElementById('modalProductTitle');
+    const modalProductCategory = document.getElementById('modalProductCategory');
+    const modalProductDescription = document.getElementById('modalProductDescription');
+    const closeModal = document.querySelector('.close-modal');
+    
+    // Función para abrir el modal
+    function openModal(productId) {
+        const product = productosData[productId];
+        
+        if (product) {
+            modalProductImage.src = product.imagen;
+            modalProductImage.alt = product.titulo;
+            modalProductTitle.textContent = product.titulo;
+            modalProductCategory.textContent = product.categoria;
+            modalProductDescription.textContent = product.descripcion;
+            
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Evitar scroll en el fondo
+        }
+    }
+    
+    // Función para cerrar el modal
+    function closeModalFunc() {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restaurar scroll
+    }
+    
+    // Asignar eventos a los botones de productos
+    const viewButtons = document.querySelectorAll('.btn-view');
+    viewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const productCard = this.closest('.product-card');
+            const productId = productCard.dataset.productId;
+            openModal(productId);
+        });
+    });
+    
+    // Cerrar modal con botón X
+    if (closeModal) {
+        closeModal.addEventListener('click', closeModalFunc);
+    }
+    
+    // Cerrar modal haciendo clic fuera
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModalFunc();
+        }
+    });
+    
+    // Cerrar modal con tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            closeModalFunc();
+        }
+    });
+});
+
+// ========== Cargar componentes con fetch ========== //
+
+/**
+ * Carga un componente HTML mediante fetch y lo inserta en el elemento de destino
+ * @param {string} url - URL del componente a cargar
+ * @param {string} targetId - ID del elemento donde se insertará el contenido
+ */
+function cargarComponente(url, targetId) {
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Error HTTP: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(html => {
+                targetElement.innerHTML = html;
+                // Disparar evento para indicar que el componente ha sido cargado
+                const event = new CustomEvent('componenteLoaded', { detail: { id: targetId } });
+                document.dispatchEvent(event);
+            })
+            .catch(error => {
+                console.error(`Error al cargar el componente ${url}:`, error);
+                targetElement.innerHTML = `<p class="error">No se pudo cargar el contenido. Por favor, recarga la página.</p>`;
+            });
+    }
+}
+
+// Ejemplo de uso (descomenta para usar):
+// document.addEventListener('DOMContentLoaded', function() {
+//     cargarComponente('componentes/header.html', 'header');
+//     cargarComponente('componentes/footer.html', 'footer');
+// });
+
+// Funcionalidad del carrito
+document.addEventListener('DOMContentLoaded', function() {
+    const carritoToggle = document.querySelector('.carrito-toggle');
+    const carritoPanel = document.querySelector('.carrito-panel');
+    const cerrarCarrito = document.querySelector('.cerrar-carrito');
+    
+    if (carritoToggle && carritoPanel) {
+        carritoToggle.addEventListener('click', function() {
+            carritoPanel.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+    
+    if (cerrarCarrito) {
+        cerrarCarrito.addEventListener('click', function() {
+            carritoPanel.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+    
+    // Cerrar carrito al hacer clic fuera
+    document.addEventListener('click', function(event) {
+        if (carritoPanel && carritoPanel.classList.contains('active') &&
+            !carritoPanel.contains(event.target) &&
+            !carritoToggle.contains(event.target)) {
+            carritoPanel.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
