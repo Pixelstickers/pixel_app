@@ -19,16 +19,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       position: relative;
       z-index: 10;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-img {
-      height: 60px;
+      padding: 0;
     }
 
     .main-nav ul {
@@ -55,7 +46,7 @@
     .banner-img {
       width: 100%;
       display: block;
-      max-height: 400px;
+      height: 280px;
       object-fit: cover;
     }
 
@@ -104,11 +95,10 @@
 <body>
   <!-- Header -->
   <header id="header" class="header">
+    <div class="banner">
+      <img src="imagenes/banner-pixel.png" alt="Banner principal de Pixel" class="banner-img">
+    </div>
     <div class="container">
-      <div class="logo">
-        <img src="imagenes/logo-pixel.png" alt="Logo Pixel" class="logo-img" />
-        <p class="tagline">Stickers y papelería creativa</p>
-      </div>
       <nav class="main-nav">
         <ul>
           <li><a href="index.html" class="active">Inicio</a></li>
@@ -130,14 +120,6 @@
           </li>
         </ul>
       </nav>
-      <div class="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div class="banner">
-      <img src="imagenes/banner-pixel.png" alt="Banner principal de Pixel" class="banner-img">
     </div>
   </header>
 
