@@ -281,9 +281,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // ========== Mostrar productos dinámicamente ========== //
 
-function renderizarProductos(filtroCategoria = 'todos', textoBusqueda = '') {
+/* function renderizarProductos(filtroCategoria = 'todos', textoBusqueda = '') {
     const contenedor = document.getElementById('contenedor-productos');
-    contenedor.innerHTML = '';
+    contenedor.innerHTML = ''; */
 
     const productos = Object.entries(productosData)
         .filter(([id, producto]) => {
