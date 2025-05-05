@@ -168,12 +168,12 @@ body {
   .product-card:hover {
     transform: scale(1.02);
   }
-  .product-img {
+  .product-img img {
     width: 100%;
-    max-width: 150px;
     height: auto;
-    margin-bottom: 12px;
-  }
+    max-height: 250px;
+    object-fit: contain;
+  }  
   .btn-view {
     background-color: #f28c28;
     border: none;
@@ -188,6 +188,8 @@ body {
   }
   /* ==== MODAL PRODUCTO ==== */
 .modal {
+  background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro translúcido */
+  backdrop-filter: blur(2px); /* efecto desenfoque */
   display: none;
   position: fixed;
   z-index: 9999;
