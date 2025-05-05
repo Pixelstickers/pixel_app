@@ -67,11 +67,34 @@
       background-color: white;
     }
 
-    .galeria {
+    .galeria-categorias {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 32px;
-      padding: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .categoria-card {
+      background-color: #ffffff;
+      border: 2px solid #f28c28;
+      border-radius: 16px;
+      overflow: hidden;
+      text-align: center;
+      text-decoration: none;
+      color: #4a2e1c;
+      transition: transform 0.2s ease;
+    }
+
+    .categoria-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .categoria-card:hover {
+      transform: scale(1.03);
     }
 
     .footer {
@@ -135,10 +158,33 @@
     </select>
   </section>
 
-  <!-- Galería de Productos -->
-  <main id="galeria-productos" class="galeria container">
-    <!-- Aquí se cargarán los productos dinámicamente -->
-  </main>
+  <!-- Galería de Categorías -->
+  <section class="galeria-categorias">
+    <a href="categorias/futbol.html" class="categoria-card">
+      <img src="imagenes/futbol.png" alt="Fútbol">
+      <h3>Fútbol</h3>
+    </a>
+    <a href="categorias/amor.html" class="categoria-card">
+      <img src="imagenes/amor.png" alt="Amor">
+      <h3>Amor</h3>
+    </a>
+    <a href="categorias/animales.html" class="categoria-card">
+      <img src="imagenes/animales.png" alt="Animales">
+      <h3>Animales</h3>
+    </a>
+    <a href="categorias/bebidas.html" class="categoria-card">
+      <img src="imagenes/bebidas.png" alt="Bebidas">
+      <h3>Bebidas</h3>
+    </a>
+    <a href="categorias/disney.html" class="categoria-card">
+      <img src="imagenes/disney.png" alt="Disney">
+      <h3>Disney</h3>
+    </a>
+    <a href="categorias/frases.html" class="categoria-card">
+      <img src="imagenes/frases.png" alt="Frases">
+      <h3>Frases</h3>
+    </a>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
