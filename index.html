@@ -6,6 +6,100 @@
   <title>Pixel - Stickers y Papelería Creativa</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #fffaf0;
+      color: #4a2e1c;
+    }
+
+    .header {
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-img {
+      height: 60px;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      color: #4a2e1c;
+      font-weight: 600;
+    }
+
+    .main-nav a.active,
+    .main-nav a:hover {
+      color: #f28c28;
+      border-bottom: 2px solid #f28c28;
+    }
+
+    .banner-img {
+      width: 100%;
+      display: block;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .busqueda-filtros {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      padding: 24px 0;
+      background-color: #fff3e6;
+    }
+
+    .busqueda-filtros input,
+    .busqueda-filtros select {
+      padding: 10px 14px;
+      font-size: 16px;
+      border: 2px solid #f28c28;
+      border-radius: 12px;
+      background-color: white;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 32px;
+      padding: 40px;
+    }
+
+    .footer {
+      background-color: #3a3a3a;
+      color: #fffaf0;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: #c9b6e4;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -42,6 +136,9 @@
         <span></span>
       </div>
     </div>
+    <div class="banner">
+      <img src="imagenes/banner-pixel.png" alt="Banner principal de Pixel" class="banner-img">
+    </div>
   </header>
 
   <!-- Filtro y Buscador -->
@@ -49,78 +146,16 @@
     <input type="text" id="buscador" placeholder="Buscar productos...">
     <select id="filtro-categoria">
       <option value="todos">Todas las categorías</option>
-      <option value="Amor">Amor</option>
-      <option value="Animales">Animales</option>
-      <option value="Bebidas">Bebidas</option>
-      <option value="Cine">Cine</option>
+      <option value="stickers">Stickers</option>
+      <option value="llaveros">Llaveros</option>
+      <option value="polaroids">Polaroids</option>
+      <option value="marcapaginas">Marcapáginas</option>
     </select>
   </section>
 
   <!-- Galería de Productos -->
   <main id="galeria-productos" class="galeria container">
     <!-- Aquí se cargarán los productos dinámicamente -->
-    <div class="categorias">
-        <a href="public/categorias/amor.html" class="categoria">
-          <img src="public/imagenes/amor.png" alt="Amor">
-          <p>Amor</p>
-        </a>
-        <a href="public/categorias/animales.html" class="categoria">
-          <img src="public/imagenes/animales.png" alt="Animales">
-          <p>Animales</p>
-        </a>
-        <a href="public/categorias/bebidas.html" class="categoria">
-          <img src="public/imagenes/bebidas.png" alt="Bebidas">
-          <p>Bebidas</p>
-        </a>
-        <a href="public/categorias/cine.html" class="categoria">
-          <img src="public/imagenes/cine.png" alt="Cine">
-          <p>Cine</p>
-        </a>
-        <a href="public/categorias/comida.html" class="categoria">
-          <img src="public/imagenes/comida.png" alt="Comida">
-          <p>Comida</p>
-        </a>
-        <a href="public/categorias/dibujos.html" class="categoria">
-          <img src="public/imagenes/dibujos.png" alt="Dibujos">
-          <p>Dibujos</p>
-        </a>
-        <a href="public/categorias/frases.html" class="categoria">
-          <img src="public/imagenes/frases.png" alt="Frases">
-          <p>Frases</p>
-        </a>
-        <a href="public/categorias/futbol.html" class="categoria">
-          <img src="public/imagenes/futbol.png" alt="Fútbol">
-          <p>Fútbol</p>
-        </a>
-        <a href="public/categorias/gatos.html" class="categoria">
-          <img src="public/imagenes/gatos.png" alt="Gatitos">
-          <p>Gatitos</p>
-        </a>
-        <a href="public/categorias/laseleccion.html" class="categoria">
-          <img src="public/imagenes/laseleccion.png" alt="La Selección">
-          <p>La Selección</p>
-        </a>
-        <a href="public/categorias/libros.html" class="categoria">
-          <img src="public/imagenes/libros.png" alt="Libros">
-          <p>Libros</p>
-        </a>
-        <a href="public/categorias/musica.html" class="categoria">
-          <img src="public/imagenes/musica.png" alt="Música">
-          <p>Música</p>
-        </a>
-        <a href="public/categorias/naturaleza.html" class="categoria">
-          <img src="public/imagenes/naturaleza.png" alt="Naturaleza">
-          <p>Naturaleza</p>
-        </a>
-        <a href="public/categorias/series.html" class="categoria">
-          <img src="public/imagenes/series.png" alt="Series">
-          <p>Series</p>
-        </a>
-        <a href="public/categorias/viajes.html" class="categoria">
-          <img src="public/imagenes/viajes.png" alt="Viajes">
-          <p>Viajes</p>
-        </a>
-      </div>
   </main>
 
   <!-- Footer -->
