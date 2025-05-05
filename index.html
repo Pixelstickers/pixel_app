@@ -15,7 +15,7 @@
     }
 
     .header {
-      background-color: white;
+      background-color: #fff3e6;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       position: relative;
       z-index: 10;
@@ -41,15 +41,6 @@
     .main-nav a:hover {
       color: #f28c28;
       border-bottom: 2px solid #f28c28;
-    }
-
-    .banner {
-      background-image: url('imagenes/banner-pixel.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center top;
-      height: 380px;
-      width: 100%;
     }
 
     .busqueda-filtros {
@@ -118,8 +109,6 @@
   </style>
 </head>
 <body>
-  <div class="banner"></div>
-
   <!-- Header -->
   <header id="header" class="header">
     <div class="container">
@@ -186,7 +175,9 @@
       <h3>Frases</h3>
     </a>
   </section>
-
+  <section class="contenedor-productos container" id="contenedor-productos">
+    <!-- Los productos se insertarán acá dinámicamente -->
+  </section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
