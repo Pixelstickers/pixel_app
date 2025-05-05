@@ -279,3 +279,70 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+// ========== Mostrar productos dinámicamente ========== //
+
+function renderizarProductos(filtroCategoria = 'todos', textoBusqueda = '') {
+    const contenedor = document.getElementById('contenedor-productos');
+    contenedor.innerHTML = '';
+
+    const productos = Object.entries(productosData)
+        .filter(([id, producto]) => {
+            const coincideCategoria = filtroCategoria === 'todos' || producto.categoria.toLowerCase().includes(filtroCategoria.toLowerCase());
+            const coincideBusqueda = producto.titulo.toLowerCase().includes(textoBusqueda.toLowerCase());
+            return coincideCategoria && coincideBusqueda;
+        });
+
+    if (productos.length === 0) {
+        contenedor.innerHTML = '<p>No se encontraron productos.</p>';
+        return;
+    }
+
+    productos.forEach(([id, producto]) => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.dataset.productId = id;
+        card.innerHTML = `
+            <img src="${producto.imagen}" alt="${producto.titulo}" class="product-img">
+            <h4 class="product-title">${producto.titulo}</h4>
+            <p class="product-category">${producto.categoria}</p>
+            <button class="btn-view">Ver más</button>
+        `;
+        contenedor.appendChild(card);
+    });
+
+    // Volver a asignar eventos para abrir modal
+    document.querySelectorAll('.btn-view').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const id = this.closest('.product-card').dataset.productId;
+            const producto = productosData[id];
+            if (producto) {
+                document.getElementById('modalProductImage').src = producto.imagen;
+                document.getElementById('modalProductTitle').textContent = producto.titulo;
+                document.getElementById('modalProductCategory').textContent = producto.categoria;
+                document.getElementById('modalProductDescription').textContent = producto.descripcion;
+                document.getElementById('productModal').classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+}
+
+// ========== Filtro y búsqueda ========== //
+
+document.addEventListener('DOMContentLoaded', function () {
+    const filtro = document.getElementById('filtro-categoria');
+    const buscador = document.getElementById('buscador');
+
+    if (filtro && buscador) {
+        filtro.addEventListener('change', () => {
+            renderizarProductos(filtro.value, buscador.value);
+        });
+
+        buscador.addEventListener('input', () => {
+            renderizarProductos(filtro.value, buscador.value);
+        });
+    }
+
+    // Render inicial
+    renderizarProductos();
+});
