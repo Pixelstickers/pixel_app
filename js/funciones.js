@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-}
+
 
 // ========== Filtro y búsqueda ========== //
 
@@ -373,3 +373,30 @@ document.addEventListener('DOMContentLoaded', function () {
     // Render inicial
     renderizarProductos();
 });
+const carrito = [];
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btnAgregar = document.getElementById("btnAgregarAlCarrito");
+
+  if (btnAgregar) {
+    btnAgregar.addEventListener("click", () => {
+      const id = document.getElementById("modalProductId").textContent;
+      const nombre = document.getElementById("modalProductTitle").textContent;
+      const categoria = document.getElementById("modalProductCategory").textContent;
+      const imagen = document.getElementById("modalProductImage").src;
+
+      const producto = { id, nombre, categoria, imagen };
+
+      carrito.push(producto);
+
+      actualizarContadorCarrito();
+      alert("Producto agregado al carrito.");
+    });
+  }
+});
+
+function actualizarContadorCarrito() {
+  const contador = document.getElementById("carritoContador");
+  contador.textContent = carrito.length;
+}
+

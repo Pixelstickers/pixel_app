@@ -29,6 +29,10 @@
             </div>
           </li>
           <li><a href="../index.html#contacto">Contacto</a></li>
+          <li class="carrito-toggle">
+            <span>🛒</span>
+            <span id="carritoContador" class="carrito-contador">0</span>
+          </li>
         </ul>
       </nav>
       <div class="mobile-menu-toggle">
@@ -149,11 +153,27 @@
       <p><strong>Categoría:</strong> <span id="modalProductCategory"></span></p>
       <p><strong></strong> <span id="modalProductId"></span></p>
       <p id="modalProductDescription"></p>
+      <button id="btnAgregarAlCarrito" class="btn-primary">Agregar al carrito</button>
     </div>
   </div>
 
   <!-- Scripts -->
   <script src="../js/funciones.js"></script>
   <script src="../js/categoria-futbol.js"></script>
+  <!-- Panel Lateral Carrito -->
+<div id="carritoPanel" class="carrito-panel">
+    <div class="carrito-header">
+      <h2>Tu carrito</h2>
+      <button id="cerrarCarrito" class="btn-cerrar">×</button>
+    </div>
+    <div id="carritoContenido" class="carrito-contenido">
+      <p class="carrito-vacio">Todavía no agregaste nada 🛒</p>
+    </div>
+    <div class="carrito-footer">
+      <button id="vaciarCarrito" class="btn-secondary">Vaciar carrito</button>
+      <button class="btn-primary">Finalizar pedido</button>
+    </div>
+  </div>
+  
 </body>
 </html>
