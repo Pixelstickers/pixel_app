@@ -46,7 +46,34 @@ document.addEventListener('click', function(event) {
 });
 
 // ========== Modal de Productos ========== //
-
+// Mostrar modal al hacer clic en "Ver"
+document.querySelectorAll('.btn-view').forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const modal = document.getElementById('productModal');
+      const image = document.getElementById('modalProductImage');
+      const title = document.getElementById('modalProductTitle');
+      const category = document.getElementById('modalProductCategory');
+      const description = document.getElementById('modalProductDescription');
+      const productId = document.getElementById('modalProductId');
+  
+      // Obtener datos del producto correspondiente (esto debería ser dinámico o del dataset)
+      const producto = productosData[`f${index + 1}`]; // o usar dataset.productId
+  
+      image.src = producto.imagen;
+      title.textContent = producto.titulo;
+      category.textContent = producto.categoria;
+      description.textContent = producto.descripcion;
+      productId.textContent = `FU-0000${index + 1}`;
+  
+      modal.classList.add('show');
+    });
+  });
+  
+  // Cerrar modal
+  document.querySelector('.close-modal').addEventListener('click', () => {
+    document.getElementById('productModal').classList.remove('show');
+  });
+  
 // Datos de productos (simulación)
 const productosData = {
     // Inicio
