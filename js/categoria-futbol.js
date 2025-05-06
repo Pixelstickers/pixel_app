@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalId = document.getElementById('modalProductId');
     const modalDescription = document.getElementById('modalProductDescription');
   
-    // Descripciones (pueden expandirse o conectarse a productosData si lo usás)
+/*     // Descripciones (pueden expandirse o conectarse a productosData si lo usás)
    const descripciones = {
       f1: "Sticker de Lionel Messi levantando la copa en Qatar 2022.",
       f2: "Escudo oficial de la Asociación del Fútbol Argentino (AFA).",
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       f10: "Sticker del estadio Monumental.",
       f11: "Sticker del estadio Camp Nou.",
       f12: "Sticker del estadio Santiago Bernabéu."
-    };
+    }; */
   
     productCards.forEach((card, index) => {
       const button = card.querySelector('.btn-view');
