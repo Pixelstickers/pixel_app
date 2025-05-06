@@ -8,12 +8,16 @@ body {
   }
   
   .header {
-    background: linear-gradient(to right, #fff3e6, #fffaf0);
-    padding: 20px 0;
-    border-bottom: 2px solid #f28c28;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-image: url("../imagenes/header-zorro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 180px; /* Podés ajustar el alto */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .header-flex {
@@ -42,6 +46,11 @@ body {
   
   .logo-img {
     height: 60px;
+  }
+  
+  .logo h1 {
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   }
   
   .tagline {
