@@ -75,8 +75,16 @@
             <img src="../imagenes/FU-00001.png" alt="Escudo club Huracán" />
           </div>
           <div class="cantidad-control">
-            <button onclick="restarDelCarrito('f1')">-</button>
-            <button onclick="agregarAlCarritoDesdeElemento(this)">+</button>
+            <button 
+              class="btn-restar" 
+              onclick="restarDelCarrito('f1')">−</button>
+            <button 
+              class="btn-agregar" 
+              onclick="agregarAlCarritoDesdeBoton(this)"
+              data-product-id="f1"
+              data-product-name="Huracán"
+              data-product-img="../imagenes/FU-00001.png"
+            >+</button>
           </div>
           <h3>Huracán</h3>
           <p class="product-category">Clubes argentinos</p>
