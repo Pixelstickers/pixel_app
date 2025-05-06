@@ -11,14 +11,14 @@
   <!-- Header -->
   <header class="header">
     <div class="container header-flex">
-      <h1 class="brand-name"></h1>
+      <h1 class="brand-name">Pixel</h1>
       <nav class="main-nav">
         <ul>
           <li><a href="../index.html" class="active">Inicio</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">Categorías</a>
             <div class="dropdown-menu">
-              <a href="categorias/futbol.html">Fútbol</a>
+              <a href="futbol.html" class="active">Fútbol</a>
               <a href="amor.html">Amor</a>
               <a href="animales.html">Animales</a>
               <a href="bebidas.html">Bebidas</a>
@@ -28,9 +28,7 @@
           </li>
           <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
           <li><a href="../nosotros.html">Nosotros</a></li>
-          <button class="carrito-btn" id="abrirCarrito">
-            🛒 <span id="carritoContador" class="carrito-contador">0</span>
-          </button>
+          <li><button class="carrito-btn" id="abrirCarrito">🛒 <span id="carritoContador" class="carrito-contador">0</span></button></li>
         </ul>
       </nav>
     </div>
@@ -56,7 +54,7 @@
             <option value="boca">Boca Juniors</option>
             <option value="river">River Plate</option>
             <option value="Estudiantes">Estudiantes</option>
-            <option value="Huracan">Huracan</option>
+            <option value="Huracan">Huracán</option>
             <option value="Independiente">Independiente</option>
           </select>
         </div>
@@ -68,35 +66,75 @@
   <section class="category-products">
     <div class="container">
       <div class="products-grid">
-        <div class="product-card" data-product-id="f1" data-team="Huracan">
-          <div class="product-img" onclick="abrirModal('imagenes/FU-00001.png', 'Huracan', 'Clubes argentinos', 'f1')">
-            <img src="../imagenes/FU-00001.png" alt="Escudo club Huracan" />
+        <div class="product-card" 
+             data-product-id="f1" 
+             data-product-name="Huracán" 
+             data-product-img="../imagenes/FU-00001.png" 
+             data-product-price="500">
+          <div class="product-img" onclick="abrirModal('imagenes/FU-00001.png', 'Huracán', 'Clubes argentinos', 'f1')">
+            <img src="../imagenes/FU-00001.png" alt="Escudo club Huracán" />
           </div>
-          <button class="btn-view" onclick="agregarAlCarrito('f1')">Agregar</button>
+          <button class="btn-view" onclick="agregarAlCarritoDesdeElemento(this)">Agregar</button>
           <h3>Huracán</h3>
           <p class="product-category">Clubes argentinos</p>
-        </div>   
+        </div>
 
-        <div class="product-card" data-product-id="f2" data-team="Estudiantes">
-          <div class="product-img" onclick="abrirModal('imagenes/FU-00002.png', 'Estudiantes de la Plata', 'Clubes argentinos', 'f2')">
-            <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de la Plata" />
+        <div class="product-card" 
+             data-product-id="f2" 
+             data-product-name="Estudiantes de La Plata" 
+             data-product-img="../imagenes/FU-00002.png" 
+             data-product-price="500">
+          <div class="product-img" onclick="abrirModal('imagenes/FU-00002.png', 'Estudiantes de La Plata', 'Clubes argentinos', 'f2')">
+            <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de La Plata" />
           </div>
-          <button class="btn-view" onclick="agregarAlCarrito('f2')">Agregar</button>
+          <button class="btn-view" onclick="agregarAlCarritoDesdeElemento(this)">Agregar</button>
           <h3>Estudiantes de La Plata</h3>
           <p class="product-category">Clubes argentinos</p>
         </div>
 
-        <div class="product-card" data-product-id="f3" data-team="Independiente">
+        <div class="product-card" 
+             data-product-id="f3" 
+             data-product-name="Independiente" 
+             data-product-img="../imagenes/FU-00004.png" 
+             data-product-price="500">
           <div class="product-img" onclick="abrirModal('imagenes/FU-00004.png', 'Independiente', 'Clubes argentinos', 'f3')">
             <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
           </div>
-          <button class="btn-view" onclick="agregarAlCarrito('f3')">Agregar</button>
+          <button class="btn-view" onclick="agregarAlCarritoDesdeElemento(this)">Agregar</button>
           <h3>Independiente</h3>
           <p class="product-category">Clubes argentinos</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modalProductImage" src="" alt="Imagen del producto" />
+      <h2 id="modalProductTitle"></h2>
+      <p><strong>Categoría:</strong> <span id="modalProductCategory"></span></p>
+      <p><strong>ID:</strong> <span id="modalProductId"></span></p>
+      <p id="modalProductDescription"></p>
+      <button id="btnAgregarAlCarrito" class="btn-primary">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <!-- Carrito -->
+  <div class="carrito-panel" id="carritoPanel">
+    <div class="carrito-header">
+      <h3>Tu carrito</h3>
+      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
+    </div>
+    <div class="carrito-contenido" id="carritoContenido">
+      <p>No hay productos en el carrito.</p>
+    </div>
+    <div class="carrito-footer">
+      <span>Total:</span>
+      <strong id="carritoTotal">$0</strong>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer id="footer" class="footer">
@@ -116,35 +154,29 @@
     </div>
   </footer>
 
-  <!-- Modal -->
-  <div id="productModal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <img id="modalProductImage" src="" alt="Imagen del producto" />
-      <h2 id="modalProductTitle"></h2>
-      <p><strong>Categoría:</strong> <span id="modalProductCategory"></span></p>
-      <p><strong>ID:</strong> <span id="modalProductId"></span></p>
-      <p id="modalProductDescription"></p>
-      <button id="btnAgregarAlCarrito" class="btn-primary">Agregar al carrito</button>
-    </div>
-  </div>
-
-  <!-- Panel Lateral Carrito -->
-  <div class="carrito-panel" id="carritoPanel">
-    <div class="carrito-header">
-      <h3>Tu carrito</h3>
-      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
-    </div>
-    <div class="carrito-contenido" id="carritoContenido">
-      <p>No hay productos en el carrito.</p>
-    </div>
-    <div class="carrito-footer">
-      <span>Total:</span>
-      <strong id="carritoTotal">$0</strong>
-    </div>
-  </div>
-
   <!-- Scripts -->
+  <script>
+    function agregarAlCarritoDesdeElemento(boton) {
+      const card = boton.closest('.product-card');
+      const id = card.dataset.productId;
+      const nombre = card.dataset.productName;
+      const imagen = card.dataset.productImg;
+      const precio = card.dataset.productPrice;
+      agregarAlCarrito(id, nombre, imagen, precio);
+    }
+
+    function abrirModal(imagenSrc, titulo, categoria, id) {
+      document.getElementById('modalProductImage').src = '../' + imagenSrc;
+      document.getElementById('modalProductTitle').textContent = titulo;
+      document.getElementById('modalProductCategory').textContent = categoria;
+      document.getElementById('modalProductId').textContent = id;
+      document.getElementById('productModal').classList.add('show');
+    }
+
+    document.querySelector('.close-modal').addEventListener('click', function () {
+      document.getElementById('productModal').classList.remove('show');
+    });
+  </script>
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>
   <script src="../js/categoria-futbol.js"></script>
