@@ -110,7 +110,7 @@ const productosData = {
         descripcion: "Escudo Huracan. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f2: {
-        titulo: "Huracan",
+        titulo: "Estudiantes de la Plata",
         categoria: "Fútbol",
         imagen: "imagenes/FU-00002.png",
         descripcion: "Escudo Estudiantes de la Plata. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
