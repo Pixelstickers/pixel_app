@@ -104,3 +104,11 @@ document.addEventListener("click", function (e) {
   }
 });
 
+function abrirModal(imagen, titulo, categoria, id) {
+  const modal = document.getElementById("productModal");
+  modal.classList.add("show");
+  document.getElementById("modalProductImage").src = imagen;
+  document.getElementById("modalProductTitle").innerText = titulo;
+  document.getElementById("modalProductCategory").innerText = categoria;
+  document.getElementById("modalProductId").innerText = id;
+}

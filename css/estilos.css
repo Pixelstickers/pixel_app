@@ -263,12 +263,8 @@ nav.main-nav a {
 .product-img {
   position: relative;
   text-align: center;
+  cursor: pointer; /* hace clickeable */
 }
-.product-img img {
-  width: 100%;
-  height: 160px;
-  object-fit: contain;
-}  
 .btn-view {
   background-color: #f28c28;
   border: none;
@@ -373,9 +369,6 @@ right: 0;
   align-items: center;
 }
 .btn-agregar {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
   background-color: #f28c28;
   color: white;
   border: none;
@@ -383,8 +376,10 @@ right: 0;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  margin-top: 8px;
   transition: background-color 0.2s ease;
 }
+
 
 .btn-agregar:hover {
   background-color: #d6741e;
