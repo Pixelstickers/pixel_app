@@ -89,3 +89,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("carritoPanel").classList.remove("active");
   });
 });
+function restarDelCarrito(id) {
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  const index = carrito.findIndex(item => item.id === id);
+
+  if (index !== -1) {
+    if (carrito[index].cantidad > 1) {
+      carrito[index].cantidad -= 1;
+    } else {
+      carrito.splice(index, 1);
+    }
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    actualizarCarrito();
+  }
+}
