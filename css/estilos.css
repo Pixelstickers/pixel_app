@@ -73,7 +73,7 @@ body {
   .main-nav {
     display: flex;
     justify-content: center;
-    margin-top: 40px; /* antes estaba en 10px o 20px */
+    margin-top: 80px; /* antes estaba en 10px o 20px */
   }
 
   nav.main-nav ul {
