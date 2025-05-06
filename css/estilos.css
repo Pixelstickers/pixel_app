@@ -106,9 +106,10 @@ nav.main-nav a {
   transition: background 0.3s ease;
 }
 
-nav.main-nav a.active,
-nav.main-nav a:hover {
-  background: rgba(255, 255, 255, 0.9); /* solo un poco más visible al pasar */
+.main-nav a.active,
+.main-nav a:hover {
+  color: #f28c28;
+  border-bottom: 2px solid #f28c28;
 }
 
 .modal {
@@ -547,12 +548,9 @@ gap: 15px;
 
 .main-nav a {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 6px 12px;
-  border-radius: 10px;
   color: #4a2e1c;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 .main-nav a:hover {
