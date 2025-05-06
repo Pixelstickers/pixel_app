@@ -116,10 +116,10 @@ const productosData = {
         descripcion: "Escudo Estudiantes de la Plata. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f3: {
-        titulo: "Sticker Escudo Boca",
-        categoria: "Boca Juniors",
-        imagen: "../imagenes/futbol/boca.jpg",
-        descripcion: "Sticker oficial del escudo de Boca Juniors, el club xeneize. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+        titulo: "Independiente",
+        categoria: "Fútbol",
+        imagen: "imagenes/FU-00004.png",
+        descripcion: "Escudo Independiente. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f4: {
         titulo: "Sticker Escudo River",
