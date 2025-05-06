@@ -156,7 +156,7 @@ body {
     font-size: 14px;
     margin-left: 4px;
   }
-  
+
   .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -321,5 +321,35 @@ body {
   height: 50px;
   object-fit: cover;
   border-radius: 8px;
+}
+.carrito-controles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.carrito-controles button {
+  background-color: #f28c28;
+  border: none;
+  padding: 4px 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.carrito-controles button:hover {
+  background-color: #d47116;
+}
+
+.btn-eliminar {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+  color: #a33;
 }
 

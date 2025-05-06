@@ -170,23 +170,56 @@ carritoToggle.addEventListener('click', function() {
     carritoPanel.classList.add('active');
     document.body.style.overflow = 'hidden';
   }); */
-  document.addEventListener('DOMContentLoaded', () => {
-    const abrir = document.getElementById('abrirCarrito');
-    const cerrar = document.getElementById('cerrarCarrito');
-    const panel = document.getElementById('carritoPanel');
+  function actualizarVistaCarrito() {
+    const contenedor = document.getElementById('carritoContenido');
+    const total = document.getElementById('carritoTotal');
 
-    if (abrir) {
-        abrir.addEventListener('click', () => {
-            panel.classList.add('active');
-            actualizarVistaCarrito();
-        });
+    if (!contenedor || !total) return;
+
+    if (carrito.length === 0) {
+        contenedor.innerHTML = '<p>No hay productos en el carrito.</p>';
+        total.textContent = '$0';
+        return;
     }
 
-    if (cerrar) {
-        cerrar.addEventListener('click', () => {
-            panel.classList.remove('active');
-        });
-    }
+    contenedor.innerHTML = '';
+    let sumaTotal = 0;
 
-    actualizarContadorCarrito(); // actualizar contador al cargar
-});
+    carrito.forEach(item => {
+        const div = document.createElement('div');
+        div.classList.add('carrito-item');
+
+        div.innerHTML = `
+            <img src="${item.imagen || 'imagenes/default.png'}" alt="${item.nombre}">
+            <div style="flex-grow:1">
+                <strong>${item.nombre}</strong><br>
+                <small>${item.categoria}</small><br>
+                <div class="carrito-controles">
+                    <button class="btn-menos" onclick="cambiarCantidad('${item.codigo}', -1)">−</button>
+                    <span>${item.cantidad}</span>
+                    <button class="btn-mas" onclick="cambiarCantidad('${item.codigo}', 1)">+</button>
+                </div>
+            </div>
+            <button class="btn-eliminar" onclick="eliminarDelCarrito('${item.codigo}')">🗑️</button>
+        `;
+
+        contenedor.appendChild(div);
+        sumaTotal += item.cantidad * (item.precio || 100); // default $100 si no hay precio definido
+    });
+
+    total.textContent = `$${sumaTotal}`;
+}
+function cambiarCantidad(codigo, cambio) {
+    const index = carrito.findIndex(p => p.codigo === codigo);
+    if (index !== -1) {
+        carrito[index].cantidad += cambio;
+
+        if (carrito[index].cantidad <= 0) {
+            carrito.splice(index, 1); // eliminamos si es 0
+        }
+
+        guardarCarrito();
+        actualizarVistaCarrito();
+        actualizarContadorCarrito();
+    }
+}
