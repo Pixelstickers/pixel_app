@@ -276,7 +276,7 @@ function cargarComponente(url, targetId) {
 //     cargarComponente('componentes/footer.html', 'footer');
 // });
 
-// Funcionalidad del carrito
+/* // Funcionalidad del carrito
 document.addEventListener('DOMContentLoaded', function() {
     const carritoToggle = document.querySelector('.carrito-toggle');
     const carritoPanel = document.querySelector('.carrito-panel');
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = '';
         }
     });
-});
+}); */
 // ========== Mostrar productos dinámicamente ========== //
 
 /* function renderizarProductos(filtroCategoria = 'todos', textoBusqueda = '') {
@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Render inicial
     renderizarProductos();
 });
-const carrito = [];
+/* const carrito = [];
 
 document.addEventListener("DOMContentLoaded", () => {
   const btnAgregar = document.getElementById("btnAgregarAlCarrito");
@@ -399,4 +399,4 @@ function actualizarContadorCarrito() {
   const contador = document.getElementById("carritoContador");
   contador.textContent = carrito.length;
 }
-
+ */
