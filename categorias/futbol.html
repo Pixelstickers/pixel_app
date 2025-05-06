@@ -40,7 +40,7 @@
   <section class="category-banner">
     <div class="container">
       <h1>Stickers de Fútbol</h1>
-      <p>Todos los stickers de fútbol que podés encontrar</p>
+      <p>Todos los stickers de fútbol que podes encontrar</p>
     </div>
   </section>
 
@@ -59,12 +59,18 @@
             <option value="Huracan">Huracan</option>
             <option value="Independiente">Independiente</option>
           </select>
+<!--         </div>
+        <div class="filter-group">
+          <label>Ordenar por:</label>
+          <select id="sortProducts">
+            <option value="newest">Más recientes</option>
+            <option value="popular">Más populares</option>
+          </select>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
-  <!-- Productos -->
   <section class="category-products">
     <div class="container">
       <div class="products-grid">
@@ -73,24 +79,44 @@
             <img src="../imagenes/FU-00001.png" alt="Escudo club Huracan" />
           </div>
           <button class="btn-view" onclick="agregarAlCarrito('f1')">Agregar</button>
-          <h3>Huracán</h3>
+          <h3>Huracan</h3>
           <p class="product-category">Clubes argentinos</p>
         </div>   
-
         <div class="product-card" data-product-id="f2" data-team="Estudiantes">
           <div class="product-img" onclick="abrirModal('imagenes/FU-00002.png', 'Estudiantes de la Plata', 'Clubes argentinos', 'f2')">
             <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de la Plata" />
           </div>
           <button class="btn-view" onclick="agregarAlCarrito('f2')">Agregar</button>
-          <h3>Estudiantes de La Plata</h3>
+          <h3>Estudiantes de la Plata</h3>
           <p class="product-category">Clubes argentinos</p>
         </div>
-
         <div class="product-card" data-product-id="f3" data-team="Independiente">
-          <div class="product-img" onclick="abrirModal('imagenes/FU-00004.png', 'Independiente', 'Clubes argentinos', 'f3')">
+          <div class="product-img">
             <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
+            <div class="overlay">
+              <button class="btn-view">Ver</button>
+            </div>
           </div>
-          <button class="btn-view" onclick="agregarAlCarrito('f3')">Agregar</button>
+          <h3>Independiente</h3>
+          <p class="product-category">Clubes argentinos</p>
+        </div>
+        <div class="product-card" data-product-id="f3" data-team="Independiente">
+          <div class="product-img">
+            <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
+            <div class="overlay">
+              <button class="btn-view">Ver</button>
+            </div>
+          </div>
+          <h3>Independiente</h3>
+          <p class="product-category">Clubes argentinos</p>
+        </div>
+        <div class="product-card" data-product-id="f3" data-team="Independiente">
+          <div class="product-img">
+            <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
+            <div class="overlay">
+              <button class="btn-view">Ver</button>
+            </div>
+          </div>
           <h3>Independiente</h3>
           <p class="product-category">Clubes argentinos</p>
         </div>
@@ -98,7 +124,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer id="footer" class="footer">
     <div class="container">
       <div class="footer-content">
@@ -123,7 +148,7 @@
       <img id="modalProductImage" src="" alt="Imagen del producto" />
       <h2 id="modalProductTitle"></h2>
       <p><strong>Categoría:</strong> <span id="modalProductCategory"></span></p>
-      <p><strong>ID:</strong> <span id="modalProductId"></span></p>
+      <p><strong></strong> <span id="modalProductId"></span></p>
       <p id="modalProductDescription"></p>
       <button id="btnAgregarAlCarrito" class="btn-primary">Agregar al carrito</button>
     </div>
