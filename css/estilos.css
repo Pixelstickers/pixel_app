@@ -28,8 +28,9 @@ body {
 
 .header-flex {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .logo-zone {
@@ -52,10 +53,11 @@ body {
 }
 
 .brand-name {
-  font-family: 'Dancing Script', cursive;
-  font-size: 36px;
-  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
   color: #4a2e1c;
+  font-family: 'Dancing Script', cursive;
+  margin-left: 20px;
 }
 
 .logo h1 {
@@ -90,6 +92,7 @@ body {
   gap: 16px;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 nav.main-nav a {
