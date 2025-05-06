@@ -86,8 +86,8 @@ const productosData = {
     2: {
         titulo: "Huracan",
         categoria: "Fútbol",
-        imagen: "imagenes/FU-00001.png",
-        descripcion: "Escudo Huracan. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        imagen: "imagenes/FU-01.png",
+        descripcion: "Escucan. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     3: {
         titulo: "Sticker Corazón",
