@@ -352,4 +352,22 @@ body {
   margin-left: 8px;
   color: #a33;
 }
+.carrito-controles {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
 
+.carrito-controles button {
+  background-color: #f28c28;
+  border: none;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.carrito-controles button:hover {
+  background-color: #d47116;
+}
