@@ -107,7 +107,7 @@ const productosData = {
         titulo: "Sticker Messi Campeón",
         categoria: "Selección Argentina",
         imagen: "../imagenes/futbol/messi1.jpg",
-        descripcion: "Sticker de Lionel Messi levantando la copa del mundo en Qatar 2022. Un recuerdo imborrable para todo argentino. Tamaño: 6x8cm. Resistente al agua y a los rayos UV."
+        descripcion: "Escudo Estudiantes de la Plata. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f2: {
         titulo: "Sticker Escudo AFA",
