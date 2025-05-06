@@ -111,6 +111,7 @@
 <body>
   <!-- Header -->
   <header class="header">
+    <button class="hamburger" id="menuToggle" aria-label="Abrir menú">&#9776;</button>
     <div class="container header-flex">
       <h1 class="brand-name">Pixel</h1>
       <nav class="main-nav">
@@ -217,5 +218,23 @@
     </div>
     <script src="js/funciones.js"></script>
     <script src="js/carrito.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menuToggle");
+        const nav = document.querySelector(".main-nav");
+    
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("active");
+        });
+    
+        // Cerrar el menú si se hace clic fuera (opcional)
+        document.addEventListener("click", (e) => {
+          if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+            nav.classList.remove("active");
+          }
+        });
+      });
+    </script>
+    
 </body>
 </html>
