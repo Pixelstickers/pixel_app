@@ -1,40 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Nosotros - Pixel</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosotros - Pixel Stickers</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .nosotros-section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fffaf5;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      font-family: 'Quicksand', sans-serif;
+    }
+    .nosotros-section h2 {
+      font-size: 32px;
+      color: #4a2e1c;
+      margin-bottom: 15px;
+    }
+    .nosotros-section p {
+      font-size: 18px;
+      color: #5a3b27;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
-    <div class="header-content">
-      <h1 class="logo">Pixel</h1>
+    <div class="container header-flex">
+      <h1 class="brand-name">Pixel</h1>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">Categorías</a>
             <div class="dropdown-menu">
-              <a href="categorias/futbol.html">Fútbol</a>
-              <a href="categorias/amor.html">Amor</a>
-              <a href="categorias/animales.html">Animales</a>
-              <a href="categorias/bebidas.html">Bebidas</a>
-              <a href="categorias/disney.html">Disney</a>
-              <a href="categorias/frases.html">Frases</a>
+              <a href="futbol.html">Fútbol</a>
+              <a href="amor.html">Amor</a>
+              <a href="animales.html">Animales</a>
+              <a href="bebidas.html">Bebidas</a>
+              <a href="disney.html">Disney</a>
+              <a href="frases.html">Frases</a>
             </div>
           </li>
           <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
           <li><a href="nosotros.html" class="active">Nosotros</a></li>
-          <li class="carrito-toggle" id="abrirCarrito">
-            🛒 <span id="carritoContador" class="carrito-contador">0</span>
-          </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="nosotros-content">
+
+  <section class="nosotros-section">
     <h2>Sobre Pixel</h2>
-    <p>Pixel es un emprendimiento dedicado a la creación de stickers resistentes al agua, marcapáginas, polaroids imantadas y más productos personalizados. Amamos lo que hacemos y cuidamos cada detalle en nuestros diseños y packaging.</p>
-  </main>
+    <p>Pixel es un emprendimiento dedicado a la creación de stickers resistentes al agua, marcapáginas, polaroids imantadas y más productos personalizados. Amamos lo que hacemos y cuidamos cada detalle en nuestros diseños y packaging. Cada producto es elaborado con amor, con el objetivo de brindarte algo único y especial.</p>
+  </section>
 </body>
 </html>
