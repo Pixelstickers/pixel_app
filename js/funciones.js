@@ -175,6 +175,14 @@ const productosData = {
         imagen: "../imagenes/futbol/bernabeu.jpg",
         descripcion: "Sticker del estadio Santiago Bernabéu del Real Huracan. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
     }
+
+    // Fútbol
+    A1: {
+        titulo: "Corazon",
+        categoria: "Corazones",
+        imagen: "imagenes/AM-00001.png",
+        descripcion: "Corazon Rosa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal

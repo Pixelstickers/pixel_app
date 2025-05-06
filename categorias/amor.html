@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amor - Pixel Stickers y Papelería Creativa</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Pixel</h1>
+        <p class="tagline">Stickers y papelería creativa</p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle active">Categorías</a>
+            <div class="dropdown-menu">
+              <a href="futbol.html" class="active">Fútbol</a>
+              <a href="amor.html">Amor</a>
+              <a href="animales.html">Animales</a>
+              <a href="bebidas.html">Bebidas</a>
+              <a href="disney.html">Disney</a>
+              <a href="frases.html">Frases</a>
+            </div>
+          </li>
+          <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
+          <li class="carrito-toggle" id="abrirCarrito">
+            🛒 <span id="carritoContador" class="carrito-contador">0</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+    <!-- Categoría Banner -->
+    <section class="category-banner">
+        <div class="container">
+            <h1>Stickers de Amor</h1>
+            <p>Todos los stickers sobre el amor que podes encontrar</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Filtrar por:</label>
+                    <select id="filterTeam">
+                        <option value="todos">Todos los de amor</option>
+                        <option value="San Valentin">San Valentin</option>
+                        <option value="Parejas">Parejas</option>
+                        <option value="Corazones">Corazones</option>
+                        <option value="Besos">Besos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Ordenar por:</label>
+                    <select id="sortProducts">
+                        <option value="newest">Más recientes</option>
+                        <option value="popular">Más populares</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <section class="category-products">
+    <div class="container">
+      <div class="products-grid">
+        <!-- Repetí esto por cada producto -->
+        <div class="product-card" data-product-id="A1" data-team="Corazon">
+          <div class="product-img">
+            <img src="../imagenes/AM-00001.png" alt="Corazon Rosa" />
+            <div class="overlay">
+              <button class="btn-view">Ver</button>
+            </div>
+          </div>
+          <h3>Corazon Rosa</h3>
+          <p class="product-category">Corazones</p>
+        </div>
+        <div class="product-card" data-product-id="A2" data-team="Sobre de corazon">
+            <div class="product-img">
+              <img src="../imagenes/AM-00002.png" alt="Sobre de corazon" />
+              <div class="overlay">
+                <button class="btn-view">Ver</button>
+              </div>
+            </div>
+            <h3>Sobre de corazon</h3>
+            <p class="product-category">Corazones</p>
+          </div>
+          <div class="product-card" data-product-id="A3" data-team="Beso">
+            <div class="product-img">
+              <img src="../imagenes/AM-00003.png" alt="Beso" />
+              <div class="overlay">
+                <button class="btn-view">Ver</button>
+              </div>
+            </div>
+            <h3>Beso</h3>
+            <p class="product-category">Besos</p>
+          </div>
+        <!-- ... agregá los demás productos igual que antes cambiando imagen, nombre e ID ... -->
+      </div>
+    </div>
+  </section>
+
+<!--   <section class="quick-contact">
+    <div class="container">
+      <h2>¿Te interesa algún diseño?</h2>
+      <p>Escribinos para consultar disponibilidad, precios y formas de envío</p>
+      <a href="https://wa.me/3764297950" class="btn-primary">Contactar por WhatsApp</a>
+    </div>
+  </section> -->
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+<!--          <h2>Pixel</h2>
+          <p>Stickers y papelería creativa</p>
+         </div>
+        <div class="footer-links">
+          <h3>Enlaces rápidos</h3>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="futbol.html">Fútbol</a></li>
+            <li><a href="amor.html">Amor</a></li>
+            <li><a href="animales.html">Animales</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="disney.html">Disney</a></li>
+            <li><a href="frases.html">Frases</a></li>
+          </ul>
+        </div> -->
+        <div class="footer-social">
+          <h3>Seguinos</h3>
+          <div class="social-icons">
+            <a href="https://instagram.com/pixel.stickerss" class="social-icon">Instagram</a>
+            <a href="https://tiktok.com/@pixel.stickerss" class="social-icon">TikTok</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modalProductImage" src="" alt="Imagen del producto" />
+      <h2 id="modalProductTitle"></h2>
+      <p><strong>Categoría:</strong> <span id="modalProductCategory"></span></p>
+      <p><strong></strong> <span id="modalProductId"></span></p>
+      <p id="modalProductDescription"></p>
+      <button id="btnAgregarAlCarrito" class="btn-primary">Agregar al carrito</button>
+    </div>
+  </div>
+
+
+  <!-- Panel Lateral Carrito -->
+  <div class="carrito-panel" id="carritoPanel">
+    <div class="carrito-header">
+      <h3>Tu carrito</h3>
+      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
+    </div>
+    <div class="carrito-contenido" id="carritoContenido">
+      <p>No hay productos en el carrito.</p>
+    </div>
+    <div class="carrito-footer">
+      <span>Total:</span>
+      <strong id="carritoTotal">$0</strong>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="../js/funciones.js"></script>
+  <script src="../js/carrito.js"></script>          <!-- PRIMERO -->
+  <script src="../js/categoria-futbol.js"></script> <!-- DESPUÉS -->  
+</body>
+</html>
