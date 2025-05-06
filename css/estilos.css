@@ -11,10 +11,12 @@ body {
   background-image: url("../imagenes/header-zorro.png");
   background-size: cover;
   background-position: center;
-  height: 230px;
+  height: 200px;
   position: relative;
-  color: #4a2e1c;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container-header {
@@ -81,15 +83,15 @@ body {
 }
 
 .main-nav {
-  position: absolute;
-  top: 50px; /* lo bajamos más */
-  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .main-nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 16px;
   padding: 0;
   margin: 0;
 }
@@ -516,20 +518,21 @@ gap: 15px;
 }
 
 .main-nav li {
-margin: 0;
+  position: relative;
 }
 
 .main-nav a {
-text-decoration: none;
-background-color: rgba(255, 255, 255, 0.8);
-padding: 6px 12px;
-border-radius: 10px;
-color: #4a2e1c;
-transition: background-color 0.3s ease;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #4a2e1c;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .main-nav a:hover {
-background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Sección Nosotros */
