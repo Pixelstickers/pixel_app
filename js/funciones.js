@@ -86,7 +86,7 @@ const productosData = {
     2: {
         titulo: "Huracan",
         categoria: "Fútbol",
-        imagen: "imagenes/FU-00001",
+        imagen: "imagenes/FU-00001.png",
         descripcion: "Escudo Huracan. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     3: {
@@ -106,7 +106,7 @@ const productosData = {
     f1: {
         titulo: "Sticker Messi Campeón",
         categoria: "Selección Argentina",
-        imagen: "../imagenes/futbol/messi1.jpg",
+        imagen: "imagenes/FU-00002.png",
         descripcion: "Escudo Estudiantes de la Plata. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f2: {
