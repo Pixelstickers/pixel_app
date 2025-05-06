@@ -104,16 +104,16 @@ const productosData = {
     
     // Fútbol
     f1: {
-        titulo: "Sticker Messi Campeón",
-        categoria: "Selección Argentina",
-        imagen: "imagenes/FU-00002.png",
-        descripcion: "Escudo Estudiantes de la Plata. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        titulo: "Huracan",
+        categoria: "Fútbol",
+        imagen: "imagenes/FU-00001.png",
+        descripcion: "Escudo Huracan. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f2: {
-        titulo: "Sticker Escudo AFA",
-        categoria: "Selección Argentina",
-        imagen: "../imagenes/futbol/argentina.jpg",
-        descripcion: "Sticker oficial del escudo de la Asociación del Fútbol Argentino con las tres estrellas. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+        titulo: "Huracan",
+        categoria: "Fútbol",
+        imagen: "imagenes/FU-00002.png",
+        descripcion: "Escudo Estudiantes de la Plata. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f3: {
         titulo: "Sticker Escudo Boca",
