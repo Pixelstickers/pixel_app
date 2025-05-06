@@ -74,7 +74,10 @@
           <div class="product-img" onclick="abrirModal('imagenes/FU-00001.png', 'Huracán', 'Clubes argentinos', 'f1')">
             <img src="../imagenes/FU-00001.png" alt="Escudo club Huracán" />
           </div>
-          <button class="btn-view" onclick="agregarAlCarritoDesdeElemento(this)">Agregar</button>
+          <div class="cantidad-control">
+            <button onclick="restarDelCarrito('f1')">-</button>
+            <button onclick="agregarAlCarritoDesdeElemento(this)">+</button>
+          </div>
           <h3>Huracán</h3>
           <p class="product-category">Clubes argentinos</p>
         </div>
@@ -87,7 +90,10 @@
           <div class="product-img" onclick="abrirModal('imagenes/FU-00002.png', 'Estudiantes de La Plata', 'Clubes argentinos', 'f2')">
             <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de La Plata" />
           </div>
-          <button class="btn-view" onclick="agregarAlCarritoDesdeElemento(this)">Agregar</button>
+          <div class="cantidad-control">
+            <button onclick="restarDelCarrito('f2')">-</button>
+            <button onclick="agregarAlCarritoDesdeElemento(this)">+</button>
+          </div>
           <h3>Estudiantes de La Plata</h3>
           <p class="product-category">Clubes argentinos</p>
         </div>
@@ -100,7 +106,10 @@
           <div class="product-img" onclick="abrirModal('imagenes/FU-00004.png', 'Independiente', 'Clubes argentinos', 'f3')">
             <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
           </div>
-          <button class="btn-view" onclick="agregarAlCarritoDesdeElemento(this)">Agregar</button>
+          <div class="cantidad-control">
+            <button onclick="restarDelCarrito('f3')">-</button>
+            <button onclick="agregarAlCarritoDesdeElemento(this)">+</button>
+          </div>
           <h3>Independiente</h3>
           <p class="product-category">Clubes argentinos</p>
         </div>
