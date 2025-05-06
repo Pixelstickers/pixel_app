@@ -80,10 +80,11 @@
               onclick="restarDelCarrito('f1')">−</button>
             <button 
               class="btn-agregar" 
-              onclick="agregarAlCarritoDesdeBoton(this)"
+              onclick="agregarAlCarritoDesdeElemento(this)"
               data-product-id="f1"
               data-product-name="Huracán"
               data-product-img="../imagenes/FU-00001.png"
+              data-product-price="500"
             >+</button>
           </div>
           <h3>Huracán</h3>
@@ -99,8 +100,17 @@
             <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de La Plata" />
           </div>
           <div class="cantidad-control">
-            <button onclick="restarDelCarrito('f2')">-</button>
-            <button onclick="agregarAlCarritoDesdeElemento(this)">+</button>
+            <button 
+              class="btn-restar" 
+              onclick="restarDelCarrito('f2')">−</button>
+            <button 
+              class="btn-agregar" 
+              onclick="agregarAlCarritoDesdeElemento(this)"
+              data-product-id="f2"
+              data-product-name="Estudiantes de La Plata"
+              data-product-img="../imagenes/FU-00002.png"
+              data-product-price="500"
+            >+</button>
           </div>
           <h3>Estudiantes de La Plata</h3>
           <p class="product-category">Clubes argentinos</p>
@@ -115,8 +125,17 @@
             <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
           </div>
           <div class="cantidad-control">
-            <button onclick="restarDelCarrito('f3')">-</button>
-            <button onclick="agregarAlCarritoDesdeElemento(this)">+</button>
+            <button 
+              class="btn-restar" 
+              onclick="restarDelCarrito('f3')">−</button>
+            <button 
+              class="btn-agregar" 
+              onclick="agregarAlCarritoDesdeElemento(this)"
+              data-product-id="f3"
+              data-product-name="Independiente"
+              data-product-img="../imagenes/FU-00004.png"
+              data-product-price="500"
+            >+</button>
           </div>
           <h3>Independiente</h3>
           <p class="product-category">Clubes argentinos</p>
@@ -134,7 +153,6 @@
       <p><strong>Categoría:</strong> <span id="modalProductCategory"></span></p>
       <p><strong>ID:</strong> <span id="modalProductId"></span></p>
       <p id="modalProductDescription"></p>
-<!--       <button id="btnAgregarAlCarrito" class="btn-primary">Agregar al carrito</button> -->
     </div>
   </div>
 
@@ -174,11 +192,16 @@
   <!-- Scripts -->
   <script>
     function agregarAlCarritoDesdeElemento(boton) {
-      const card = boton.closest('.product-card');
-      const id = card.dataset.productId;
-      const nombre = card.dataset.productName;
-      const imagen = card.dataset.productImg;
-      const precio = card.dataset.productPrice;
+      const id = boton.dataset.productId;
+      const nombre = boton.dataset.productName;
+      const imagen = boton.dataset.productImg;
+      const precio = boton.dataset.productPrice;
+
+      if (!id || !nombre || !imagen || !precio) {
+        console.warn('Datos faltantes en producto:', { id, nombre, imagen, precio });
+        return;
+      }
+
       agregarAlCarrito(id, nombre, imagen, precio);
     }
 
