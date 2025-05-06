@@ -131,3 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     actualizarContadorCarrito();
     actualizarVistaCarrito();
 });
+carritoToggle.addEventListener('click', function() {
+    carritoPanel.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });

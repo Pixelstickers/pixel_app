@@ -202,10 +202,18 @@
 
   <!-- Scripts -->
   <script src="js/funciones.js"></script>
+  <script src="js/carrito.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       cargarProductos();
     });
   </script>
+
+  <div id="carritoPanel" class="carrito-panel">
+    <button class="cerrar-carrito">✕</button>
+    <h2>Tu Carrito</h2>
+    <div id="carritoLista"></div>
+    <div id="carritoTotal"></div>
+  </div>
 </body>
 </html>
