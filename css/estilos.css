@@ -536,18 +536,15 @@ background-color: rgba(255, 255, 255, 0.6);
 .nosotros-main {
   padding: 60px 0;
 }
-
 .nosotros-info {
-  background-color: #fffaf5;
+  background-color: #fff;
   border-radius: 8px;
   padding: 40px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   max-width: 900px;
   margin: 0 auto;
   font-size: 18px;
-  color: #4a2e1c;
 }
-
 .nosotros-info h2 {
   font-size: 32px;
   margin-bottom: 20px;
