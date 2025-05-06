@@ -58,10 +58,6 @@ body {
   color: #4a2e1c;
 }
 
-.logo-img {
-  height: 60px;
-}
-
 .logo h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 90px;
@@ -495,14 +491,11 @@ padding: 0 30px 20px;
 }
 
 .header .logo h1 {
-font-family: 'Dancing Script', cursive;
-font-size: 50px;
-color: #4a2e1c;
-margin: 0 auto;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  font-size: 90px;
+  color: #4a2e1c;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .main-nav {
