@@ -371,3 +371,22 @@ body {
 .carrito-controles button:hover {
   background-color: #d47116;
 }
+.cantidad-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.cantidad-control button {
+  background-color: #f28c28;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.cantidad-control button:hover {
+  background-color: #d96f00;
+}
