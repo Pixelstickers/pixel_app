@@ -59,73 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  const carrito = [];
-
-function actualizarContadorCarrito() {
-  document.getElementById("carritoContador").textContent = carrito.length;
-}
-
-function renderizarCarrito() {
-  const contenedor = document.getElementById("carritoContenido");
-  contenedor.innerHTML = "";
-
-  if (carrito.length === 0) {
-    contenedor.innerHTML = '<p class="carrito-vacio">Todavía no agregaste nada 🛒</p>';
-    return;
-  }
-
-  carrito.forEach((item) => {
-    const div = document.createElement("div");
-    div.classList.add("carrito-item");
-    div.innerHTML = `
-      <img src="${item.imagen}" alt="${item.nombre}">
-      <div>
-        <strong>${item.nombre}</strong><br>
-        <small>${item.categoria}</small>
-      </div>
-    `;
-    contenedor.appendChild(div);
+  document.addEventListener("DOMContentLoaded", () => {
+    const btnAgregar = document.getElementById("btnAgregarAlCarrito");
+  
+    if (btnAgregar) {
+      btnAgregar.addEventListener("click", () => {
+        const codigo = document.getElementById("modalProductId").textContent;
+        const nombre = document.getElementById("modalProductTitle").textContent;
+        const categoria = document.getElementById("modalProductCategory").textContent;
+        const imagen = document.getElementById("modalProductImage").src;
+  
+        const producto = { codigo, nombre, categoria, imagen };
+        agregarAlCarrito(producto); // Usamos la función de carrito.js
+      });
+    }
   });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const btnAgregar = document.getElementById("btnAgregarAlCarrito");
-  const panel = document.getElementById("carritoPanel");
-  const abrir = document.getElementById("abrirCarrito");
-  const cerrar = document.getElementById("cerrarCarrito");
-  const vaciar = document.getElementById("vaciarCarrito");
-
-  if (btnAgregar) {
-    btnAgregar.addEventListener("click", () => {
-      const id = document.getElementById("modalProductId").textContent;
-      const nombre = document.getElementById("modalProductTitle").textContent;
-      const categoria = document.getElementById("modalProductCategory").textContent;
-      const imagen = document.getElementById("modalProductImage").src;
-
-      carrito.push({ id, nombre, categoria, imagen });
-      actualizarContadorCarrito();
-      renderizarCarrito();
-      alert("Producto agregado al carrito.");
-    });
-  }
-
-  if (abrir) {
-    abrir.addEventListener("click", () => {
-      panel.classList.add("active");
-    });
-  }
-
-  if (cerrar) {
-    cerrar.addEventListener("click", () => {
-      panel.classList.remove("active");
-    });
-  }
-
-  if (vaciar) {
-    vaciar.addEventListener("click", () => {
-      carrito.length = 0;
-      actualizarContadorCarrito();
-      renderizarCarrito();
-    });
-  }
-});

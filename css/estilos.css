@@ -371,6 +371,7 @@ body {
 .carrito-controles button:hover {
   background-color: #d47116;
 }
+
 .cantidad-control {
   display: flex;
   align-items: center;
@@ -380,13 +381,14 @@ body {
 
 .cantidad-control button {
   background-color: #f28c28;
-  color: white;
   border: none;
+  color: white;
+  padding: 4px 8px;
   border-radius: 6px;
-  padding: 2px 8px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .cantidad-control button:hover {
-  background-color: #d96f00;
+  background-color: #d47116;
 }

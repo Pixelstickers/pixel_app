@@ -29,36 +29,31 @@ function actualizarVistaCarrito() {
   carrito.forEach(item => {
     const div = document.createElement("div");
     div.classList.add("carrito-item");
-
     div.innerHTML = `
       <div style="flex-grow: 1">
-        <strong>${item.nombre}</strong><br>
-        <small>${item.categoria}</small><br>
-        <div class="cantidad-control">
-          <button class="menos" data-codigo="${item.codigo}">➖</button>
-          <span>${item.cantidad}</span>
-          <button class="mas" data-codigo="${item.codigo}">➕</button>
-        </div>
+          <strong>${item.nombre}</strong><br>
+          <small>${item.categoria}</small>
+          <div class="cantidad-control">
+              <button class="menos" data-codigo="${item.codigo}">➖</button>
+              <span>${item.cantidad}</span>
+              <button class="mas" data-codigo="${item.codigo}">➕</button>
+          </div>
       </div>
       <button class="eliminar" data-codigo="${item.codigo}">🗑️</button>
     `;
-
     contenedor.appendChild(div);
   });
-
-  // Reasignar eventos a los botones
+  
+  // Estos eventos deben ir afuera del forEach:
   document.querySelectorAll('.mas').forEach(btn => {
     btn.addEventListener('click', () => cambiarCantidad(btn.dataset.codigo, 1));
   });
-
   document.querySelectorAll('.menos').forEach(btn => {
     btn.addEventListener('click', () => cambiarCantidad(btn.dataset.codigo, -1));
   });
-
   document.querySelectorAll('.eliminar').forEach(btn => {
     btn.addEventListener('click', () => eliminarDelCarrito(btn.dataset.codigo));
   });
-}
 
 function actualizarContadorCarrito() {
   const contador = document.getElementById("carritoContador");
