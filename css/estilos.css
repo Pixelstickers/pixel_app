@@ -457,6 +457,34 @@ cursor: pointer;
 background-color: #d47116;
 }
 
+.carrito-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  padding: 8px 12px;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.carrito-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.carrito-contador {
+  background-color: #f78f1e;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+
 .cantidad-control {
 display: flex;
 align-items: center;
