@@ -84,10 +84,10 @@ const productosData = {
         descripcion: "Sticker de zorrito en estilo acuarela, perfecto para decorar cuadernos, laptops o cualquier superficie lisa. Tamaño: 5x7cm. Resistente al agua y a los rayos UV."
     },
     2: {
-        titulo: "Sticker Messi",
+        titulo: "Huracan",
         categoria: "Fútbol",
-        imagen: "imagenes/producto2.jpg",
-        descripcion: "Sticker de Lionel Messi levantando la copa del mundo. Ideal para fanáticos del fútbol y coleccionistas. Tamaño: 6x8cm. Resistente al agua y a los rayos UV."
+        imagen: "imagenes/FU-00001",
+        descripcion: "Escudo Huracan. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     3: {
         titulo: "Sticker Corazón",
@@ -128,16 +128,16 @@ const productosData = {
         descripcion: "Sticker oficial del escudo de River Plate, el club millonario. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
     },
     f5: {
-        titulo: "Sticker FC Barcelona",
-        categoria: "FC Barcelona",
-        imagen: "../imagenes/futbol/barcelona.jpg",
-        descripcion: "Sticker oficial del escudo del FC Barcelona. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+        titulo: "Sticker FC Estudiantes",
+        categoria: "FC Estudiantes",
+        imagen: "../imagenes/futbol/Estudiantes.jpg",
+        descripcion: "Sticker oficial del escudo del FC Estudiantes. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
     },
     f6: {
-        titulo: "Sticker Real Madrid",
-        categoria: "Real Madrid",
-        imagen: "../imagenes/futbol/madrid.jpg",
-        descripcion: "Sticker oficial del escudo del Real Madrid Club de Fútbol. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+        titulo: "Sticker Real Huracan",
+        categoria: "Real Huracan",
+        imagen: "../imagenes/futbol/Huracan.jpg",
+        descripcion: "Sticker oficial del escudo del Real Huracan Club de Fútbol. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
     },
     f7: {
         titulo: "Sticker Dibu Martínez",
@@ -165,15 +165,15 @@ const productosData = {
     },
     f11: {
         titulo: "Sticker Camp Nou",
-        categoria: "FC Barcelona",
+        categoria: "FC Estudiantes",
         imagen: "../imagenes/futbol/camp-nou.jpg",
-        descripcion: "Sticker del estadio Camp Nou del FC Barcelona. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+        descripcion: "Sticker del estadio Camp Nou del FC Estudiantes. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
     },
     f12: {
         titulo: "Sticker Santiago Bernabéu",
-        categoria: "Real Madrid",
+        categoria: "Real Huracan",
         imagen: "../imagenes/futbol/bernabeu.jpg",
-        descripcion: "Sticker del estadio Santiago Bernabéu del Real Madrid. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+        descripcion: "Sticker del estadio Santiago Bernabéu del Real Huracan. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
     }
 };
 
