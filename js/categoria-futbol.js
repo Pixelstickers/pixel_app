@@ -56,15 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const btnAgregar = document.getElementById("btnAgregarAlCarrito");
+
   if (btnAgregar) {
-    btnAgregar.addEventListener("click", () => {
-      if (productoActual) {
-        agregarAlCarrito(productoActual);
-        document.getElementById('productModal').classList.remove('show');
-        document.body.style.overflow = '';
-      }
-    });
-  }
+  btnAgregar.addEventListener("click", () => {
+    if (productoActual) {
+      agregarAlCarrito(productoActual);
+      document.getElementById('productModal').classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  });
+}
 
   closeModal.addEventListener('click', () => {
     modal.classList.remove('show');
