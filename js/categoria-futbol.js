@@ -78,3 +78,29 @@ document.addEventListener("click", function (e) {
     agregarAlCarrito(producto);
   }
 });
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("btn-agregar")) {
+    const card = e.target.closest(".product-card");
+    const id = card.dataset.productId;
+    const nombre = card.querySelector("h3").textContent;
+    const categoria = card.querySelector(".product-category").textContent;
+    const imagen = card.querySelector("img").src;
+
+    const producto = { id, nombre, categoria, imagen };
+    agregarAlCarrito(producto);
+
+    // Feedback visual
+    e.target.textContent = "✅";
+    setTimeout(() => {
+      e.target.textContent = "➕";
+    }, 1000);
+  }
+
+  if (e.target.classList.contains("btn-ver")) {
+    const card = e.target.closest(".product-card");
+    const id = card.dataset.productId;
+    abrirModalProducto(id);
+  }
+});
+

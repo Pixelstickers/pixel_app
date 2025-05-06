@@ -262,6 +262,7 @@ nav.main-nav a {
 }
 .product-img {
   position: relative;
+  text-align: center;
 }
 .product-img img {
   width: 100%;
@@ -718,4 +719,47 @@ gap: 15px;
 
 .nosotros-info p {
   margin-bottom: 20px;
+}
+/* ==== NUEVO: Botones dentro de tarjeta de producto ==== */
+.product-img {
+  position: relative;
+  text-align: center;
+}
+
+.btn-group {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.btn-ver,
+.btn-agregar {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 14px;
+}
+
+.btn-ver {
+  background-color: #f28c28;
+  color: white;
+}
+
+.btn-agregar {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-ver:hover {
+  background-color: #d47116;
+}
+
+.btn-agregar:hover {
+  background-color: #3c963f;
 }
