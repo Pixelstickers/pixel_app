@@ -2,25 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Nosotros - Pixel</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros - Pixel Stickers y Papelería Creativa</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
-    <div class="header-content">
-      <h1 class="logo">Pixel</h1>
+    <div class="container header-flex">
+      <h1 class="brand-name">Pixel</h1>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">Categorías</a>
             <div class="dropdown-menu">
-              <a href="categorias/futbol.html">Fútbol</a>
-              <a href="categorias/amor.html">Amor</a>
-              <a href="categorias/animales.html">Animales</a>
-              <a href="categorias/bebidas.html">Bebidas</a>
-              <a href="categorias/disney.html">Disney</a>
-              <a href="categorias/frases.html">Frases</a>
+              <a href="futbol.html">Fútbol</a>
+              <a href="amor.html">Amor</a>
+              <a href="animales.html">Animales</a>
+              <a href="bebidas.html">Bebidas</a>
+              <a href="disney.html">Disney</a>
+              <a href="frases.html">Frases</a>
             </div>
           </li>
           <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
@@ -30,11 +33,54 @@
           </li>
         </ul>
       </nav>
+      <div class="mobile-menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </header>
-  <main class="nosotros-content">
-    <h2>Sobre Pixel</h2>
-    <p>Pixel es un emprendimiento dedicado a la creación de stickers resistentes al agua, marcapáginas, polaroids imantadas y más productos personalizados. Amamos lo que hacemos y cuidamos cada detalle en nuestros diseños y packaging.</p>
+
+  <!-- Contenido Principal -->
+  <main class="nosotros-main container">
+    <section class="nosotros-info">
+      <h2>Sobre Pixel</h2>
+      <p>
+        Pixel es un emprendimiento dedicado a la creación de stickers resistentes al agua, marcapáginas,
+        polaroids imantadas y más productos personalizados. Amamos lo que hacemos y cuidamos cada detalle
+        en nuestros diseños y packaging. Cada producto es elaborado con amor, con el objetivo de brindarte algo único y especial.
+      </p>
+    </section>
   </main>
+
+  <!-- Panel Lateral Carrito -->
+  <div class="carrito-panel" id="carritoPanel">
+    <div class="carrito-header">
+      <h3>Tu carrito</h3>
+      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
+    </div>
+    <div class="carrito-contenido" id="carritoContenido">
+      <p>No hay productos en el carrito.</p>
+    </div>
+    <div class="carrito-footer">
+      <span>Total:</span>
+      <strong id="carritoTotal">$0</strong>
+    </div>
+  </div>
+
+  <!-- Modal (si lo usás también acá) -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modalProductImage" src="" alt="Imagen del producto" />
+      <h2 id="modalProductTitle"></h2>
+      <p><strong>Categoría:</strong> <span id="modalProductCategory"></span></p>
+      <p><strong></strong> <span id="modalProductId"></span></p>
+      <p id="modalProductDescription"></p>
+      <button id="btnAgregarAlCarrito" class="btn-primary">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/funciones.js"></script>
+  <script src="../js/carrito.js"></script>
 </body>
 </html>
