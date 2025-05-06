@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nosotros - Pixel Stickers y Papelería Creativa</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="../css/estilos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,41 +14,76 @@
       <h1 class="brand-name">Pixel</h1>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">Categorías</a>
             <div class="dropdown-menu">
-              <a href="categorias/futbol.html">Fútbol</a>
-              <a href="categorias/amor.html">Amor</a>
-              <a href="categorias/animales.html">Animales</a>
-              <a href="categorias/bebidas.html">Bebidas</a>
-              <a href="categorias/disney.html">Disney</a>
-              <a href="categorias/frases.html">Frases</a>
+              <a href="futbol.html">Fútbol</a>
+              <a href="amor.html">Amor</a>
+              <a href="animales.html">Animales</a>
+              <a href="bebidas.html">Bebidas</a>
+              <a href="disney.html">Disney</a>
+              <a href="frases.html">Frases</a>
             </div>
           </li>
           <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="nosotros.html" class="active">Nosotros</a></li>
           <li>
             <button class="carrito-btn" id="abrirCarrito">
               🛒 <span id="carritoContador" class="carrito-contador">0</span>
             </button>
-          </li>                       
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="nosotros-main container">
+  <!-- Contenido principal -->
+  <main class="container">
     <section class="nosotros-info">
       <h2>Sobre Pixel</h2>
       <p>
-        Pixel es un emprendimiento dedicado a la creación de stickers resistentes al agua, marcapáginas,
-        polaroids imantadas y más productos personalizados. Amamos lo que hacemos y cuidamos cada detalle
-        en nuestros diseños y packaging. Cada producto es elaborado con amor, con el objetivo de brindarte algo único y especial.
+        Bienvenidos a <strong>Pixel</strong>, un rincón donde la creatividad se convierte en papel. Amamos contar historias a través de stickers, marcapáginas, llaveros y muchos otros productos de papelería que diseñamos con muchísimo amor.
+      </p>
+      <p>
+        Cada pedido es una oportunidad para conectar con vos, con tus gustos, tus recuerdos y tu imaginación. Nuestro packaging tiene detalles que hacen sonreír, porque creemos que lo simple y hecho a mano también puede ser mágico ✨
+      </p>
+      <p>
+        Gracias por elegirnos y ser parte de esta aventura creativa. ¡Nos encanta que formes parte de la familia Pixel! 💛
       </p>
     </section>
   </main>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-social">
+      <h3>Seguinos</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com/pixel.stickerss" class="social-icon">Instagram</a>
+        <a href="https://tiktok.com/@pixel.stickerss" class="social-icon">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Carrito lateral -->
+  <div class="carrito-panel" id="carritoPanel">
+    <div class="carrito-header">
+      <h3>Tu carrito</h3>
+      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
+    </div>
+    <div class="carrito-contenido" id="carritoContenido">
+      <p>No hay productos en el carrito.</p>
+    </div>
+    <div class="carrito-footer">
+      <span>Total:</span>
+      <strong id="carritoTotal">$0</strong>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>
 </body>

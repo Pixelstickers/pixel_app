@@ -679,3 +679,23 @@ gap: 15px;
     gap: 16px;
   }
 }
+.nosotros-info {
+  background-color: #fff3e6;
+  border-radius: 16px;
+  padding: 40px;
+  margin: 40px 0;
+  color: #4a2e1c;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.nosotros-info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f28c28;
+}
+
+.nosotros-info p {
+  margin-bottom: 20px;
+}
