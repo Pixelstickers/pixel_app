@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Descripciones (pueden expandirse o conectarse a productosData si lo usás)
    const descripciones = {
-      f1: "Escudo Huracan",
+      /* f1: "Escudo Huracan", */
       f2: "Escudo Estudiantes de la Plata",
       f3: "Escudo de Boca Juniors, el club Xeneize.",
       f4: "Escudo de River Plate, el club Millonario.",
