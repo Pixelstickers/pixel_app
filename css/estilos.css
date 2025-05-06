@@ -261,9 +261,12 @@ nav.main-nav a {
   transform: scale(1.03);
 }
 .product-img {
-  position: relative;
-  text-align: center;
-  cursor: pointer; /* hace clickeable */
+  max-width: 100%;
+  max-height: 200px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
 }
 .btn-view {
   background-color: #f28c28;
