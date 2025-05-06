@@ -11,10 +11,10 @@ body {
     background-image: url("../imagenes/header-zorro.png");
     background-size: cover;
     background-position: center;
-    height: 220px;
+    height: 230px;
     position: relative;
     color: #4a2e1c;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .container-header {
@@ -34,6 +34,13 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+  }
+
+  .logo-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin: 0;
+    line-height: 1;
   }
   
   .logo-img {
@@ -74,7 +81,7 @@ body {
 
   .main-nav {
     position: absolute;
-    top: 20px;
+    top: 50px; /* lo bajamos más */
     right: 20px;
   }
 
@@ -87,24 +94,19 @@ body {
   }
   
   nav.main-nav a {
-    background: white;
+    background: rgba(255, 255, 255, 0.7); /* más transparente */
     padding: 6px 12px;
     border-radius: 10px;
     text-decoration: none;
     color: #4a2e1c;
     font-weight: bold;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
   }
   
   nav.main-nav a.active,
   nav.main-nav a:hover {
-    color: #f28c28; /* naranja cálido */
-    border-bottom: 2px solid #f28c28;
-  }
-  
-  .main-nav a:hover {
-    background-color: #f28c28;
-    color: white;
+    background: rgba(255, 255, 255, 0.9); /* solo un poco más visible al pasar */
   }
 
   .modal {
