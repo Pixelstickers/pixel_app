@@ -105,19 +105,19 @@ const productosData = {
     // Fútbol
     f1: {
         titulo: "Huracan",
-        categoria: "Fútbol",
+        categoria: "Clubes argentinos",
         imagen: "imagenes/FU-00001.png",
         descripcion: "Escudo Huracan. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f2: {
         titulo: "Estudiantes de la Plata",
-        categoria: "Fútbol",
+        categoria: "Clubes argentinos",
         imagen: "imagenes/FU-00002.png",
         descripcion: "Escudo Estudiantes de la Plata. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f3: {
         titulo: "Independiente",
-        categoria: "Fútbol",
+        categoria: "Clubes argentinos",
         imagen: "imagenes/FU-00004.png",
         descripcion: "Escudo Independiente. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
