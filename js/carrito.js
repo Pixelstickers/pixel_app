@@ -22,7 +22,7 @@ function actualizarVistaCarrito() {
   contenedor.innerHTML = "";
 
   if (carrito.length === 0) {
-    contenedor.innerHTML = "<p>Tu carrito está vacío.</p>";
+    contenedor.innerHTML = "<p>No hay productos en el carrito.</p>";
     return;
   }
 
@@ -30,30 +30,21 @@ function actualizarVistaCarrito() {
     const div = document.createElement("div");
     div.classList.add("carrito-item");
     div.innerHTML = `
+      <img src="${item.imagen}" alt="${item.nombre}" />
       <div style="flex-grow: 1">
-          <strong>${item.nombre}</strong><br>
-          <small>${item.categoria}</small>
-          <div class="cantidad-control">
-              <button class="menos" data-codigo="${item.codigo}">➖</button>
-              <span>${item.cantidad}</span>
-              <button class="mas" data-codigo="${item.codigo}">➕</button>
-          </div>
+        <strong>${item.nombre}</strong><br>
+        <small>${item.categoria}</small><br>
+        <div class="cantidad-control">
+          <button onclick="cambiarCantidad('${item.codigo}', -1)">➖</button>
+          <span>${item.cantidad}</span>
+          <button onclick="cambiarCantidad('${item.codigo}', 1)">➕</button>
+        </div>
       </div>
-      <button class="eliminar" data-codigo="${item.codigo}">🗑️</button>
+      <button onclick="eliminarDelCarrito('${item.codigo}')">🗑️</button>
     `;
     contenedor.appendChild(div);
   });
-  
-  // Estos eventos deben ir afuera del forEach:
-  document.querySelectorAll('.mas').forEach(btn => {
-    btn.addEventListener('click', () => cambiarCantidad(btn.dataset.codigo, 1));
-  });
-  document.querySelectorAll('.menos').forEach(btn => {
-    btn.addEventListener('click', () => cambiarCantidad(btn.dataset.codigo, -1));
-  });
-  document.querySelectorAll('.eliminar').forEach(btn => {
-    btn.addEventListener('click', () => eliminarDelCarrito(btn.dataset.codigo));
-  });
+}
 
 function actualizarContadorCarrito() {
   const contador = document.getElementById("carritoContador");
@@ -71,6 +62,7 @@ function cambiarCantidad(codigo, delta) {
   } else {
     guardarCarrito();
     actualizarVistaCarrito();
+    actualizarContadorCarrito();
   }
 }
 
@@ -81,7 +73,19 @@ function eliminarDelCarrito(codigo) {
   actualizarContadorCarrito();
 }
 
+// Inicializar al cargar
 document.addEventListener("DOMContentLoaded", () => {
   actualizarVistaCarrito();
   actualizarContadorCarrito();
+
+  const abrir = document.getElementById("abrirCarrito");
+  const cerrar = document.getElementById("cerrarCarrito");
+
+  if (abrir) abrir.addEventListener("click", () => {
+    document.getElementById("carritoPanel").classList.add("active");
+  });
+
+  if (cerrar) cerrar.addEventListener("click", () => {
+    document.getElementById("carritoPanel").classList.remove("active");
+  });
 });
