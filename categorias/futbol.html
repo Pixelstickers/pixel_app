@@ -29,9 +29,8 @@
             </div>
           </li>
           <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
-          <li class="carrito-toggle">
-            <span>🛒</span>
-            <span id="carritoContador" class="carrito-contador">0</span>
+          <li class="carrito-toggle" id="abrirCarrito">
+            🛒 <span id="carritoContador" class="carrito-contador">0</span>
           </li>
         </ul>
       </nav>
@@ -173,17 +172,17 @@
   <script src="../js/funciones.js"></script>
   <script src="../js/categoria-futbol.js"></script>
   <!-- Panel Lateral Carrito -->
-<div id="carritoPanel" class="carrito-panel">
+  <div class="carrito-panel" id="carritoPanel">
     <div class="carrito-header">
-      <h2>Tu carrito</h2>
-      <button id="cerrarCarrito" class="btn-cerrar">×</button>
+      <h3>Tu carrito</h3>
+      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
     </div>
-    <div id="carritoContenido" class="carrito-contenido">
-      <p class="carrito-vacio">Todavía no agregaste nada 🛒</p>
+    <div class="carrito-contenido" id="carritoContenido">
+      <p>No hay productos en el carrito.</p>
     </div>
     <div class="carrito-footer">
-      <button id="vaciarCarrito" class="btn-secondary">Vaciar carrito</button>
-      <button class="btn-primary">Finalizar pedido</button>
+      <span>Total:</span>
+      <strong id="carritoTotal">$0</strong>
     </div>
   </div>
   

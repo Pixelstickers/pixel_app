@@ -25,6 +25,41 @@ function agregarAlCarrito(codigo, nombre, categoria, cantidad = 1) {
     actualizarContadorCarrito();
     mostrarNotificacion(`${nombre} agregado al carrito`);
 }
+// Mostrar contenido del carrito en el panel lateral
+function actualizarVistaCarrito() {
+    const contenedor = document.getElementById('carritoContenido');
+    const total = document.getElementById('carritoTotal');
+
+    if (!contenedor || !total) return;
+
+    if (carrito.length === 0) {
+        contenedor.innerHTML = '<p>No hay productos en el carrito.</p>';
+        total.textContent = '$0';
+        return;
+    }
+
+    contenedor.innerHTML = '';
+    let sumaTotal = 0;
+
+    carrito.forEach(item => {
+        const div = document.createElement('div');
+        div.classList.add('carrito-item');
+
+        div.innerHTML = `
+            <div>
+                <strong>${item.nombre}</strong><br>
+                <small>Categoría: ${item.categoria}</small><br>
+                <small>Cantidad: ${item.cantidad}</small>
+            </div>
+            <button onclick="eliminarDelCarrito('${item.codigo}')">🗑️</button>
+        `;
+
+        contenedor.appendChild(div);
+        sumaTotal += item.cantidad * 100; // acá podés reemplazar 100 por el precio real si lo tenés
+    });
+
+    total.textContent = `$${sumaTotal}`;
+}
 
 // Función para eliminar producto del carrito
 function eliminarDelCarrito(codigo) {
@@ -127,11 +162,31 @@ function generarMensajeWhatsApp() {
 }
 
 // Inicializar carrito al cargar la página
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
     actualizarContadorCarrito();
     actualizarVistaCarrito();
 });
 carritoToggle.addEventListener('click', function() {
     carritoPanel.classList.add('active');
     document.body.style.overflow = 'hidden';
-  });
+  }); */
+  document.addEventListener('DOMContentLoaded', () => {
+    const abrir = document.getElementById('abrirCarrito');
+    const cerrar = document.getElementById('cerrarCarrito');
+    const panel = document.getElementById('carritoPanel');
+
+    if (abrir) {
+        abrir.addEventListener('click', () => {
+            panel.classList.add('active');
+            actualizarVistaCarrito();
+        });
+    }
+
+    if (cerrar) {
+        cerrar.addEventListener('click', () => {
+            panel.classList.remove('active');
+        });
+    }
+
+    actualizarContadorCarrito(); // actualizar contador al cargar
+});
