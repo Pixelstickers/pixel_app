@@ -73,15 +73,15 @@ body {
   .main-nav {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 40px; /* antes estaba en 10px o 20px */
   }
 
   nav.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
   }
   
   nav.main-nav a {
