@@ -11,12 +11,8 @@
   <!-- Header -->
   <header class="header">
     <div class="container header-flex">
-<!--       <div class="logo-zone">
-        <img src="../imagenes/logo-zorro.png" alt="Logo Pixel" class="logo-img" />
-        <div> -->
-          <h1 class="brand-name">Pixel</h1>
-<!--           <p class="tagline">Stickers y papelería creativa</p> -->
-        </div>
+      <div class="logo-zone">
+        <h1 class="brand-name">Pixel</h1>
       </div>
       <nav class="main-nav">
         <ul>
@@ -39,51 +35,47 @@
           </li>
         </ul>
       </nav>
-      <div class="mobile-menu-toggle">
-        <span></span><span></span><span></span>
-      </div>
     </div>
   </header>
 
-    <!-- Categoría Banner -->
-    <section class="category-banner">
-        <div class="container">
-            <h1>Stickers de Fútbol</h1>
-            <p>Todos los stickers de fútbol que podes encontrar</p>
-        </div>
-    </section>
+  <!-- Categoría Banner -->
+  <section class="category-banner">
+    <div class="container">
+      <h1>Stickers de Fútbol</h1>
+      <p>Todos los stickers de fútbol que podes encontrar</p>
+    </div>
+  </section>
 
-    <!-- Filtros -->
-    <section class="filters">
-        <div class="container">
-            <div class="filter-container">
-                <div class="filter-group">
-                    <label>Filtrar por:</label>
-                    <select id="filterTeam">
-                        <option value="todos">Todos los equipos</option>
-                        <option value="clubes argentinos">Clubes argentinos</option>
-                        <option value="boca">Boca Juniors</option>
-                        <option value="river">River Plate</option>
-                        <option value="Estudiantes">Estudiantes</option>
-                        <option value="Huracan">Huracan</option>
-                        <option value="Independiente">Independiente</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>Ordenar por:</label>
-                    <select id="sortProducts">
-                        <option value="newest">Más recientes</option>
-                        <option value="popular">Más populares</option>
-                    </select>
-                </div>
-            </div>
+  <!-- Filtros -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-container">
+        <div class="filter-group">
+          <label>Filtrar por:</label>
+          <select id="filterTeam">
+            <option value="todos">Todos los equipos</option>
+            <option value="clubes argentinos">Clubes argentinos</option>
+            <option value="boca">Boca Juniors</option>
+            <option value="river">River Plate</option>
+            <option value="Estudiantes">Estudiantes</option>
+            <option value="Huracan">Huracan</option>
+            <option value="Independiente">Independiente</option>
+          </select>
         </div>
+        <div class="filter-group">
+          <label>Ordenar por:</label>
+          <select id="sortProducts">
+            <option value="newest">Más recientes</option>
+            <option value="popular">Más populares</option>
+          </select>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="category-products">
     <div class="container">
       <div class="products-grid">
-        <!-- Repetí esto por cada producto -->
         <div class="product-card" data-product-id="f1" data-team="Huracan">
           <div class="product-img">
             <img src="../imagenes/FU-00001.png" alt="Escudo club Huracán" />
@@ -95,57 +87,32 @@
           <p class="product-category">Clubes argentinos</p>
         </div>
         <div class="product-card" data-product-id="f2" data-team="Estudiantes">
-            <div class="product-img">
-              <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de la Plata" />
-              <div class="overlay">
-                <button class="btn-view">Ver</button>
-              </div>
+          <div class="product-img">
+            <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de la Plata" />
+            <div class="overlay">
+              <button class="btn-view">Ver</button>
             </div>
-            <h3>Estudiantes de la Plata</h3>
-            <p class="product-category">Clubes argentinos</p>
           </div>
-          <div class="product-card" data-product-id="f3" data-team="Independiente">
-            <div class="product-img">
-              <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
-              <div class="overlay">
-                <button class="btn-view">Ver</button>
-              </div>
+          <h3>Estudiantes de la Plata</h3>
+          <p class="product-category">Clubes argentinos</p>
+        </div>
+        <div class="product-card" data-product-id="f3" data-team="Independiente">
+          <div class="product-img">
+            <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
+            <div class="overlay">
+              <button class="btn-view">Ver</button>
             </div>
-            <h3>Independiente</h3>
-            <p class="product-category">Clubes argentinos</p>
           </div>
-        <!-- ... agregá los demás productos igual que antes cambiando imagen, nombre e ID ... -->
+          <h3>Independiente</h3>
+          <p class="product-category">Clubes argentinos</p>
+        </div>
       </div>
     </div>
   </section>
 
-<!--   <section class="quick-contact">
-    <div class="container">
-      <h2>¿Te interesa algún diseño?</h2>
-      <p>Escribinos para consultar disponibilidad, precios y formas de envío</p>
-      <a href="https://wa.me/3764297950" class="btn-primary">Contactar por WhatsApp</a>
-    </div>
-  </section> -->
-
   <footer id="footer" class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo">
-<!--          <h2>Pixel</h2>
-          <p>Stickers y papelería creativa</p>
-         </div>
-        <div class="footer-links">
-          <h3>Enlaces rápidos</h3>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="futbol.html">Fútbol</a></li>
-            <li><a href="amor.html">Amor</a></li>
-            <li><a href="animales.html">Animales</a></li>
-            <li><a href="bebidas.html">Bebidas</a></li>
-            <li><a href="disney.html">Disney</a></li>
-            <li><a href="frases.html">Frases</a></li>
-          </ul>
-        </div> -->
         <div class="footer-social">
           <h3>Seguinos</h3>
           <div class="social-icons">
@@ -173,7 +140,6 @@
     </div>
   </div>
 
-
   <!-- Panel Lateral Carrito -->
   <div class="carrito-panel" id="carritoPanel">
     <div class="carrito-header">
@@ -188,9 +154,10 @@
       <strong id="carritoTotal">$0</strong>
     </div>
   </div>
+
   <!-- Scripts -->
   <script src="../js/funciones.js"></script>
-  <script src="../js/carrito.js"></script>          <!-- PRIMERO -->
-  <script src="../js/categoria-futbol.js"></script> <!-- DESPUÉS -->  
+  <script src="../js/carrito.js"></script>
+  <script src="../js/categoria-futbol.js"></script>
 </body>
 </html>
