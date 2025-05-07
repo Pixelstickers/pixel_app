@@ -143,32 +143,57 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-social">
-      <h3>Seguinos</h3>
-      <div class="social-icons">
-        <a href="https://instagram.com/pixel.stickerss" class="social-icon">Instagram</a>
-        <a href="https://tiktok.com/@pixel.stickerss" class="social-icon">TikTok</a>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <h3>Seguinos</h3>
+          <div class="social-icons">
+            <a href="https://instagram.com/pixel.stickerss" class="social-icon">Instagram</a>
+            <a href="https://tiktok.com/@pixel.stickerss" class="social-icon">TikTok</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
+      </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="../js/funciones.js"></script>
-  <script src="../js/carrito.js"></script>
   <script>
-    function abrirModal(imagenSrc, titulo) {
-      document.getElementById('modalProductImage').src = '../' + imagenSrc;
-      document.getElementById('modalProductTitle').textContent = titulo;
-      document.getElementById('productModal').classList.add('show');
-    }
+  function agregarAlCarritoDesdeElemento(boton) {
+  const id = boton.dataset.productId;
+  const nombre = boton.dataset.productName;
+  const imagen = '../imagenes/' + boton.dataset.productImg;
+  const codigo = boton.dataset.productCode; // NUEVO
 
-    document.querySelector('.close-modal').addEventListener('click', () => {
-      document.getElementById('productModal').classList.remove('show');
-    });
+  if (!id || !nombre || !imagen || !codigo) {
+    console.warn('Datos faltantes en producto:', { id, nombre, imagen, codigo });
+    return;
+  }
+
+  const producto = {
+    id,
+    nombre,
+    imagen,
+    codigo,
+    cantidad: 1
+  };
+
+  agregarAlCarrito(producto);
+}
+
+
+  function abrirModal(imagenSrc, titulo) {
+    document.getElementById('modalProductImage').src = '../' + imagenSrc;
+    document.getElementById('modalProductTitle').textContent = titulo;
+    document.getElementById('productModal').classList.add('show');
+  }
+
+  document.querySelector('.close-modal').addEventListener('click', function () {
+    document.getElementById('productModal').classList.remove('show');
+  });
 
     const hamburger = document.getElementById("hamburger");
   const nav = document.querySelector(".main-nav");
