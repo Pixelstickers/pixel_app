@@ -20,8 +20,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Categorías</a>
           <div class="dropdown-menu">
-            <a href="futbol.html" class="active">Fútbol</a>
-            <a href="amor.html">Amor</a>
+            <a href="futbol.html">Fútbol</a>
+            <a href="amor.html" class="active">Amor</a>
             <a href="animales.html">Animales</a>
             <a href="bebidas.html">Bebidas</a>
             <a href="disney.html">Disney</a>
@@ -38,8 +38,8 @@
   <!-- Categoría Banner -->
   <section class="category-banner">
     <div class="container">
-      <h1>Stickers de Fútbol</h1>
-      <p>Todos los stickers de fútbol que podés encontrar</p>
+      <h1>Stickers de Futbol</h1>
+      <p>Todos los stickers de futbol que podés encontrar</p>
     </div>
   </section>
 
@@ -48,23 +48,23 @@
   <div class="container">
     <div class="products-grid">
 
-      <!-- Huracán -->
+      <!-- Huracan -->
       <div class="product-card" 
-           data-product-id="f1" 
-           data-product-name="Huracán" 
+           data-product-id="A1" 
+           data-product-name="Huracan" 
            data-product-img="FU-00001.png">
-        <div class="product-img" onclick="abrirModal('imagenes/FU-00001.png', 'Huracán')">
-          <img src="../imagenes/FU-00001.png" alt="Escudo club Huracán" />
+        <div class="product-img" onclick="abrirModal('imagenes/FU-00001.png', 'Escudo del Club Huracan')">
+          <img src="../imagenes/FU-00001.png" alt="Escudo del Club Huracan" />
         </div>
         <div class="cantidad-control">
           <button class="btn-restar" onclick="restarDelCarrito('f1')">−</button>
           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-          data-product-id="f1"
-          data-product-name="Huracán"
+          data-product-id="F1"
+          data-product-name="Escudo del Club Huracan"
           data-product-img="FU-00001.png"
           data-product-code="FU-00001">+</button>
         </div>
-        <h3>Huracán</h3>
+        <h3>Escudo del Club Huracan</h3>
         <p class="product-code">Código: FU-00001</p>
         <p class="product-category">Clubes argentinos</p>
       </div>
@@ -125,19 +125,28 @@
   </div>
 
   <!-- Carrito -->
-  <div class="carrito-panel" id="carritoPanel">
-    <div class="carrito-header">
-      <h3>Tu carrito</h3>
-      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
-    </div>
+<div class="carrito-panel" id="carritoPanel">
+  <div class="carrito-header">
+    <h3>Tu carrito</h3>
+    <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
+  </div>
+
+
     <div class="carrito-contenido" id="carritoContenido">
       <p>No hay productos en el carrito.</p>
     </div>
+
     <div class="carrito-footer">
-      <span></span>
+      <span>Total del pedido:</span>
       <strong id="carritoTotal">0</strong>
+      <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
+      </div>
     </div>
   </div>
+</div>
+
 
   <!-- Footer -->
   <footer id="footer" class="footer">
@@ -228,12 +237,44 @@
       });
     }
   });
-
   
+  function copiarCarritoAlPortapapeles() {
+  const carrito = window.carrito;
+  if (!carrito || carrito.length === 0) {
+    alert("El carrito está vacío.");
+    return;
+  }
+
+  let texto = "Pedido de Pixel Stickers:\n\n";
+  carrito.forEach(item => {
+    texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
+  });
+  texto += `\nTotal: ${carrito.reduce((acc, item) => acc + item.cantidad, 0)} producto(s)`;
+
+  navigator.clipboard.writeText(texto).then(() => {
+    const aviso = document.createElement("div");
+    aviso.textContent = "¡Pedido copiado!";
+    Object.assign(aviso.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      background: "#4a2e1c",
+      color: "white",
+      padding: "10px 20px",
+      borderRadius: "10px",
+      zIndex: "10000",
+      fontWeight: "bold",
+    });
+    document.body.appendChild(aviso);
+    setTimeout(() => aviso.remove(), 2000);
+  }).catch(() => alert("Error al copiar el pedido."));
+}
+
 
   </script>
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>
-<!--   <script src="../js/categoria-futbol.js"></script>
- --></body>
+  <!-- <script src="../js/categoria-amor.js"></script> -->
+</body>
 </html>
