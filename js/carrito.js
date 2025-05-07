@@ -100,7 +100,7 @@ function actualizarCarrito() {
 
     const textoFinal = `🧾 *Pedido Pixel*:\n${resumen}`;
     navigator.clipboard.writeText(textoFinal).then(() => {
-      alert('¡Resumen copiado! Pegalo en WhatsApp, Instagram o donde quieras 💬');
+      alert('Pedido copiado! Pegalo en WhatsApp, Instagram o en la Tienda Online 💬');
     });
   };
   contenedor.appendChild(exportar);
