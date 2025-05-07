@@ -12,13 +12,22 @@ body {
   background-size: cover;
   background-position: center;
   height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   padding: 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .container-header {
   width: 90%;
   margin: 0 auto;
@@ -51,7 +60,24 @@ body {
   height: 60px;
   border-radius: 50%;
 }
+.brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  margin: 0;
+}
+.nav-menu {
+  display: flex;
+  gap: 16px;
+}
 
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #ff914d;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
 .brand-name {
   font-size: 2rem;
   font-weight: 700;
@@ -594,10 +620,10 @@ gap: 15px;
 
 .hamburger {
   display: none;
-  font-size: 30px;
+  font-size: 28px;
   background: none;
   border: none;
-  color: #4a2e1c;
+  color: white;
   cursor: pointer;
 }
 
@@ -662,52 +688,30 @@ gap: 15px;
 /* BLOQUE RESPONSIVE COMPLETO PARA CELULARES */
 
 @media (max-width: 768px) {
-  .main-nav ul {
+  .nav-menu {
     display: none;
-    flex-direction: column;
-    background-color: #fffaf0;
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 999;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    right: 20px;
+    background-color: #fffaf5;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
 
-  .main-nav ul.show {
+  .nav-menu a {
+    color: #4a2e1c;
+    background-color: transparent;
+    padding: 8px 12px;
+  }
+
+  .nav-menu.show {
     display: flex;
   }
 
   .hamburger {
     display: block;
-  }
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .main-nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #fffaf0;
-    width: 100%;
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 999;
-  }
-
-  .main-nav ul.show {
-    display: flex;
-  }
-
-  .main-nav ul li {
-    text-align: center;
-    padding: 10px 0;
   }
 }

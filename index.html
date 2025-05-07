@@ -76,14 +76,10 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="container-header">
-      <div class="header-flex">
-        <div class="logo-zone">
-          <h1 class="brand-name">Pixel</h1>
-        </div>
-        <button class="hamburger" id="menuToggle">☰</button>
-      </div>
-      <nav class="main-nav">
+    <div class="header-container">
+      <h1 class="brand">Pixel</h1>
+      <button class="hamburger" id="menuToggle">☰</button>
+      <nav class="nav-menu" id="navMenu">
         <ul>
           <li><a href="index.html" class="active">Inicio</a></li>
           <li class="dropdown">
@@ -193,32 +189,17 @@
     <script src="js/funciones.js"></script>
     <script src="js/carrito.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggle = document.getElementById("menuToggle");
-        const nav = document.querySelector(".main-nav");
-    
-        toggle.addEventListener("click", () => {
-          nav.classList.toggle("active");
-        });
-    
-        // Cerrar el menú si se hace clic fuera (opcional)
-        document.addEventListener("click", (e) => {
-          if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-            nav.classList.remove("active");
-          }
-        });
-      });
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById("menuToggle");
-    const menu = document.getElementById("mainMenu");
+    const nav = document.getElementById("navMenu");
 
     toggle.addEventListener("click", () => {
-      menu.classList.toggle("show");
+      nav.classList.toggle("show");
     });
 
     document.addEventListener("click", (e) => {
-      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
-        menu.classList.remove("show");
+      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove("show");
       }
     });
   });
