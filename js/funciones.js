@@ -75,12 +75,12 @@ document.querySelectorAll('.btn-view').forEach((btn, index) => {
   });
 
   // Cerrar modal al hacer clic fuera del contenido
-window.addEventListener("click", function (event) {
-    const modal = document.getElementById("productModal");
-    if (event.target === modal) {
-      modal.classList.remove("show");
+  modal.addEventListener("click", function (e) {
+    if (!e.target.closest(".modal-content")) {
+      closeModalFunc();
     }
   });
+  
   
   
 // Datos de productos (simulación)
