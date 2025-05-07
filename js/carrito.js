@@ -81,6 +81,7 @@ function actualizarCarrito() {
       <div class="carrito-controles">
         <button onclick="restarDelCarrito('${item.id}')">−</button>
         <button onclick="agregarUno('${item.id}')">+</button>
+
       </div>
     `;
     contenedor.appendChild(productoHTML);
