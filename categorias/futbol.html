@@ -177,6 +177,27 @@
   </footer>
 
   <!-- Scripts -->
+  <script>
+  /* function agregarAlCarritoDesdeElemento(boton) {
+    const id = boton.dataset.productId;
+    const nombre = boton.dataset.productName;
+    const imagen = '../imagenes/' + boton.dataset.productImg;
+
+    if (!id || !nombre || !imagen) {
+      console.warn('Datos faltantes en producto:', { id, nombre, imagen });
+      return;
+    }
+
+    const producto = {
+      id,
+      nombre,
+      imagen,
+      cantidad: 1
+    };
+
+    agregarAlCarrito(producto);
+  } */
+
 
     function abrirModal(imagenSrc, titulo, categoria, id) {
       document.getElementById('modalProductImage').src = '../' + imagenSrc;
