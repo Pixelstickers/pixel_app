@@ -70,6 +70,7 @@
              data-product-id="f1" 
              data-product-name="Huracán" 
              data-product-img="../imagenes/FU-00001.png" 
+             data-product-price="500">
           <div class="product-img" onclick="abrirModal('imagenes/FU-00001.png', 'Huracán', 'Clubes argentinos', 'f1')">
             <img src="../imagenes/FU-00001.png" alt="Escudo club Huracán" />
           </div>
@@ -83,6 +84,7 @@
               data-product-id="f1"
               data-product-name="Huracán"
               data-product-img="../imagenes/FU-00001.png"
+              data-product-price="500"
             >+</button>
           </div>
           <h3>Huracán</h3>
@@ -93,6 +95,7 @@
              data-product-id="f2" 
              data-product-name="Estudiantes de La Plata" 
              data-product-img="../imagenes/FU-00002.png" 
+             data-product-price="500">
           <div class="product-img" onclick="abrirModal('imagenes/FU-00002.png', 'Estudiantes de La Plata', 'Clubes argentinos', 'f2')">
             <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de La Plata" />
           </div>
@@ -106,6 +109,7 @@
               data-product-id="f2"
               data-product-name="Estudiantes de La Plata"
               data-product-img="../imagenes/FU-00002.png"
+              data-product-price="500"
             >+</button>
           </div>
           <h3>Estudiantes de La Plata</h3>
@@ -116,6 +120,7 @@
              data-product-id="f3" 
              data-product-name="Independiente" 
              data-product-img="../imagenes/FU-00004.png" 
+             data-product-price="500">
           <div class="product-img" onclick="abrirModal('imagenes/FU-00004.png', 'Independiente', 'Clubes argentinos', 'f3')">
             <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
           </div>
@@ -129,6 +134,7 @@
               data-product-id="f3"
               data-product-name="Independiente"
               data-product-img="../imagenes/FU-00004.png"
+              data-product-price="500"
             >+</button>
           </div>
           <h3>Independiente</h3>
@@ -189,6 +195,7 @@
       const id = boton.dataset.productId;
       const nombre = boton.dataset.productName;
       const imagen = boton.dataset.productImg;
+      const precio = boton.dataset.productPrice;
 
       if (!id || !nombre || !imagen || !precio) {
         console.warn('Datos faltantes en producto:', { id, nombre, imagen, precio });
