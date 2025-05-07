@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.toggle('menu-open');
         });
     }
+    window.addEventListener("click", function (event) {
+        const modal = document.getElementById("productModal");
+        if (event.target === modal) {
+          modal.classList.remove("show");
+        }
+      });
     
     // Manejar los dropdowns en móvil
     const dropdowns = document.querySelectorAll('.dropdown');
