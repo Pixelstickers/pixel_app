@@ -306,18 +306,22 @@ nav.main-nav a {
 }
 /* ==== MODAL PRODUCTO ==== */
 .modal {
-  display: none;
-  justify-content: center;
-  align-items: center;
+  display: none; /* o 'flex' cuando se muestra */
   position: fixed;
-  z-index: 9999;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.modal.show {
+  display: flex !important;
 }
 
 .modal-content {
@@ -327,10 +331,10 @@ nav.main-nav a {
   border-radius: 16px;
   max-width: 400px;
   width: 90%;
-  position: relative;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
-  animation: fadeIn 0.3s ease-in-out;
+  position: relative;
+  margin: 0 auto; /* esta línea es clave para evitar que se desplace */
 }
 
 .modal-content img {
