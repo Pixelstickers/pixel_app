@@ -883,6 +883,7 @@ gap: 15px;
   }
 }
 
+/* Ajustes para que el footer se quede abajo en mobile */
 @media (max-width: 768px) {
   .carrito-panel {
     display: flex;
@@ -902,4 +903,5 @@ gap: 15px;
     background-color: #fff2e6;
   }
 }
+
 
