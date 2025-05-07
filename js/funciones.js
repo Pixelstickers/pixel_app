@@ -87,18 +87,41 @@ document.querySelectorAll('.btn-view').forEach((btn, index) => {
     });
   });
   
-  // Cerrar modal
-  document.querySelector('.close-modal').addEventListener('click', () => {
-    document.getElementById('productModal').classList.remove('show');
-  });
-
-  // Cerrar modal al hacer clic fuera del contenido
-  modal.addEventListener("click", function (e) {
-    if (!e.target.closest(".modal-content")) {
-      closeModalFunc();
+ // ========= Función global para cerrar modal =========
+function closeModalFunc() {
+    const modal = document.getElementById("productModal");
+    if (modal) {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
     }
-  });
+  }
   
+  // ========= Modal de Productos =========
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("productModal");
+    const closeModalBtn = document.querySelector(".close-modal");
+  
+    // Cerrar con botón X
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener("click", closeModalFunc);
+    }
+  
+    // Cerrar con clic fuera del contenido
+    if (modal) {
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          closeModalFunc();
+        }
+      });
+    }
+  
+    // Cerrar con tecla ESC
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.classList.contains("show")) {
+        closeModalFunc();
+      }
+    });
+  });
   
   
 // Datos de productos (simulación)
