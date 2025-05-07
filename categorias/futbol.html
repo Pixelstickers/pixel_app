@@ -131,17 +131,17 @@
     });
 
     const hamburger = document.getElementById("hamburger");
-    const nav = document.querySelector(".main-nav");
+  const nav = document.querySelector(".main-nav");
 
-    hamburger.addEventListener("click", () => {
-      nav.classList.toggle("open");
-    });
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
 
-    document.addEventListener("click", (e) => {
-      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
-        nav.classList.remove("open");
-      }
-    });
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+      nav.classList.remove("open");
+    }
+  });
   </script>
 </body>
 </html>
