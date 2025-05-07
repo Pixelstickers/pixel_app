@@ -1,3 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fútbol - Pixel Stickers y Papelería Creativa</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-flex">
+      <h1 class="brand-name"></h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html" class="active">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Categorías</a>
+            <div class="dropdown-menu">
+              <a href="futbol.html" class="active">Fútbol</a>
+              <a href="amor.html">Amor</a>
+              <a href="animales.html">Animales</a>
+              <a href="bebidas.html">Bebidas</a>
+              <a href="disney.html">Disney</a>
+              <a href="frases.html">Frases</a>
+            </div>
+          </li>
+          <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
+          <li><a href="../nosotros.html">Nosotros</a></li>
+          <li><button class="carrito-btn" id="abrirCarrito">🛒 <span id="carritoContador" class="carrito-contador">0</span></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Categoría Banner -->
+  <section class="category-banner">
+    <div class="container">
+      <h1>Stickers de Fútbol</h1>
+      <p>Todos los stickers de fútbol que podés encontrar</p>
+    </div>
+  </section>
+
+  <!-- Filtros -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-container">
+        <div class="filter-group">
+          <label>Filtrar por:</label>
+          <select id="filterTeam">
+            <option value="todos">Todos los equipos</option>
+            <option value="clubes argentinos">Clubes argentinos</option>
+            <option value="boca">Boca Juniors</option>
+            <option value="river">River Plate</option>
+            <option value="Estudiantes">Estudiantes</option>
+            <option value="Huracan">Huracán</option>
+            <option value="Independiente">Independiente</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <!-- Productos -->
 <section class="category-products">
   <div class="container">
@@ -111,3 +175,10 @@
     document.getElementById('productModal').classList.remove('show');
   });
 </script>
+
+  </script>
+  <script src="../js/funciones.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="../js/categoria-futbol.js"></script>
+</body>
+</html>
