@@ -557,16 +557,16 @@ color: #a33;
 /* Modificaciones para header bonito */
 
 .header {
-background-image: url('../imagenes/header-zorro.png');
-background-size: cover;
-background-position: center;
-height: 200px;
-position: relative;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-padding: 0 30px 20px;
-display: flex;
+  background-image: url('../imagenes/header-zorro.png');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: white;
+  text-align: left;
 }
 
 .header .logo h1 {
