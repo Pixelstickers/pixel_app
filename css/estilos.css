@@ -136,7 +136,7 @@ nav.main-nav a {
   border-bottom: 2px solid #f28c28;
 }
 
-.modal.show {
+/* .modal.show {
   display: flex;
 }
 
@@ -149,7 +149,7 @@ nav.main-nav a {
   width: 90%;
   text-align: center;
   position: relative;
-}
+} */
 
 .close-modal {
   position: absolute;
