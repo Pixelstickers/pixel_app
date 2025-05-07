@@ -342,18 +342,17 @@ right: 0;
 }
 
 .btn-exportar {
-  background-color: #6c5ce7;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  margin-top: 8px;
-  cursor: pointer;
-  border-radius: 4px;
+  background-color: #4a2e1c; /* Marrón oscuro de tu branding */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
   font-weight: bold;
-  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
 }
 .btn-exportar:hover {
-  background-color: #574b90;
+  background-color: #3a2b1c; /* Un marrón más oscuro */
 }
 .carrito-header {
   display: flex;
@@ -430,18 +429,19 @@ margin-top: 6px;
 }
 
 .carrito-controles button {
-  background-color: #f28c28;
+  background-color: #f28c28; /* Naranja de tu branding */
   border: none;
+  padding: 4px 10px;
   color: white;
-  font-size: 18px;
-  padding: 5px 10px;
-  margin-left: 5px;
+  font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
 .carrito-controles button:hover {
-background-color: #d47116;
+  background-color: #d47116; /* Un tono más oscuro del naranja */
 }
 
 .btn-eliminar {
@@ -454,17 +454,17 @@ color: #a33;
 }
 
 .btn-vaciar {
-  background-color: #b22222;
+  background-color: #f28c28; /* Naranja */
   color: white;
-  padding: 8px 14px;
-  border: none;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
-  margin-top: 10px;
-  width: 100%;
+  transition: background-color 0.3s ease;
+  border: none;
 }
 .btn-vaciar:hover {
-  background-color: #8b1a1a;
+  background-color: #d47116; /* Tono más oscuro */
 }
 .carrito-btn {
   background-color: rgba(255, 255, 255, 0.9);
