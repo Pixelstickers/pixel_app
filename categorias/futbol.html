@@ -203,6 +203,17 @@
       nav.classList.remove("open");
     }
   });
+  const abrirCarritoBtn = document.getElementById("abrirCarrito");
+  const cerrarCarritoBtn = document.getElementById("cerrarCarrito");
+  const panelCarrito = document.getElementById("carritoPanel");
+
+  abrirCarritoBtn.addEventListener("click", () => {
+    panelCarrito.classList.add("active");
+  });
+
+  cerrarCarritoBtn.addEventListener("click", () => {
+    panelCarrito.classList.remove("active");
+  });
   </script>
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>

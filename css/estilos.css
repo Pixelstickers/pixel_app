@@ -787,7 +787,7 @@ gap: 15px;
   }
 }
 /* Ajuste responsive del panel del carrito */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .carrito-panel {
     width: 100vw;
     right: -100vw;
@@ -796,4 +796,30 @@ gap: 15px;
   .carrito-panel.active {
     right: 0;
   }
+
+  .carrito-header,
+  .carrito-footer,
+  .carrito-contenido {
+    padding: 16px;
+  }
+
+  .carrito-header h3 {
+    font-size: 20px;
+  }
+
+  .btn-cerrar {
+    font-size: 22px;
+  }
+
+  .carrito-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .carrito-item img {
+    width: 40px;
+    height: 40px;
+  }
 }
+
