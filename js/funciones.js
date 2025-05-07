@@ -340,3 +340,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Render inicial
     renderizarProductos();
 });
+function toggleMenu() {
+    const nav = document.querySelector('.main-nav ul');
+    nav.classList.toggle('show');
+  }
+  
