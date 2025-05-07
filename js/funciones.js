@@ -177,10 +177,10 @@ const productosData = {
         descripcion: "Messi y Roman. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f5: {
-        titulo: "Sticker FC Estudiantes",
-        categoria: "FC Estudiantes",
-        imagen: "../imagenes/futbol/Estudiantes.jpg",
-        descripcion: "Sticker oficial del escudo del FC Estudiantes. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+        titulo: "Mate River",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00005.png",
+        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f6: {
         titulo: "Sticker Real Huracan",
