@@ -70,27 +70,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
-document.addEventListener("click", function (e) {
-  if (e.target.classList.contains("btn-agregar")) {
-    const boton = e.target;
-
-    const id = boton.dataset.productId;
-    const nombre = boton.dataset.productName;
-    const imagen = boton.dataset.productImg;
-
-    if (!id || !nombre || !imagen) {
-      console.warn("Faltan datos del producto", { id, nombre, imagen });
-      return;
-    }
-
-    const producto = {
-      id,
-      nombre,
-      imagen,
-      cantidad: 1
-    };
-
-    agregarAlCarrito(producto);
-  }
-});
