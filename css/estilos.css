@@ -568,6 +568,9 @@ color: #a33;
   color: white;
   text-align: left;
 }
+.brand-name {
+  margin-right: auto;
+}
 
 .header .logo h1 {
   font-family: 'Dancing Script', cursive;
