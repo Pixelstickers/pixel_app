@@ -1,121 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel - Stickers y Papelería Creativa</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <style>
-    
-    .busqueda-filtros {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      padding: 24px 0;
-      background-color: #fff3e6;
-    }
-
-    .busqueda-filtros input,
-    .busqueda-filtros select {
-      padding: 10px 14px;
-      font-size: 16px;
-      border: 2px solid #f28c28;
-      border-radius: 12px;
-      background-color: white;
-    }
-
-    .galeria-categorias {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 24px;
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .categoria-card {
-      background-color: #ffffff;
-      border: 2px solid #f28c28;
-      border-radius: 16px;
-      overflow: hidden;
-      text-align: center;
-      text-decoration: none;
-      color: #4a2e1c;
-      transition: transform 0.2s ease;
-    }
-
-    .categoria-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    .categoria-card:hover {
-      transform: scale(1.03);
-    }
-
-    .footer {
-      background-color: #3a3a3a;
-      color: #fffaf0;
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    .footer a {
-      color: #c9b6e4;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
-  </style>
 </head>
 <body>
+
   <!-- Header -->
   <header class="header">
-    <div class="container header-flex">
-      <h1 class="brand-name">Pixel</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Categorías</a>
-            <div class="dropdown-menu">
-              <a href="categorias/futbol.html">Fútbol</a>
-              <a href="categorias/amor.html">Amor</a>
-              <a href="categorias/animales.html">Animales</a>
-              <a href="categorias/bebidas.html">Bebidas</a>
-              <a href="categorias/disney.html">Disney</a>
-              <a href="categorias/frases.html">Frases</a>
-            </div>
-          </li>
-          <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li>
-            <button class="carrito-btn" id="abrirCarrito">
-              🛒 <span id="carritoContador" class="carrito-contador">0</span>
-            </button>
-          </li>                       
-        </ul>
-      </nav>
-    </div>
+    <h1 class="brand-name">Pixel</h1>
+    <button id="hamburger" class="hamburger">☰</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Categorías</a>
+          <div class="dropdown-menu">
+            <a href="categorias/futbol.html">Fútbol</a>
+            <a href="categorias/amor.html">Amor</a>
+            <a href="categorias/animales.html">Animales</a>
+            <a href="categorias/bebidas.html">Bebidas</a>
+            <a href="categorias/disney.html">Disney</a>
+            <a href="categorias/frases.html">Frases</a>
+          </div>
+        </li>
+        <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li>
+          <button class="carrito-btn" id="abrirCarrito">
+            🛒 <span id="carritoContador" class="carrito-contador">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
   </header>
-  
-
-  <!-- Filtro y Buscador -->
- <!--  <section class="busqueda-filtros container">
-    <input type="text" id="buscador" placeholder="Buscar productos...">
-    <select id="filtro-categoria"> 
-      <option value="todos">Todas las categorías</option>
-      <option value="futbol">Fútbol</option>
-      <option value="llaveros">Llaveros</option>
-      <option value="polaroids">Polaroids</option>
-      <option value="marcapaginas">Marcapáginas</option>
-    </select>
-  </section>-->
 
   <!-- Galería de Categorías -->
   <section class="galeria-categorias">
@@ -144,24 +65,22 @@
       <h3>Frases</h3>
     </a>
   </section>
-  <section class="contenedor-productos container" id="contenedor-productos">
-    <!-- Los productos se insertarán acá dinámicamente -->
-  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-social">
       <h3>Seguinos</h3>
       <div class="social-icons">
-        <a href="https://instagram.com/pixel.stickerss" class="social-icon">Instagram</a>
-        <a href="https://tiktok.com/@pixel.stickerss" class="social-icon">TikTok</a>
+        <a href="https://instagram.com/pixel.stickerss">Instagram</a>
+        <a href="https://tiktok.com/@pixel.stickerss">TikTok</a>
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
-  </div>
-</div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
+    </div>
   </footer>
+
+  <!-- Panel Carrito -->
   <div class="carrito-panel" id="carritoPanel">
     <div class="carrito-header">
       <h3>Tu carrito</h3>
@@ -175,35 +94,23 @@
       <strong id="carritoTotal">$0</strong>
     </div>
   </div>
-  
+
   <!-- Scripts -->
-
-
+  <script src="js/funciones.js"></script>
+  <script src="js/carrito.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      cargarProductos();
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.querySelector(".main-nav");
+
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+        nav.classList.remove("open");
+      }
     });
   </script>
-
-    <script src="js/funciones.js"></script>
-    <script src="js/carrito.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggle = document.getElementById("menuToggle");
-        const nav = document.querySelector(".main-nav");
-    
-        toggle.addEventListener("click", () => {
-          nav.classList.toggle("active");
-        });
-    
-        // Cerrar el menú si se hace clic fuera (opcional)
-        document.addEventListener("click", (e) => {
-          if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-            nav.classList.remove("active");
-          }
-        });
-      });
-    </script>
-
 </body>
 </html>

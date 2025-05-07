@@ -624,7 +624,39 @@ gap: 15px;
   background: none;
   border: none;
   color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    color: #4a2e1c;
+    background-color: transparent;
+  }
 }
 
 .nosotros-info {
@@ -711,7 +743,4 @@ gap: 15px;
     display: flex;
   }
 
-  .hamburger {
-    display: block;
-  }
 }
