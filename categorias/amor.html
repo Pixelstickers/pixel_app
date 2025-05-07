@@ -237,7 +237,9 @@
       });
     }
   });
+  
   function copiarCarritoAlPortapapeles() {
+  const carrito = window.carrito;
   if (!carrito || carrito.length === 0) {
     alert("El carrito está vacío.");
     return;
@@ -249,12 +251,27 @@
     texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
   });
 
-  texto += `\nTotal: $${calcularTotal()}`;
+  texto += `\nTotal: $${carrito.reduce((acc, item) => acc + item.cantidad, 0)}`;
 
   navigator.clipboard.writeText(texto)
-    .then(() => alert("¡Pedido copiado al portapapeles!"))
+    .then(() => {
+      const aviso = document.createElement("div");
+      aviso.textContent = "¡Pedido copiado!";
+      aviso.style.position = "fixed";
+      aviso.style.bottom = "20px";
+      aviso.style.left = "50%";
+      aviso.style.transform = "translateX(-50%)";
+      aviso.style.background = "#4a2e1c";
+      aviso.style.color = "white";
+      aviso.style.padding = "10px 20px";
+      aviso.style.borderRadius = "10px";
+      aviso.style.zIndex = "10000";
+      document.body.appendChild(aviso);
+      setTimeout(() => aviso.remove(), 2000);
+    })
     .catch(err => alert("Error al copiar el pedido."));
 }
+
   </script>
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>

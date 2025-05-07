@@ -1,5 +1,7 @@
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+window.carrito = window.carrito || [];
+
 function agregarAlCarrito(producto) {
   const existente = carrito.find(item => item.id === producto.id);
   if (existente) {
