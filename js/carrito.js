@@ -74,7 +74,9 @@ function actualizarVistaCarrito() {
 
       item.innerHTML = `
         <div class="carrito-item-info">
-          <img src="${producto.imagen}" alt="${producto.nombre}" />
+          <img src="${location.pathname.endsWith('index.html') || location.pathname === '/' 
+  ? producto.imagen.replace('../', '') 
+  : producto.imagen}" alt="${producto.nombre}" />
           <div>
             <p>${producto.nombre}</p>
             <p class="product-code">${producto.codigo}</p>
