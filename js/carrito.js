@@ -1,4 +1,4 @@
-// carrito.js actualizado con contador y sin precio
+// carrito.js corregido con contador y suma/resta correctos
 
 function agregarAlCarrito(producto) {
   const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -34,6 +34,17 @@ function restarDelCarrito(id) {
   }
 }
 
+function agregarUno(id) {
+  const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+  const index = carrito.findIndex(item => item.id === id);
+
+  if (index !== -1) {
+    carrito[index].cantidad += 1;
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    actualizarCarrito();
+  }
+}
+
 function vaciarCarrito() {
   localStorage.removeItem('carrito');
   actualizarCarrito();
@@ -44,7 +55,7 @@ function actualizarCarrito() {
   const contenedor = document.getElementById('carritoContenido');
   const totalElemento = document.getElementById('carritoTotal');
 
-  // Actualizar burbuja del contador
+  // Actualizar burbuja contador
   const totalItems = carrito.reduce((sum, item) => sum + item.cantidad, 0);
   document.getElementById('carritoContador').textContent = totalItems;
 
@@ -69,7 +80,7 @@ function actualizarCarrito() {
       </div>
       <div class="carrito-controles">
         <button onclick="restarDelCarrito('${item.id}')">−</button>
-        <button onclick="agregarAlCarrito({ id: '${item.id}', nombre: '${item.nombre}', imagen: '${item.imagen}' })">+</button>
+        <button onclick="agregarUno('${item.id}')">+</button>
       </div>
     `;
     contenedor.appendChild(productoHTML);
