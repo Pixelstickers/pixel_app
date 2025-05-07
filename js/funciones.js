@@ -278,47 +278,6 @@ function cargarComponente(url, targetId) {
     }
 }
 
-// Ejemplo de uso (descomenta para usar):
-// document.addEventListener('DOMContentLoaded', function() {
-//     cargarComponente('componentes/header.html', 'header');
-//     cargarComponente('componentes/footer.html', 'footer');
-// });
-
-/* // Funcionalidad del carrito
-document.addEventListener('DOMContentLoaded', function() {
-    const carritoToggle = document.querySelector('.carrito-toggle');
-    const carritoPanel = document.querySelector('.carrito-panel');
-    const cerrarCarrito = document.querySelector('.cerrar-carrito');
-    
-    if (carritoToggle && carritoPanel) {
-        carritoToggle.addEventListener('click', function() {
-            carritoPanel.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        });
-    }
-    
-    if (cerrarCarrito) {
-        cerrarCarrito.addEventListener('click', function() {
-            carritoPanel.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    }
-    
-    // Cerrar carrito al hacer clic fuera
-    document.addEventListener('click', function(event) {
-        if (carritoPanel && carritoPanel.classList.contains('active') &&
-            !carritoPanel.contains(event.target) &&
-            !carritoToggle.contains(event.target)) {
-            carritoPanel.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    });
-}); */
-// ========== Mostrar productos dinámicamente ========== //
-
-/* function renderizarProductos(filtroCategoria = 'todos', textoBusqueda = '') {
-    const contenedor = document.getElementById('contenedor-productos');
-    contenedor.innerHTML = ''; */
 
     const productos = Object.entries(productosData)
         .filter(([id, producto]) => {
@@ -381,30 +340,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Render inicial
     renderizarProductos();
 });
-/* const carrito = [];
-
-document.addEventListener("DOMContentLoaded", () => {
-  const btnAgregar = document.getElementById("btnAgregarAlCarrito");
-
-  if (btnAgregar) {
-    btnAgregar.addEventListener("click", () => {
-      const id = document.getElementById("modalProductId").textContent;
-      const nombre = document.getElementById("modalProductTitle").textContent;
-      const categoria = document.getElementById("modalProductCategory").textContent;
-      const imagen = document.getElementById("modalProductImage").src;
-
-      const producto = { id, nombre, categoria, imagen };
-
-      carrito.push(producto);
-
-      actualizarContadorCarrito();
-      alert("Producto agregado al carrito.");
-    });
-  }
-});
-
-function actualizarContadorCarrito() {
-  const contador = document.getElementById("carritoContador");
-  contador.textContent = carrito.length;
-}
- */

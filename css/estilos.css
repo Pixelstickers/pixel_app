@@ -488,19 +488,24 @@ color: #a33;
 }
 
 .cantidad-control button {
-  background-color: #f28c28;
+  background-color: #f79433;
   border: none;
   color: white;
-  padding: 6px 10px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px;
+  font-size: 20px;
+  padding: 6px 12px;
+  margin: 0 5px;
+  border-radius: 6px;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.2s ease;
 }
 
 .cantidad-control button:hover {
-  background-color: #d47116;
+  background-color: #e67c1f;
 }
 
 

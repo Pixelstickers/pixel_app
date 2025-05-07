@@ -1,4 +1,4 @@
-// carrito.js actualizado SIN precio
+// carrito.js actualizado con contador y sin precio
 
 function agregarAlCarrito(producto) {
   const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -43,6 +43,10 @@ function actualizarCarrito() {
   const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
   const contenedor = document.getElementById('carritoContenido');
   const totalElemento = document.getElementById('carritoTotal');
+
+  // Actualizar burbuja del contador
+  const totalItems = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+  document.getElementById('carritoContador').textContent = totalItems;
 
   contenedor.innerHTML = '';
 
