@@ -73,6 +73,15 @@ document.querySelectorAll('.btn-view').forEach((btn, index) => {
   document.querySelector('.close-modal').addEventListener('click', () => {
     document.getElementById('productModal').classList.remove('show');
   });
+
+  // Cerrar modal al hacer clic fuera del contenido
+window.addEventListener("click", function (event) {
+    const modal = document.getElementById("productModal");
+    if (event.target === modal) {
+      modal.classList.remove("show");
+    }
+  });
+  
   
 // Datos de productos (simulación)
 const productosData = {
