@@ -181,27 +181,12 @@ nav.main-nav a {
   color: #4a2e1c;
 }
 .carrito-panel {
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 320px;
-  background-color: #fffaf0;
-  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 9999;
-
-  display: flex;
-  flex-direction: column;
-
-  /* NUEVO: esto limita que el footer se baje */
+  display: block;
+  overflow-y: auto;
   max-height: 100vh;
 }
 
 .carrito-contenido {
-  flex: 1;
-  overflow-y: auto;
   padding: 16px;
 }
 
@@ -210,6 +195,7 @@ nav.main-nav a {
   border-top: 1px solid #ccc;
   background-color: #fff3e6;
 }
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
