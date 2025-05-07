@@ -181,12 +181,28 @@ nav.main-nav a {
   color: #4a2e1c;
 }
 .carrito-panel {
-  display: block;
-  overflow-y: auto;
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .carrito-contenido {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.carrito-panel {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carrito-contenido {
+  flex-grow: 1;
+  overflow-y: auto;
   padding: 16px;
 }
 
@@ -194,21 +210,9 @@ nav.main-nav a {
   padding: 16px;
   border-top: 1px solid #ccc;
   background-color: #fff3e6;
+  flex-shrink: 0;
 }
 
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-  padding: 40px;
-}
-
-.footer {
-  background-color: #3a3a3a;
-  color: #fffaf0;
-  text-align: center;
-  padding: 20px;
-}
 
 .footer a {
   color: #c9b6e4; /* lila suave */
