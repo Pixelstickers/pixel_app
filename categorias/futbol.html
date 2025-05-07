@@ -192,18 +192,24 @@
   <!-- Scripts -->
   <script>
     function agregarAlCarritoDesdeElemento(boton) {
-      const id = boton.dataset.productId;
-      const nombre = boton.dataset.productName;
-      const imagen = boton.dataset.productImg;
-      const precio = boton.dataset.productPrice;
+  const id = boton.dataset.productId;
+  const nombre = boton.dataset.productName;
+  const imagen = boton.dataset.productImg;
 
-      if (!id || !nombre || !imagen || !precio) {
-        console.warn('Datos faltantes en producto:', { id, nombre, imagen, precio });
-        return;
-      }
+  if (!id || !nombre || !imagen) {
+    console.warn('Datos faltantes en producto:', { id, nombre, imagen });
+    return;
+  }
 
-      agregarAlCarrito(id, nombre, imagen, precio);
-    }
+  const producto = {
+    id,
+    nombre,
+    imagen,
+    cantidad: 1
+  };
+
+  agregarAlCarrito(producto);
+}
 
     function abrirModal(imagenSrc, titulo, categoria, id) {
       document.getElementById('modalProductImage').src = '../' + imagenSrc;
