@@ -125,28 +125,26 @@
   </div>
 
   <!-- Carrito -->
-<div class="carrito-panel" id="carritoPanel">
-  <div class="carrito-header">
-    <h3>Tu carrito</h3>
-    <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
-  </div>
+  <div class="carrito-panel" id="carritoPanel">
 
-
+    <!-- HEADER con total y botones -->
+    <div class="carrito-header">
+      <div style="flex-grow: 1;">
+        <p style="margin: 0; font-weight: bold;">Total del pedido: <strong id="carritoTotal">0</strong></p>
+        <div style="margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+          <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
+        </div>
+      </div>
+      <button class="btn-cerrar" id="cerrarCarrito" style="align-self: start;">&times;</button>
+    </div>
+  
+    <!-- CONTENIDO del carrito -->
     <div class="carrito-contenido" id="carritoContenido">
       <p>No hay productos en el carrito.</p>
     </div>
-
-    <div class="carrito-footer">
-      <span>Total del pedido:</span>
-      <strong id="carritoTotal">0</strong>
-      <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
-        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
-        <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
-      </div>
-    </div>
+  
   </div>
-</div>
-
 
   <!-- Footer -->
   <footer id="footer" class="footer">
