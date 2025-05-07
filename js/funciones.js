@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    // Cierra al hacer clic fuera del modal-content
+/*     // Cierra al hacer clic fuera del modal-content
     modal.addEventListener("click", function (e) {
       if (e.target === modal) {
         modal.classList.remove("show");
         document.body.style.overflow = '';
       }
-    });
+    }); */
   
     // Cierra con tecla ESC
     document.addEventListener("keydown", function (e) {
