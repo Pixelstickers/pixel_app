@@ -131,10 +131,9 @@
     <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
   </div>
 
-  <div class="carrito-body">
+
     <div class="carrito-contenido" id="carritoContenido">
       <p>No hay productos en el carrito.</p>
-    </div>
 
     <div class="carrito-footer">
       <span>Total del pedido:</span>
@@ -238,7 +237,7 @@
     }
   });
   
-  Function copiarCarritoAlPortapapeles() {
+  function copiarCarritoAlPortapapeles() {
   const carrito = window.carrito;
   if (!carrito || carrito.length === 0) {
     alert("El carrito está vacío.");
@@ -246,34 +245,31 @@
   }
 
   let texto = "Pedido de Pixel Stickers:\n\n";
-
   carrito.forEach(item => {
     texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
   });
-
   texto += `\nTotal: ${carrito.reduce((acc, item) => acc + item.cantidad, 0)} producto(s)`;
 
-  navigator.clipboard.writeText(texto)
-    .then(() => {
-      const aviso = document.createElement("div");
-      aviso.textContent = "¡Pedido copiado!";
-      Object.assign(aviso.style, {
-        position: "fixed",
-        bottom: "20px",
-        left: "50%",
-        transform: "translateX(-50%)",
-        background: "#4a2e1c",
-        color: "white",
-        padding: "10px 20px",
-        borderRadius: "10px",
-        zIndex: "10000",
-        fontWeight: "bold",
-      });
-      document.body.appendChild(aviso);
-      setTimeout(() => aviso.remove(), 2000);
-    })
-    .catch(() => alert("Error al copiar el pedido."));
+  navigator.clipboard.writeText(texto).then(() => {
+    const aviso = document.createElement("div");
+    aviso.textContent = "¡Pedido copiado!";
+    Object.assign(aviso.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      background: "#4a2e1c",
+      color: "white",
+      padding: "10px 20px",
+      borderRadius: "10px",
+      zIndex: "10000",
+      fontWeight: "bold",
+    });
+    document.body.appendChild(aviso);
+    setTimeout(() => aviso.remove(), 2000);
+  }).catch(() => alert("Error al copiar el pedido."));
 }
+
 
   </script>
   <script src="../js/funciones.js"></script>
