@@ -137,11 +137,11 @@
     </div>
 
     <div class="carrito-footer">
-      <span>Total:</span>
-      <strong id="carritoTotal">$0</strong>
+      <span>Total del pedido:</span>
+      <strong id="carritoTotal">0</strong>
       <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
         <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
-        <button class="btn-exportar" onclick="exportarCarrito()">Exportar lista</button>
+        <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
       </div>
     </div>
   </div>
@@ -237,7 +237,24 @@
       });
     }
   });
+  function copiarCarritoAlPortapapeles() {
+  if (!carrito || carrito.length === 0) {
+    alert("El carrito está vacío.");
+    return;
+  }
 
+  let texto = "Pedido de Pixel Stickers:\n\n";
+
+  carrito.forEach(item => {
+    texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
+  });
+
+  texto += `\nTotal: $${calcularTotal()}`;
+
+  navigator.clipboard.writeText(texto)
+    .then(() => alert("¡Pedido copiado al portapapeles!"))
+    .catch(err => alert("Error al copiar el pedido."));
+}
   </script>
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>
