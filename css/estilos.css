@@ -223,7 +223,9 @@ nav.main-nav a {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 1000;
 }
-
+.dropdown-menu.show {
+  display: block;
+}
 .dropdown-menu a {
   display: block;
   padding: 8px 12px;
