@@ -93,7 +93,7 @@ function actualizarVistaCarrito() {
     });
   }
 
-  total.textContent = `$${totalPrecio}`;
+  total.textContent = `${totalPrecio}`;
   contador.textContent = totalCantidad;
 }
 
