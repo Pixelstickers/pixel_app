@@ -134,10 +134,13 @@
       <p>No hay productos en el carrito.</p>
     </div>
     <div class="carrito-footer">
-      <span></span>
+      <span>Total:</span>
       <strong id="carritoTotal">$0</strong>
+      <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="btn-exportar" onclick="exportarCarrito()">Exportar lista</button>
+      </div>
     </div>
-  </div>
 
   <!-- Footer -->
   <footer id="footer" class="footer">
