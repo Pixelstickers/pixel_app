@@ -662,62 +662,75 @@ gap: 15px;
 /* BLOQUE RESPONSIVE COMPLETO PARA CELULARES */
 
 @media (max-width: 768px) {
-  .header {
+  header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 16px;
+    padding: 20px;
     text-align: center;
   }
 
-  .logo-zone {
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
+  nav {
+    margin-top: 20px;
   }
 
-  .main-nav {
-    width: 100%;
-    position: relative;
-  }
-
-  .hamburger {
+  nav a {
     display: block;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: #4a2e1c;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-
-  .main-nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #fffaf0;
-    position: absolute;
-    top: 100%;
-    right: 0;
     width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 6px 0;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 0;
+    background-color: #f28c28;
   }
 
-  .main-nav ul.show {
-    display: flex;
+  .dropdown {
+    display: block;
+    width: 100%;
   }
 
-  .main-nav a {
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+  }
+
+  .dropdown-content a {
     padding: 12px;
     font-size: 16px;
-    border-bottom: 1px solid #f0c087;
+    border-bottom: 1px solid #e6d4c4;
   }
 
-  .main-nav a:last-child {
-    border-bottom: none;
+  .galeria {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .item {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  #carritoBtn {
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #panelPedido {
+    width: 90%;
+    right: 5%;
+  }
+
+  footer {
+    padding: 16px;
+    font-size: 14px;
   }
 }
-
