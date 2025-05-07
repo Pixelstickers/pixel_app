@@ -6,22 +6,34 @@
 // ========== Navegación ========== //
 
 // Manejar menú móvil
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const mainNav = document.querySelector('.main-nav');
-    
-    if (mobileMenuToggle && mainNav) {
-        mobileMenuToggle.addEventListener('click', function() {
-            mainNav.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
-    }
-    window.addEventListener("click", function (event) {
-        const modal = document.getElementById("productModal");
-        if (event.target === modal) {
-          modal.classList.remove("show");
-        }
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("productModal");
+    const closeModalBtn = document.querySelector(".close-modal");
+  
+    // Cierra al tocar la X
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener("click", () => {
+        modal.classList.remove("show");
+        document.body.style.overflow = '';
       });
+    }
+  
+    // Cierra al hacer clic fuera del modal-content
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.classList.remove("show");
+        document.body.style.overflow = '';
+      }
+    });
+  
+    // Cierra con tecla ESC
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.classList.contains("show")) {
+        modal.classList.remove("show");
+        document.body.style.overflow = '';
+      }
+    });
+  });
     
     // Manejar los dropdowns en móvil
     const dropdowns = document.querySelectorAll('.dropdown');
