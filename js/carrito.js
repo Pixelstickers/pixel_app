@@ -1,5 +1,3 @@
-// carrito.js corregido con contador y suma/resta correctos
-
 function agregarAlCarrito(producto) {
   const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
   const index = carrito.findIndex(item => item.id === producto.id);
@@ -11,6 +9,7 @@ function agregarAlCarrito(producto) {
       id: producto.id,
       nombre: producto.nombre,
       imagen: producto.imagen,
+      codigo: producto.codigo, // nuevo campo
       cantidad: 1
     });
   }
@@ -55,7 +54,6 @@ function actualizarCarrito() {
   const contenedor = document.getElementById('carritoContenido');
   const totalElemento = document.getElementById('carritoTotal');
 
-  // Actualizar burbuja contador
   const totalItems = carrito.reduce((sum, item) => sum + item.cantidad, 0);
   document.getElementById('carritoContador').textContent = totalItems;
 
@@ -74,7 +72,7 @@ function actualizarCarrito() {
       <div class="carrito-item-info">
         <img src="${item.imagen}" alt="${item.nombre}" />
         <div>
-          <strong>${item.nombre}</strong><br />
+          <strong>${item.codigo}</strong><br />
           <span>Cantidad: ${item.cantidad}</span>
         </div>
       </div>
@@ -86,25 +84,23 @@ function actualizarCarrito() {
     contenedor.appendChild(productoHTML);
   });
 
-  // Botón Vaciar
   const vaciar = document.createElement('button');
   vaciar.textContent = 'Vaciar Carrito';
   vaciar.className = 'btn-vaciar';
   vaciar.onclick = vaciarCarrito;
   contenedor.appendChild(vaciar);
 
-  // Botón Exportar
   const exportar = document.createElement('button');
   exportar.textContent = 'Exportar pedido';
   exportar.className = 'btn-exportar';
   exportar.onclick = () => {
     const resumen = carrito.map(item =>
-      `- ${item.nombre} (${item.id.toUpperCase()}) x${item.cantidad}`
+      `- ${item.codigo} x${item.cantidad}`
     ).join('\n');
 
     const textoFinal = `🧾 *Pedido Pixel*:\n${resumen}`;
     navigator.clipboard.writeText(textoFinal).then(() => {
-      alert('Pedido copiado! Podés pegarlo en WhatsApp, Instagram o en la Tienda Online 💬');
+      alert('¡Resumen copiado! Pegalo en WhatsApp, Instagram o donde quieras 💬');
     });
   };
   contenedor.appendChild(exportar);
