@@ -665,6 +665,7 @@ gap: 15px;
   .header {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: auto;
     padding: 20px;
     text-align: center;
@@ -673,61 +674,59 @@ gap: 15px;
   .logo-zone {
     flex-direction: column;
     gap: 8px;
+    align-items: center;
+  }
+
+  .logo-text {
+    font-size: 48px;
   }
 
   .main-nav {
-    flex-direction: column;
-    gap: 10px;
     align-items: center;
     margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
   }
 
   .main-nav ul {
     flex-direction: column;
     background-color: #fffaf0;
     position: static;
-    display: flex;
     width: 100%;
     gap: 10px;
-    padding: 10px 0;
     align-items: center;
+    padding: 10px 0;
+  }
+
+  .main-nav a {
+    font-size: 18px;
+    padding: 8px 16px;
+    width: 100%;
+    text-align: center;
   }
 
   .products-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 20px;
     padding: 20px;
   }
 
   .product-img img {
-    height: 140px;
-  }
-
-  .galeria {
-    padding: 20px;
-    grid-template-columns: 1fr;
+    height: 160px;
   }
 
   .carrito-panel {
     width: 100%;
-    right: -100%;
-  }
-
-  .carrito-panel.active {
-    right: 0;
   }
 
   .carrito-footer {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
     align-items: center;
   }
-
-  .footer {
-    padding: 30px 10px;
-  }
-
-  .btn-group {
-    flex-direction: column;
-    gap: 6px;
-  }
 }
+
