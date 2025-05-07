@@ -892,5 +892,10 @@ gap: 15px;
     background-color: #fff2e6;
   }
 }
-
+@media (max-width: 480px) {
+  .modal-content {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
 
