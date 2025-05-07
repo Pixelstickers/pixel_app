@@ -340,17 +340,21 @@ to { opacity: 1; transform: scale(1); }
 .carrito-panel.active {
 right: 0;
 }
+
 .btn-exportar {
-  background-color: #b18acc;
-  color: white;
+  background-color: #6c5ce7;
+  color: #fff;
   border: none;
   padding: 8px 16px;
   margin-top: 8px;
   cursor: pointer;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: bold;
+  width: 100%;
 }
-
+.btn-exportar:hover {
+  background-color: #574b90;
+}
 .carrito-header {
   display: flex;
   justify-content: space-between;
