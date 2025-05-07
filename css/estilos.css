@@ -390,17 +390,23 @@ font-style: italic;
 }
 
 .carrito-item {
-display: flex;
-align-items: center;
-gap: 10px;
-margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
 }
+.carrito-item-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+} 
 
 .carrito-item img {
-width: 50px;
-height: 50px;
-object-fit: cover;
-border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 .carrito-controles {
 display: flex;
@@ -410,14 +416,14 @@ margin-top: 6px;
 }
 
 .carrito-controles button {
-background-color: #f28c28;
-border: none;
-padding: 4px 10px;
-color: white;
-font-weight: bold;
-border-radius: 6px;
-cursor: pointer;
-font-size: 14px;
+  background-color: #f28c28;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .carrito-controles button:hover {
@@ -432,26 +438,20 @@ cursor: pointer;
 margin-left: 8px;
 color: #a33;
 }
-.carrito-controles {
-display: flex;
-align-items: center;
-gap: 6px;
-margin-top: 8px;
-}
 
-.carrito-controles button {
-background-color: #f28c28;
-border: none;
-padding: 4px 8px;
-color: white;
-border-radius: 6px;
-cursor: pointer;
+.btn-vaciar {
+  background-color: #b22222;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
 }
-
-.carrito-controles button:hover {
-background-color: #d47116;
+.btn-vaciar:hover {
+  background-color: #8b1a1a;
 }
-
 .carrito-btn {
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
