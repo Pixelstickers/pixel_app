@@ -128,6 +128,29 @@
     </a>
   </section>
 
+  <!-- Carrito -->
+<div class="carrito-panel" id="carritoPanel">
+  <div class="carrito-header">
+    <h3>Tu carrito</h3>
+    <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
+  </div>
+
+
+    <div class="carrito-contenido" id="carritoContenido">
+      <p>No hay productos en el carrito.</p>
+    </div>
+
+    <div class="carrito-footer">
+      <span>Total del pedido:</span>
+      <strong id="carritoTotal">0</strong>
+      <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-social">
@@ -141,25 +164,6 @@
       <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
     </div>
   </footer>
-
-  <!-- Panel Carrito -->
-  <div class="carrito-panel" id="carritoPanel">
-    <div class="carrito-header">
-      <h3>Tu carrito</h3>
-      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
-    </div>
-    <div class="carrito-contenido" id="carritoContenido">
-      <p>No hay productos en el carrito.</p>
-    </div>
-    <div class="carrito-footer">
-      <span>Total del pedido:</span>
-      <strong id="carritoTotal">0</strong>
-      <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
-        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
-        <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
-      </div>
-    </div>
-  </div>
 
   <!-- Scripts -->
   <script src="js/funciones.js"></script>
@@ -189,7 +193,7 @@
       });
     }
   });
-  
+
   function copiarCarritoAlPortapapeles() {
   const carrito = window.carrito;
   if (!carrito || carrito.length === 0) {
