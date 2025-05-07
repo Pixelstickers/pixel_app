@@ -240,9 +240,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Función para cerrar el modal
     function closeModalFunc() {
-        modal.classList.remove('show');
-        document.body.style.overflow = ''; // Restaurar scroll
-    }
+        const modal = document.getElementById("productModal");
+        modal.classList.remove("show");
+        document.body.style.overflow = "";
+      }
+      
     
     // Asignar eventos a los botones de productos
     const viewButtons = document.querySelectorAll('.btn-view');
