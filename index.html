@@ -133,15 +133,14 @@
 
   <!-- HEADER con total y botones -->
   <div class="carrito-header">
-    <div>
-      <span>Total del pedido:</span>
-      <strong id="carritoTotal">0</strong>
+    <div style="flex-grow: 1;">
+      <p style="margin: 0; font-weight: bold;">Total del pedido: <strong id="carritoTotal">0</strong></p>
+      <div style="margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
+      </div>
     </div>
-    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px;">
-      <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
-      <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
-    </div>
-    <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
+    <button class="btn-cerrar" id="cerrarCarrito" style="align-self: start;">&times;</button>
   </div>
 
   <!-- CONTENIDO del carrito -->
@@ -151,7 +150,7 @@
 
 </div>
 
-<!--   <!-- Carrito -->
+<!-- 
   <div class="carrito-header">
     <div>
       <span>Total del pedido:</span>
