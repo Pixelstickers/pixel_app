@@ -882,3 +882,22 @@ gap: 15px;
     height: 350px;
   }
 }
+
+@media (max-width: 768px) {
+  .carrito-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .carrito-contenido {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .carrito-footer {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #fff2e6;
+  }
+}
