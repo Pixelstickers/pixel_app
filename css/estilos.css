@@ -6,7 +6,16 @@ body {
   background-color: #fffaf0; /* fondo crema claro */
   color: #4a2e1c; /* marrón oscuro */
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
+main {
+  flex: 1; /* Hace que el contenido crezca y empuje al footer abajo */
+}
 .header {
   background-image: url("../imagenes/header-zorro.png");
   background-size: cover;
