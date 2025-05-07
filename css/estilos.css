@@ -138,8 +138,6 @@ nav.main-nav a {
 
 .modal.show {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .modal-content {
@@ -308,32 +306,31 @@ nav.main-nav a {
 }
 /* ==== MODAL PRODUCTO ==== */
 .modal {
-background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro translúcido */
-backdrop-filter: blur(2px); /* efecto desenfoque */
-display: none;
-position: fixed;
-z-index: 9999;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-background-color: rgba(0, 0, 0, 0.5);
-justify-content: center;
-align-items: center;
-padding: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .modal-content {
-background-color: #fffaf0;
-color: #4a2e1c;
-padding: 24px;
-border-radius: 16px;
-max-width: 400px;
-width: 90%;
-position: relative;
-box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-text-align: center;
-animation: fadeIn 0.3s ease-in-out;
+  background-color: #fffaf0;
+  color: #4a2e1c;
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal-content img {
