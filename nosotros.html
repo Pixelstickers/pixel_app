@@ -10,8 +10,9 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="container header-flex">
-      <h1 class="brand-name"></h1>
+    <div class="header-inner">
+      <h1 class="brand-name">Pixel</h1>
+      <button id="hamburger" class="hamburger">☰</button>
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -20,10 +21,10 @@
             <div class="dropdown-menu">
               <a href="categorias/futbol.html">Fútbol</a>
               <a href="categorias/amor.html">Amor</a>
-              <a href="animales.html">Animales</a>
-              <a href="bebidas.html">Bebidas</a>
-              <a href="disney.html">Disney</a>
-              <a href="frases.html">Frases</a>
+              <a href="categorias/pronto.html">Animales</a>
+              <a href="categorias/pronto.html">Bebidas</a>
+              <a href="categorias/pronto.html">Disney</a>
+              <a href="categorias/pronto.html">Frases</a>
             </div>
           </li>
           <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
@@ -50,19 +51,18 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-social">
-      <h3>Seguinos</h3>
-      <div class="social-icons">
-        <a href="https://instagram.com/pixel.stickerss" class="social-icon">Instagram</a>
-        <a href="https://tiktok.com/@pixel.stickerss" class="social-icon">TikTok</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer class="footer" style="background-color: #f3e5f5; padding: 12px 10px; text-align: center; font-size: 14px;">
+  <div style="margin-bottom: 6px;">
+    <a href="https://instagram.com/pixel.stickerss"
+       style="margin: 0 10px; color: #b18acc; text-decoration: none;" 
+       target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+    <a href="https://tiktok.com/@pixel.stickerss"
+       style="margin: 0 10px; color: #b18acc; text-decoration: none;" 
+       target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+  </div>
+  <p style="margin: 4px 0 0; color: #4a2e1c;">&copy; 2025 Pixel - Todos los derechos reservados</p>
+</footer>
 
   <!-- Carrito lateral -->
   <div class="carrito-panel" id="carritoPanel">
@@ -82,5 +82,33 @@
   <!-- Scripts -->
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.querySelector(".main-nav");
+  
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  
+    document.addEventListener("click", (e) => {
+      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+        nav.classList.remove("open");
+      }
+    });
+  
+    // Desplegable de categorías
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".dropdown-toggle");
+      const menu = document.querySelector(".dropdown-menu");
+  
+      if (toggle && menu) {
+        toggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          menu.classList.toggle("show");
+        });
+      }
+    });
+  </script>
+  
 </body>
 </html>
