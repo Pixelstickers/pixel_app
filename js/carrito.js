@@ -35,6 +35,17 @@ function vaciarCarrito() {
   actualizarVistaCarrito();
 }
 
+function exportarCarrito() {
+  let contenido = carrito.map(prod => `• ${prod.nombre} - ${prod.codigo} (x${prod.cantidad})`).join('\n');
+  const blob = new Blob([contenido], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'carrito_pixel.txt';
+  a.click();
+  URL.revokeObjec
+  tURL(url);
+}
 function guardarCarrito() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }

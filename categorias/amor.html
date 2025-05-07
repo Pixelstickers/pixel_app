@@ -125,25 +125,25 @@
   </div>
 
   <!-- Carrito -->
-  <div class="carrito-panel" id="carritoPanel">
-    <div class="carrito-header">
-      <h3>Tu carrito</h3>
-      <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
-    </div>
-    <div class="carrito-contenido" id="carritoContenido">
-      <p>No hay productos en el carrito.</p>
+<div class="carrito-panel" id="carritoPanel">
+  <div class="carrito-header">
+    <h3>Tu carrito</h3>
+    <button class="btn-cerrar" id="cerrarCarrito">&times;</button>
+  </div>
+
+  <div class="carrito-contenido" id="carritoContenido">
+    <p>No hay productos en el carrito.</p>
+  </div>
+
+  <div class="carrito-footer">
+    <span>Total:</span>
+    <strong id="carritoTotal">$0</strong>
+    <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+      <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+      <button class="btn-exportar" onclick="exportarCarrito()">Exportar lista</button>
     </div>
   </div>
 </div>
-    <div class="carrito-footer">
-      <span>Total:</span>
-      <strong id="carritoTotal">$0</strong>
-      <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
-        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
-        <button class="btn-exportar" onclick="exportarCarrito()">Exportar lista</button>
-      </div>
-    </div>
-    </div> <!-- ← cierro correctamente el carrito-panel -->
 
   <!-- Footer -->
   <footer id="footer" class="footer">
