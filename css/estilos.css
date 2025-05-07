@@ -340,6 +340,16 @@ to { opacity: 1; transform: scale(1); }
 .carrito-panel.active {
 right: 0;
 }
+.btn-exportar {
+  background-color: #b18acc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
 
 .carrito-header {
   display: flex;

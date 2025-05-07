@@ -104,3 +104,17 @@ document.getElementById('abrirCarrito').addEventListener('click', () => {
 document.getElementById('cerrarCarrito').addEventListener('click', () => {
   document.getElementById('carritoPanel').classList.remove('active');
 });
+const exportar = document.createElement('button');
+exportar.textContent = 'Exportar pedido';
+exportar.className = 'btn-exportar';
+exportar.onclick = () => {
+  const resumen = carrito.map(item =>
+    `- ${item.nombre} (${item.id.toUpperCase()}) x${item.cantidad}`
+  ).join('\n');
+
+  const textoFinal = `Pedido Pixel:\n${resumen}`;
+  navigator.clipboard.writeText(textoFinal).then(() => {
+    alert('¡Resumen copiado! Podés pegarlo en WhatsApp o donde quieras.');
+  });
+};
+contenedor.appendChild(exportar);
