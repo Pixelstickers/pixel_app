@@ -1,6 +1,8 @@
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+window.carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+let carrito = window.carrito;
 
-window.carrito = window.carrito || [];
+
+;
 
 function agregarAlCarrito(producto) {
   const existente = carrito.find(item => item.id === producto.id);
@@ -113,3 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+function guardarCarrito() {
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  window.carrito = carrito; // <- esta línea es clave
+}

@@ -238,7 +238,7 @@
     }
   });
   
-  function copiarCarritoAlPortapapeles() {
+  Function copiarCarritoAlPortapapeles() {
   const carrito = window.carrito;
   if (!carrito || carrito.length === 0) {
     alert("El carrito está vacío.");
@@ -251,25 +251,28 @@
     texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
   });
 
-  texto += `\nTotal: $${carrito.reduce((acc, item) => acc + item.cantidad, 0)}`;
+  texto += `\nTotal: ${carrito.reduce((acc, item) => acc + item.cantidad, 0)} producto(s)`;
 
   navigator.clipboard.writeText(texto)
     .then(() => {
       const aviso = document.createElement("div");
       aviso.textContent = "¡Pedido copiado!";
-      aviso.style.position = "fixed";
-      aviso.style.bottom = "20px";
-      aviso.style.left = "50%";
-      aviso.style.transform = "translateX(-50%)";
-      aviso.style.background = "#4a2e1c";
-      aviso.style.color = "white";
-      aviso.style.padding = "10px 20px";
-      aviso.style.borderRadius = "10px";
-      aviso.style.zIndex = "10000";
+      Object.assign(aviso.style, {
+        position: "fixed",
+        bottom: "20px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        background: "#4a2e1c",
+        color: "white",
+        padding: "10px 20px",
+        borderRadius: "10px",
+        zIndex: "10000",
+        fontWeight: "bold",
+      });
       document.body.appendChild(aviso);
       setTimeout(() => aviso.remove(), 2000);
     })
-    .catch(err => alert("Error al copiar el pedido."));
+    .catch(() => alert("Error al copiar el pedido."));
 }
 
   </script>
