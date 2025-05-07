@@ -46,37 +46,77 @@
     </div>
   </section>
 
-  <!-- Productos -->
-  <section class="category-products">
-    <div class="container">
-      <div class="products-grid">
+<!-- Productos -->
+<section class="category-products">
+  <div class="container">
+    <div class="products-grid">
 
-        <!-- Producto ejemplo -->
-        <div class="product-card" 
-             data-product-id="f1" 
-             data-product-name="Huracán" 
-             data-product-img="FU-00001.png">
-          <div class="product-img" onclick="abrirModal('imagenes/FU-00001.png', 'Huracán')">
-            <img src="../imagenes/FU-00001.png" alt="Escudo club Huracán" />
-          </div>
-          <div class="cantidad-control">
-            <button class="btn-restar" onclick="restarDelCarrito('f1')">−</button>
-            <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-              data-product-id="f1"
-              data-product-name="Huracán"
-              data-product-img="FU-00001.png"
-              data-product-code="FU-00001">+</button>
-          </div>
-          <h3>Huracán</h3>
-          <p class="product-code">Código: FU-00001</p>
-          <p class="product-category">Clubes argentinos</p>
+      <!-- Huracán -->
+      <div class="product-card" 
+           data-product-id="f1" 
+           data-product-name="Huracán" 
+           data-product-img="FU-00001.png">
+        <div class="product-img" onclick="abrirModal('imagenes/FU-00001.png', 'Huracán')">
+          <img src="../imagenes/FU-00001.png" alt="Escudo club Huracán" />
         </div>
-
-        <!-- Repetir según corresponda los otros productos -->
-
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('f1')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="f1"
+          data-product-name="Huracán"
+          data-product-img="FU-00001.png"
+          data-product-code="FU-00001">+</button>
+        </div>
+        <h3>Huracán</h3>
+        <p class="product-code">Código: FU-00001</p>
+        <p class="product-category">Clubes argentinos</p>
       </div>
+
+      <!-- Estudiantes -->
+      <div class="product-card" 
+           data-product-id="f2" 
+           data-product-name="Estudiantes de La Plata" 
+           data-product-img="FU-00002.png">
+        <div class="product-img" onclick="abrirModal('imagenes/FU-00002.png', 'Estudiantes de La Plata')">
+          <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de La Plata" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('f2')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="f2"
+          data-product-name="Estudiantes de la Plata"
+          data-product-img="FU-00002.png"
+          data-product-code="FU-00002">+</button>
+        </div>
+        <h3>Estudiantes de La Plata</h3>
+        <p class="product-code">Código: FU-00002</p>
+        <p class="product-category">Clubes argentinos</p>
+      </div>
+
+      <!-- Independiente -->
+      <div class="product-card" 
+           data-product-id="f3" 
+           data-product-name="Independiente" 
+           data-product-img="FU-00004.png">
+        <div class="product-img" onclick="abrirModal('imagenes/FU-00004.png', 'Independiente')">
+          <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('f3')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="f3"
+          data-product-name="Independiente"
+          data-product-img="FU-00004.png"
+          data-product-code="FU-00004">+</button>
+        </div>
+        <h3>Independiente</h3>
+        <p class="product-code">Código: FU-00004</p>
+        <p class="product-category">Clubes argentinos</p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Modal -->
   <div id="productModal" class="modal">
