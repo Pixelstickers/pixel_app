@@ -171,10 +171,10 @@ const productosData = {
         descripcion: "Escudo Independiente. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f4: {
-        titulo: "Sticker Escudo River",
-        categoria: "River Plate",
-        imagen: "../imagenes/futbol/river.jpg",
-        descripcion: "Sticker oficial del escudo de River Plate, el club millonario. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+        titulo: "Messi y Roman",
+        categoria: "Personajes",
+        imagen: "imagenes/FU-00003.png",
+        descripcion: "Messi y Roman. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     f5: {
         titulo: "Sticker FC Estudiantes",
