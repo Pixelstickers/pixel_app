@@ -5,34 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fútbol - Pixel Stickers y Papelería Creativa</title>
   <link rel="stylesheet" href="../css/estilos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header -->
   <header class="header">
-    <div class="container header-flex">
-      <h1 class="brand-name"></h1>
-      <button class="hamburger" onclick="toggleMenu()">☰</button>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="../index.html" class="active">Inicio</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Categorías</a>
-            <div class="dropdown-menu">
-              <a href="futbol.html" class="active">Fútbol</a>
-              <a href="amor.html">Amor</a>
-              <a href="animales.html">Animales</a>
-              <a href="bebidas.html">Bebidas</a>
-              <a href="disney.html">Disney</a>
-              <a href="frases.html">Frases</a>
-            </div>
-          </li>
-          <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
-          <li><a href="../nosotros.html">Nosotros</a></li>
-          <li><button class="carrito-btn" id="abrirCarrito">🛒 <span id="carritoContador" class="carrito-contador">0</span></button></li>
-        </ul>
-      </nav>
-    </div>
+    <h1 class="brand-name">Pixel</h1>
+    <button id="hamburger" class="hamburger">☰</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Categorías</a>
+          <div class="dropdown-menu">
+            <a href="futbol.html" class="active">Fútbol</a>
+            <a href="amor.html">Amor</a>
+            <a href="animales.html">Animales</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="disney.html">Disney</a>
+            <a href="frases.html">Frases</a>
+          </div>
+        </li>
+        <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
+        <li><a href="../nosotros.html">Nosotros</a></li>
+        <li>
+          <button class="carrito-btn" id="abrirCarrito">
+            🛒 <span id="carritoContador" class="carrito-contador">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Categoría Banner -->
@@ -43,32 +46,12 @@
     </div>
   </section>
 
-  <!-- Filtros -->
-  <section class="filters">
-    <div class="container">
-      <div class="filter-container">
-        <div class="filter-group">
-          <label>Filtrar por:</label>
-          <select id="filterTeam">
-            <option value="todos">Todos los equipos</option>
-            <option value="clubes argentinos">Clubes argentinos</option>
-            <option value="boca">Boca Juniors</option>
-            <option value="river">River Plate</option>
-            <option value="Estudiantes">Estudiantes</option>
-            <option value="Huracan">Huracán</option>
-            <option value="Independiente">Independiente</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Productos -->
   <section class="category-products">
     <div class="container">
       <div class="products-grid">
 
-        <!-- Huracán -->
+        <!-- Producto ejemplo -->
         <div class="product-card" 
              data-product-id="f1" 
              data-product-name="Huracán" 
@@ -79,57 +62,17 @@
           <div class="cantidad-control">
             <button class="btn-restar" onclick="restarDelCarrito('f1')">−</button>
             <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-            data-product-id="f1"
-            data-product-name="Huracán"
-            data-product-img="FU-00001.png"
-            data-product-code="FU-00001">+</button>
+              data-product-id="f1"
+              data-product-name="Huracán"
+              data-product-img="FU-00001.png"
+              data-product-code="FU-00001">+</button>
           </div>
           <h3>Huracán</h3>
           <p class="product-code">Código: FU-00001</p>
           <p class="product-category">Clubes argentinos</p>
         </div>
 
-        <!-- Estudiantes -->
-        <div class="product-card" 
-             data-product-id="f2" 
-             data-product-name="Estudiantes de La Plata" 
-             data-product-img="FU-00002.png">
-          <div class="product-img" onclick="abrirModal('imagenes/FU-00002.png', 'Estudiantes de La Plata')">
-            <img src="../imagenes/FU-00002.png" alt="Escudo club Estudiantes de La Plata" />
-          </div>
-          <div class="cantidad-control">
-            <button class="btn-restar" onclick="restarDelCarrito('f2')">−</button>
-            <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-            data-product-id="f2"
-            data-product-name="Estudiantes de la Plata"
-            data-product-img="FU-00002.png"
-            data-product-code="FU-00002">+</button>
-          </div>
-          <h3>Estudiantes de La Plata</h3>
-          <p class="product-code">Código: FU-00002</p>
-          <p class="product-category">Clubes argentinos</p>
-        </div>
-
-        <!-- Independiente -->
-        <div class="product-card" 
-             data-product-id="f3" 
-             data-product-name="Independiente" 
-             data-product-img="FU-00004.png">
-          <div class="product-img" onclick="abrirModal('imagenes/FU-00004.png', 'Independiente')">
-            <img src="../imagenes/FU-00004.png" alt="Escudo club Independiente" />
-          </div>
-          <div class="cantidad-control">
-            <button class="btn-restar" onclick="restarDelCarrito('f3')">−</button>
-            <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-            data-product-id="f3"
-            data-product-name="Independiente"
-            data-product-img="FU-00004.png"
-            data-product-code="FU-00004">+</button>
-          </div>
-          <h3>Independiente</h3>
-          <p class="product-code">Código: FU-00004</p>
-          <p class="product-category">Clubes argentinos</p>
-        </div>
+        <!-- Repetir según corresponda los otros productos -->
 
       </div>
     </div>
@@ -160,60 +103,45 @@
   </div>
 
   <!-- Footer -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-social">
-          <h3>Seguinos</h3>
-          <div class="social-icons">
-            <a href="https://instagram.com/pixel.stickerss" class="social-icon">Instagram</a>
-            <a href="https://tiktok.com/@pixel.stickerss" class="social-icon">TikTok</a>
-          </div>
-        </div>
+  <footer class="footer">
+    <div class="footer-social">
+      <h3>Seguinos</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com/pixel.stickerss" class="social-icon">Instagram</a>
+        <a href="https://tiktok.com/@pixel.stickerss" class="social-icon">TikTok</a>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
-      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Pixel - Todos los derechos reservados</p>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script>
-  function agregarAlCarritoDesdeElemento(boton) {
-  const id = boton.dataset.productId;
-  const nombre = boton.dataset.productName;
-  const imagen = '../imagenes/' + boton.dataset.productImg;
-  const codigo = boton.dataset.productCode; // NUEVO
-
-  if (!id || !nombre || !imagen || !codigo) {
-    console.warn('Datos faltantes en producto:', { id, nombre, imagen, codigo });
-    return;
-  }
-
-  const producto = {
-    id,
-    nombre,
-    imagen,
-    codigo,
-    cantidad: 1
-  };
-
-  agregarAlCarrito(producto);
-}
-
-
-  function abrirModal(imagenSrc, titulo) {
-    document.getElementById('modalProductImage').src = '../' + imagenSrc;
-    document.getElementById('modalProductTitle').textContent = titulo;
-    document.getElementById('productModal').classList.add('show');
-  }
-
-  document.querySelector('.close-modal').addEventListener('click', function () {
-    document.getElementById('productModal').classList.remove('show');
-  });
-  </script>
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>
-  <script src="../js/categoria-futbol.js"></script>
+  <script>
+    function abrirModal(imagenSrc, titulo) {
+      document.getElementById('modalProductImage').src = '../' + imagenSrc;
+      document.getElementById('modalProductTitle').textContent = titulo;
+      document.getElementById('productModal').classList.add('show');
+    }
+
+    document.querySelector('.close-modal').addEventListener('click', () => {
+      document.getElementById('productModal').classList.remove('show');
+    });
+
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.querySelector(".main-nav");
+
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+        nav.classList.remove("open");
+      }
+    });
+  </script>
 </body>
 </html>
