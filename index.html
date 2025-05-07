@@ -176,6 +176,18 @@
         nav.classList.remove("open");
       }
     });
+    // Para abrir/cerrar menú desplegable en móviles
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".dropdown-toggle");
+    const menu = document.querySelector(".dropdown-menu");
+
+    if (toggle && menu) {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        menu.classList.toggle("show");
+      });
+    }
+  });
   </script>
 </body>
 </html>
