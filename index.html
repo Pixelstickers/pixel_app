@@ -76,9 +76,13 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="container header-flex">
-      <h1 class="brand-name">Pixel</h1>
-      <button class="hamburger" id="menuToggle">☰</button>
+    <div class="container-header">
+      <div class="header-flex">
+        <div class="logo-zone">
+          <h1 class="brand-name">Pixel</h1>
+        </div>
+        <button class="hamburger" id="menuToggle">☰</button>
+      </div>
       <nav class="main-nav">
         <ul>
           <li><a href="index.html" class="active">Inicio</a></li>
@@ -206,23 +210,23 @@
       });
       
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggle = document.getElementById("menuToggle");
-        const nav = document.querySelector(".main-nav ul");
-    
-        toggle.addEventListener("click", () => {
-          nav.classList.toggle("show");
-        });
-    
-        // Cierra el menú al hacer clic fuera
-        document.addEventListener("click", (e) => {
-          if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-            nav.classList.remove("show");
-          }
-        });
-      });
-    </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("mainMenu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove("show");
+      }
+    });
+  });
+</script>
+
     
 
 </body>
