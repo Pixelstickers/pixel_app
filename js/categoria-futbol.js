@@ -20,28 +20,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   productCards.forEach((card, index) => {
     const button = card.querySelector('.btn-view');
-    button.addEventListener('click', () => {
-      const id = card.dataset.productId;
-      const imagen = card.querySelector('img').src;
-      const nombre = card.querySelector('h3').textContent;
-      const categoria = card.querySelector('.product-category').textContent;
+    if (button) {
+      button.addEventListener('click', () => {
+        const id = card.dataset.productId;
+        const imagen = card.querySelector('img').src;
+        const nombre = card.querySelector('h3').textContent;
+        const categoria = card.querySelector('.product-category').textContent;
 
-      modalImage.src = imagen;
-      modalTitle.textContent = nombre;
-      modalCategory.textContent = categoria;
-      modalId.textContent = "FU-" + String(index + 1).padStart(5, '0');
-      modalDescription.textContent = descripciones[id] || "Sin descripción disponible.";
+        modalImage.src = imagen;
+        modalTitle.textContent = nombre;
+        modalCategory.textContent = categoria;
+        modalId.textContent = "FU-" + String(index + 1).padStart(5, '0');
+        modalDescription.textContent = descripciones[id] || "Sin descripción disponible.";
 
-      productoActual = {
-        codigo: "FU-" + String(index + 1).padStart(5, '0'),
-        nombre,
-        categoria,
-        imagen
-      };
+        productoActual = {
+          id,
+          nombre,
+          categoria,
+          imagen,
+          precio: parseFloat(card.dataset.productPrice || "0")
+        };
 
-      modal.classList.add('show');
-      document.body.style.overflow = 'hidden';
-    });
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      });
+    }
   });
 
   closeModal.addEventListener('click', () => {
@@ -66,28 +69,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ✅ Solo un único listener para botones +
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("btn-agregar")) {
-    const card = e.target.closest(".product-card");
-    const id = card.dataset.productId;
-    const nombre = card.querySelector("h3").textContent;
-    const categoria = card.querySelector(".product-category").textContent;
-    const imagen = card.querySelector("img").src;
+    const boton = e.target;
 
-    const producto = { id, nombre, categoria, imagen };
-    agregarAlCarrito(producto);
-  }
-});
+    // Lee desde el botón directamente
+    const id = boton.dataset.productId;
+    const nombre = boton.dataset.productName;
+    const imagen = boton.dataset.productImg;
+    const precio = boton.dataset.productPrice;
 
-document.addEventListener("click", function (e) {
-  if (e.target.classList.contains("btn-agregar")) {
-    const card = e.target.closest(".product-card");
-    const id = card.dataset.productId;
-    const nombre = card.querySelector("h3").textContent;
-    const categoria = card.querySelector(".product-category").textContent;
-    const imagen = card.querySelector("img").src;
+    if (!id || !nombre || !imagen || !precio) {
+      console.warn("Faltan datos del producto", { id, nombre, imagen, precio });
+      return;
+    }
 
-    const producto = { id, nombre, categoria, imagen };
+    const producto = {
+      id,
+      nombre,
+      imagen,
+      precio: parseFloat(precio),
+      cantidad: 1
+    };
+
     agregarAlCarrito(producto);
 
     // Feedback visual
