@@ -88,13 +88,12 @@ document.querySelectorAll('.btn-view').forEach((btn, index) => {
   });
   
  // ========= Función global para cerrar modal =========
-function closeModalFunc() {
+ function closeModalFunc() {
     const modal = document.getElementById("productModal");
-    if (modal) {
-      modal.classList.remove("show");
-      document.body.style.overflow = "";
-    }
-  }
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+    document.getElementById("modalProductImage").src = ""; // limpia imagen
+}
   
   // ========= Modal de Productos =========
   document.addEventListener("DOMContentLoaded", function () {
