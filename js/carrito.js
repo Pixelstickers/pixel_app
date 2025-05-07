@@ -1,4 +1,4 @@
-// carrito.js
+// carrito.js actualizado SIN precio
 
 function agregarAlCarrito(producto) {
   const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -8,7 +8,9 @@ function agregarAlCarrito(producto) {
     carrito[index].cantidad += 1;
   } else {
     carrito.push({
-      ...producto,
+      id: producto.id,
+      nombre: producto.nombre,
+      imagen: producto.imagen,
       cantidad: 1
     });
   }
@@ -46,11 +48,9 @@ function actualizarCarrito() {
 
   if (carrito.length === 0) {
     contenedor.innerHTML = '<p>No hay productos en el carrito.</p>';
-    totalElemento.textContent = '$0';
+    totalElemento.textContent = '';
     return;
   }
-
-  let total = 0;
 
   carrito.forEach(item => {
     const productoHTML = document.createElement('div');
@@ -60,18 +60,15 @@ function actualizarCarrito() {
         <img src="${item.imagen}" alt="${item.nombre}" />
         <div>
           <strong>${item.nombre}</strong><br />
-          <span>Cantidad: ${item.cantidad}</span><br />
-          <span>Precio: $${item.precio}</span>
+          <span>Cantidad: ${item.cantidad}</span>
         </div>
       </div>
       <div class="carrito-controles">
         <button onclick="restarDelCarrito('${item.id}')">−</button>
-        <button onclick="agregarAlCarrito(${JSON.stringify(item).replace(/"/g, '&quot;')})">+</button>
+        <button onclick="agregarAlCarrito({ id: '${item.id}', nombre: '${item.nombre}', imagen: '${item.imagen}' })">+</button>
       </div>
     `;
     contenedor.appendChild(productoHTML);
-
-    total += item.cantidad * item.precio;
   });
 
   const vaciar = document.createElement('button');
@@ -80,7 +77,7 @@ function actualizarCarrito() {
   vaciar.onclick = vaciarCarrito;
   contenedor.appendChild(vaciar);
 
-  totalElemento.textContent = `$${total}`;
+  totalElemento.textContent = '';
 }
 
 document.getElementById('abrirCarrito').addEventListener('click', () => {
