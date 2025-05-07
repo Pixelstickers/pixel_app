@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ✅ Solo un único listener para botones +
-document.addEventListener("click", function (e) {
+/* document.addEventListener("click", function (e) {
   if (e.target.classList.contains("btn-agregar")) {
     const boton = e.target;
 
@@ -108,7 +108,7 @@ document.addEventListener("click", function (e) {
     const id = card.dataset.productId;
     abrirModalProducto(id);
   }
-});
+}); */
 
 function abrirModal(imagen, titulo, categoria, id) {
   const modal = document.getElementById("productModal");
