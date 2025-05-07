@@ -830,4 +830,8 @@ gap: 15px;
     height: 40px;
   }
 }
-
+@media (max-width: 768px) {
+  .categoria-card img {
+    height: 350px;
+  }
+}
