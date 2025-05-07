@@ -84,6 +84,7 @@ body {
   color: #4a2e1c;
   font-family: 'Dancing Script', cursive;
   margin-left: 20px;
+  text-align: left; /* Asegura alineación */
 }
 
 .logo h1 {
@@ -563,8 +564,9 @@ height: 200px;
 position: relative;
 display: flex;
 flex-direction: column;
-justify-content: flex-end;
+justify-content: space-between;
 padding: 0 30px 20px;
+display: flex;
 }
 
 .header .logo h1 {
