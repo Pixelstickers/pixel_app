@@ -416,19 +416,16 @@
 }
 
 // Mostrar u ocultar el botón al hacer scroll
-window.addEventListener("scroll", function () {
-  const btn = document.getElementById("btnVolverArriba");
-  if (window.scrollY > 300) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
+const btnVolverArriba = document.getElementById("btnVolverArriba");
+
+window.addEventListener("scroll", () => {
+  btnVolverArriba.style.display = window.scrollY > 300 ? "block" : "none";
 });
 
-// Función para volver arriba
-document.getElementById("btnVolverArriba").addEventListener("click", function () {
+btnVolverArriba.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
 
 
   </script>
@@ -453,7 +450,12 @@ document.getElementById("btnVolverArriba").addEventListener("click", function ()
   ¡Sticker agregado!
 </div>
 
-<button id="btnVolverArriba" class="btn-volver-arriba" title="Volver arriba">↑</button>
+<button id="btnVolverArriba" class="btn-volver-arriba" title="Volver arriba">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+    <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+  </svg>
+</button>
+
 
 </body>
 </html>
