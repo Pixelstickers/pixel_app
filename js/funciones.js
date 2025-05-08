@@ -213,10 +213,10 @@ const productosData = {
         descripcion: "CARP. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f11: {
-        titulo: "Dios Marandona",
+        titulo: "Dios Maradona",
         categoria: "categoria",
         imagen: "imagenes/FU-00011.png",
-        descripcion: "Dios Marandona. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+        descripcion: "Dios Maradona. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f12: {
         titulo: "Sticker Santiago Bernabéu",
