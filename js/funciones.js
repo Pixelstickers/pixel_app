@@ -224,6 +224,13 @@ const productosData = {
         imagen: "imagenes/FU-00012.png",
         descripcion: "Marcos Rojo gritando. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
+    f13: {
+        titulo: "Escudo de Banfield",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00013.png",
+        descripcion: "Escudo de Banfield. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+    }
+
 
     // Amor
     A1: {
