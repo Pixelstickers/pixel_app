@@ -219,10 +219,10 @@ const productosData = {
         descripcion: "Dios Maradona. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f12: {
-        titulo: "Sticker Santiago Bernabéu",
+        titulo: "Marcos Rojo gritando",
         categoria: "categoria",
-        imagen: "imagenes/FU-00005.png",
-        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+        imagen: "imagenes/FU-00012.png",
+        descripcion: "Marcos Rojo gritando. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
 
     // Amor
