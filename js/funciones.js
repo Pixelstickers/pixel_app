@@ -230,25 +230,30 @@ const productosData = {
         imagen: "imagenes/FU-00013.png",
         descripcion: "Escudo de Banfield. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
-    f13: {
+    f14: {
         titulo: "Escudo de Defensa y Justicia",
         categoria: "categoria",
         imagen: "imagenes/FU-00014.png",
         descripcion: "Escudo de Defensa y Justicia. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
-    f13: {
+    f15: {
         titulo: "Escudo de Racing",
         categoria: "categoria",
         imagen: "imagenes/FU-00015.png",
         descripcion: "Escudo de Racing. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
-    f13: {
+    f16: {
         titulo: "River Libertadores",
         categoria: "categoria",
         imagen: "imagenes/FU-00016.png",
         descripcion: "River Libertadores. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
-
+    f17: {
+        titulo: "Monumental",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00017.png",
+        descripcion: "Monumental. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+    }
 
     // Amor
     A1: {
