@@ -201,10 +201,10 @@ const productosData = {
         descripcion: "Boca. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f9: {
-        titulo: "Sticker La Bombonera",
+        titulo: "Boca BA",
         categoria: "categoria",
-        imagen: "imagenes/FU-00005.png",
-        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+        imagen: "imagenes/FU-00009.png",
+        descripcion: "Boca BA. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f10: {
         titulo: "Sticker El Monumental",
