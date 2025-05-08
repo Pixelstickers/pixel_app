@@ -195,10 +195,10 @@ const productosData = {
         descripcion: "Escudo de San Lorenzo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f8: {
-        titulo: "Sticker Copa del Mundo",
+        titulo: "Boca",
         categoria: "categoria",
-        imagen: "imagenes/FU-00005.png",
-        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+        imagen: "imagenes/FU-00008.png",
+        descripcion: "Boca. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f9: {
         titulo: "Sticker La Bombonera",
