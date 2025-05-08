@@ -744,22 +744,25 @@ gap: 15px;
     position: fixed;
     bottom: 24px;
     right: 24px;
-    background: none;
-    border: none;
+    background-color: #f3e5f5; /* lila suave */
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #b18acc;
     cursor: pointer;
     z-index: 9999;
-    padding: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  #btnVolverArriba:hover {
+    transform: scale(1.1);
   }
   
   #btnVolverArriba img {
-    width: 60px;
-    height: 60px;
-    transition: transform 0.3s ease;
+    width: 40px;
+    height: 40px;
   }
   
-  #btnVolverArriba:hover img {
-    transform: scale(1.1);
-  }
   
 
 }
