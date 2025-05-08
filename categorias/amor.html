@@ -118,7 +118,7 @@
   <div id="productModal" class="modal">
     <div class="modal-content">
       <span class="close-modal">&times;</span>
-      <img id="modalProductImage" src="" alt="Imagen del producto" />
+      <img id="modalProductImage" src="" alt="Imagen del producto">
       <h2 id="modalProductTitle"></h2>
       <p id="modalProductCategory"></p>
       <p id="modalProductDescription"></p>
@@ -161,7 +161,6 @@
   <p style="margin: 4px 0 0; color: #4a2e1c;">&copy; 2025 Pixel - Todos los derechos reservados</p>
 </footer>
 
-
   <!-- Scripts -->
   <script>
   function agregarAlCarritoDesdeElemento(boton) {
@@ -183,6 +182,7 @@
     cantidad: 1
   };
 
+  agregarAlCarrito(producto);
   mostrarMensajeAgregado();
 
 }
@@ -196,7 +196,6 @@
       }, 1500);
     }
   }
-
 
   function abrirModal(imagenSrc, titulo) {
     document.getElementById('modalProductImage').src = '../' + imagenSrc;
