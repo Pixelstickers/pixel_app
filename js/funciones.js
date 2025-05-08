@@ -242,6 +242,12 @@ const productosData = {
         imagen: "imagenes/FU-00015.png",
         descripcion: "Escudo de Racing. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
+    f13: {
+        titulo: "River Libertadores",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00016.png",
+        descripcion: "River Libertadores. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+    }
 
 
     // Amor
