@@ -183,46 +183,46 @@ const productosData = {
         descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f6: {
-        titulo: "Sticker Real Huracan",
-        categoria: "Real Huracan",
-        imagen: "../imagenes/futbol/Huracan.jpg",
-        descripcion: "Sticker oficial del escudo del Real Huracan Club de Fútbol. Tamaño: 5x6cm. Resistente al agua y a los rayos UV."
+        titulo: "Escudo de River Plate",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00006.png",
+        descripcion: "Escudo de River Plate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f7: {
         titulo: "Sticker Dibu Martínez",
-        categoria: "Selección Argentina",
-        imagen: "../imagenes/futbol/dibu.jpg",
-        descripcion: "Sticker del 'Dibu' Martínez, arquero de la selección argentina, con sus icónicos gestos. Tamaño: 6x8cm. Resistente al agua y a los rayos UV."
+        categoria: "categoria",
+        imagen: "imagenes/FU-00005.png",
+        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f8: {
         titulo: "Sticker Copa del Mundo",
-        categoria: "Mundial",
-        imagen: "../imagenes/futbol/copa-mundo.jpg",
-        descripcion: "Sticker de la Copa del Mundo FIFA en diseño dorado brillante. Tamaño: 5x7cm. Resistente al agua y a los rayos UV."
+        categoria: "categoria",
+        imagen: "imagenes/FU-00005.png",
+        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f9: {
         titulo: "Sticker La Bombonera",
-        categoria: "Boca Juniors",
-        imagen: "../imagenes/futbol/bombonera.jpg",
-        descripcion: "Sticker del estadio La Bombonera de Boca Juniors. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+        categoria: "categoria",
+        imagen: "imagenes/FU-00005.png",
+        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f10: {
         titulo: "Sticker El Monumental",
-        categoria: "River Plate",
-        imagen: "../imagenes/futbol/monumental.jpg",
-        descripcion: "Sticker del estadio Monumental de River Plate. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+        categoria: "categoria",
+        imagen: "imagenes/FU-00005.png",
+        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f11: {
         titulo: "Sticker Camp Nou",
-        categoria: "FC Estudiantes",
-        imagen: "../imagenes/futbol/camp-nou.jpg",
-        descripcion: "Sticker del estadio Camp Nou del FC Estudiantes. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+        categoria: "categoria",
+        imagen: "imagenes/FU-00005.png",
+        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f12: {
         titulo: "Sticker Santiago Bernabéu",
-        categoria: "Real Huracan",
-        imagen: "../imagenes/futbol/bernabeu.jpg",
-        descripcion: "Sticker del estadio Santiago Bernabéu del Real Huracan. Tamaño: 7x4cm. Resistente al agua y a los rayos UV."
+        categoria: "categoria",
+        imagen: "imagenes/FU-00005.png",
+        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
 
     // Amor
