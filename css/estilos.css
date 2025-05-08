@@ -739,29 +739,28 @@ gap: 15px;
     display: flex;
   }
 
-  #btnVolverArriba {
-    display: none;
+  .btn-volver-arriba {
     position: fixed;
-    bottom: 24px;
-    right: 24px;
-    background-color: #f3e5f5; /* lila suave */
+    bottom: 30px;
+    right: 30px;
+    background-color: #f28c28;
+    color: white;
+    border: none;
+    font-size: 32px;
+    padding: 12px 16px;
     border-radius: 50%;
-    padding: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border: 2px solid #b18acc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     cursor: pointer;
     z-index: 9999;
-    transition: transform 0.2s ease;
+    display: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
-  #btnVolverArriba:hover {
+  .btn-volver-arriba:hover {
+    background-color: #d47116;
     transform: scale(1.1);
   }
   
-  #btnVolverArriba img {
-    width: 40px;
-    height: 40px;
-  }
   
   
 
