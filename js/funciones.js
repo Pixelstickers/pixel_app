@@ -189,10 +189,10 @@ const productosData = {
         descripcion: "Escudo de River Plate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f7: {
-        titulo: "Sticker Dibu Martínez",
+        titulo: "Escudo de San Lorenzo",
         categoria: "categoria",
-        imagen: "imagenes/FU-00005.png",
-        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+        imagen: "imagenes/FU-00007.png",
+        descripcion: "Escudo de San Lorenzo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f8: {
         titulo: "Sticker Copa del Mundo",
