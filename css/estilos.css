@@ -739,34 +739,25 @@ gap: 15px;
     display: flex;
   }
 
-  .btn-volver-arriba {
+  #btnVolverArriba {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     background-color: #f28c28;
-    border: none;
+    color: white;
+    padding: 16px 18px; /* más grande */
     border-radius: 50%;
-    padding: 14px;
+    font-size: 28px; /* agrandá el ícono */
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
     display: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;
   }
-  
-  .btn-volver-arriba:hover {
+  #btnVolverArriba:hover {
     background-color: #d47116;
-    transform: scale(1.15);
   }
-  
-  .btn-volver-arriba svg {
-    display: block;
-    margin: auto;
-  }
-  
-  
-  
-  
+ 
 
 }
 .hamburger {

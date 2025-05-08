@@ -416,15 +416,20 @@
 }
 
 // Mostrar u ocultar el botón al hacer scroll
-const btnVolverArriba = document.getElementById("btnVolverArriba");
-
-window.addEventListener("scroll", () => {
-  btnVolverArriba.style.display = window.scrollY > 300 ? "block" : "none";
+window.addEventListener("scroll", function () {
+  const btn = document.getElementById("btnVolverArriba");
+  if (window.scrollY > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
 });
 
-btnVolverArriba.addEventListener("click", () => {
+// Función para volver arriba
+document.getElementById("btnVolverArriba").addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
 
 
 
@@ -450,11 +455,19 @@ btnVolverArriba.addEventListener("click", () => {
   ¡Sticker agregado!
 </div>
 
-<button id="btnVolverArriba" class="btn-volver-arriba" title="Volver arriba">
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
-    <path d="M12 4l-8 8h6v8h4v-8h6z"/>
-  </svg>
+<button id="btnVolverArriba" style="
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+">
+  <img src="../imagenes/flecha-arriba.png" alt="Volver arriba" style="width: 40px; height: 40px;">
 </button>
+
 
 
 </body>
