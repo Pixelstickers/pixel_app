@@ -213,10 +213,10 @@ const productosData = {
         descripcion: "CARP. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f11: {
-        titulo: "Sticker Camp Nou",
+        titulo: "Dios Marandona",
         categoria: "categoria",
-        imagen: "imagenes/FU-00005.png",
-        descripcion: "Mate de River. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+        imagen: "imagenes/FU-00011.png",
+        descripcion: "Dios Marandona. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     },
     f12: {
         titulo: "Sticker Santiago Bernabéu",
