@@ -62,14 +62,14 @@
           <img src="../imagenes/AM-00001.png" alt="Corazon rosado" />
         </div>
         <div class="cantidad-control">
-  <button class="btn-restar" onclick="restarDelCarrito('A1', this)">−</button>
-  <span class="cantidad-display">0</span>
-  <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-          data-product-id="A1"
-          data-product-name="Corazon rosado"
-          data-product-img="AM-00001.png"
-          data-product-code="AM-00001">+</button>
-</div>
+          <button class="btn-restar" onclick="restarDelCarrito('A1', this)">−</button>
+          <span class="cantidad-display">0</span>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+            data-product-id="A1"
+            data-product-name="Corazon rosado"
+            data-product-img="AM-00001.png"
+            data-product-code="AM-00001">+</button>
+        </div>
         <h3>Corazon rosado</h3>
         <p class="product-code">Código: AM-00001</p>
       </div>
@@ -209,12 +209,9 @@
   const id = boton.dataset.productId;
   const nombre = boton.dataset.productName;
   const imagen = '../imagenes/' + boton.dataset.productImg;
-  const codigo = boton.dataset.productCode; // NUEVO
+  const codigo = boton.dataset.productCode;
 
-  if (!id || !nombre || !imagen || !codigo) {
-    console.warn('Datos faltantes en producto:', { id, nombre, imagen, codigo });
-    return;
-  }
+  if (!id || !nombre || !imagen || !codigo) return;
 
   const producto = {
     id,
@@ -224,17 +221,18 @@
     cantidad: 1
   };
 
-  agregarAlCarrito(producto);
+  agregarAlCarrito(producto); // esta es tu función original
   mostrarMensajeAgregado();
 
+  // 👇 ACTUALIZAR CONTADOR VISUAL
+  const contenedor = boton.closest('.cantidad-control');
+  const spanCantidad = contenedor.querySelector('.cantidad-display');
+  if (spanCantidad) {
+    const item = carrito.find(p => p.id === id);
+    spanCantidad.textContent = item ? item.cantidad : 0;
+  }
 }
 
-const contenedor = boton.closest('.cantidad-control');
-const spanCantidad = contenedor.querySelector('.cantidad-display');
-if (spanCantidad) {
-  const item = window.carrito.find(p => p.id === id);
-  spanCantidad.textContent = item ? item.cantidad : 0;
-}
 
 
   function mostrarMensajeAgregado() {
