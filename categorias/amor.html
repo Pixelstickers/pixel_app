@@ -229,6 +229,14 @@
 
 }
 
+const contenedor = boton.closest('.cantidad-control');
+const spanCantidad = contenedor.querySelector('.cantidad-display');
+if (spanCantidad) {
+  const item = window.carrito.find(p => p.id === id);
+  spanCantidad.textContent = item ? item.cantidad : 0;
+}
+
+
   function mostrarMensajeAgregado() {
     const mensaje = document.getElementById("mensajeAgregado");
     if (mensaje) {
