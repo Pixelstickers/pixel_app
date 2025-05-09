@@ -266,6 +266,12 @@ const productosData = {
         imagen: "imagenes/FU-00019.png",
         descripcion: "Julian y Enzo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
+    f20: {
+        titulo: "Riquelme",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00020.png",
+        descripcion: "Riquelme. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+    }
 
     // Amor
     A1: {
