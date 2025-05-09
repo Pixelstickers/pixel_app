@@ -37,6 +37,8 @@ function vaciarCarrito() {
   carrito = [];
   guardarCarrito();
   actualizarVistaCarrito();
+  mostrarAvisoFlotante("Carrito vaciado");
+
 }
 
 function exportarCarrito() {
