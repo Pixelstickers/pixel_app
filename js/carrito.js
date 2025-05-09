@@ -16,27 +16,24 @@ function agregarAlCarrito(producto) {
 }
 
 function restarDelCarrito(id, boton) {
-  const index = carrito.findIndex(p => p.id === id);
+  const index = window.carrito.findIndex(p => p.id === id);
   if (index !== -1) {
-    carrito[index].cantidad--;
-    if (carrito[index].cantidad <= 0) {
-      carrito.splice(index, 1);
+    window.carrito[index].cantidad--;
+    if (window.carrito[index].cantidad <= 0) {
+      window.carrito.splice(index, 1);
     }
-    guardarCarrito();
-    actualizarVistaCarrito();
+    actualizarCarritoUI();
   }
 
-  // 👇 ACTUALIZAR CONTADOR VISUAL
   if (boton) {
     const contenedor = boton.closest('.cantidad-control');
     const spanCantidad = contenedor.querySelector('.cantidad-display');
     if (spanCantidad) {
-      const item = carrito.find(p => p.id === id);
+      const item = window.carrito.find(p => p.id === id);
       spanCantidad.textContent = item ? item.cantidad : 0;
     }
   }
 }
-
 
 
 function eliminarDelCarrito(productId) {
