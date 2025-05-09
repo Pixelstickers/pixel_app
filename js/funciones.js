@@ -260,6 +260,12 @@ const productosData = {
         imagen: "imagenes/FU-00018.png",
         descripcion: "Escudo de Gimnasia. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
+    f19: {
+        titulo: "Julian y Enzo",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00019.png",
+        descripcion: "Julian y Enzo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+    }
 
     // Amor
     A1: {
