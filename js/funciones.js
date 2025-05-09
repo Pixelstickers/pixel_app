@@ -284,6 +284,12 @@ const productosData = {
         imagen: "imagenes/FU-00022.png",
         descripcion: "Atletico Belgrano. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
+    f23: {
+        titulo: "Tevez",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00023.png",
+        descripcion: "Tevez. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+    }
 
     // Amor
     A1: {
