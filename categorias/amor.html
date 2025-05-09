@@ -331,11 +331,76 @@ document.getElementById("btnVolverArriba").addEventListener("click", function ()
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+function copiarCarritoAlPortapapeles() {
+  const carrito = window.carrito;
+  if (!carrito || carrito.length === 0) {
+    alert("El carrito está vacío.");
+    return;
+  }
+
+  let texto = "Pedido de Pixel Stickers:\n\n";
+  carrito.forEach(item => {
+    texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
+  });
+  texto += `\nTotal: ${carrito.reduce((acc, item) => acc + item.cantidad, 0)} producto(s)`;
+
+  navigator.clipboard.writeText(texto).then(() => {
+    const aviso = document.createElement("div");
+    aviso.textContent = "¡Pedido copiado!";
+    Object.assign(aviso.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      background: "#4a2e1c",
+      color: "white",
+      padding: "10px 20px",
+      borderRadius: "10px",
+      zIndex: "10000",
+      fontWeight: "bold",
+    });
+    document.body.appendChild(aviso);
+    setTimeout(() => aviso.remove(), 2000);
+
+    // 👇 Mostrar cartel flotante de sugerencia
+    mostrarCartTip();
+  }).catch(() => alert("Error al copiar el pedido."));
+}
+
+// ✅ Función para mostrar el cartel flotante
+function mostrarCartTip() {
+  const tip = document.getElementById("cartTip");
+  if (tip) {
+    tip.style.display = "block";
+    setTimeout(() => {
+      tip.style.display = "none";
+    }, 5000); // visible 5 segundos
+  }
+}
+
   </script>
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>
   <!-- <script src="../js/categoria-amor.js"></script> -->
   
+<div id="cartTip" style="
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #fff8e6;
+  color: #4a2e1c;
+  padding: 14px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  z-index: 9999;
+  max-width: 280px;
+  font-size: 14px;
+  border-left: 5px solid #f28c28;
+">
+  Copiá los códigos y envialos por WhatsApp, Instagram o cuando hagas tu compra en la Tienda Online.
+</div>
 
 </body>
 </html>
