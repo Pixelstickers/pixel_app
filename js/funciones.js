@@ -278,6 +278,12 @@ const productosData = {
         imagen: "imagenes/FU-00021.png",
         descripcion: "Estudiantes. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
+    f22: {
+        titulo: "Atletico Belgrano",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00022.png",
+        descripcion: "Atletico Belgrano. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+    }
 
     // Amor
     A1: {
