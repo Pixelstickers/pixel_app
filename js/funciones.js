@@ -272,6 +272,12 @@ const productosData = {
         imagen: "imagenes/FU-00020.png",
         descripcion: "Riquelme. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
+    f21: {
+        titulo: "Estudiantes",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00021.png",
+        descripcion: "Estudiantes. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+    }
 
     // Amor
     A1: {
