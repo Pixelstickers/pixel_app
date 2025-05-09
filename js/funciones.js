@@ -428,3 +428,11 @@ document.addEventListener('DOMContentLoaded', function () {
     renderizarProductos();
         });
         
+// Mostrar cantidad actualizada
+const contenedor = boton.closest('.cantidad-control');
+const spanCantidad = contenedor.querySelector('.cantidad-display');
+if (spanCantidad) {
+  const id = boton.dataset.productId;
+  const item = carrito.find(p => p.id === id);
+  spanCantidad.textContent = item ? item.cantidad : 0;
+}
