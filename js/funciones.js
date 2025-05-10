@@ -295,7 +295,7 @@ const productosData = {
         categoria: "categoria",
         imagen: "imagenes/FU-00024.png",
         descripcion: "Estudiantes. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-        },
+    }
 
     // Amor
     A1: {
