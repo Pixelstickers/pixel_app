@@ -290,6 +290,12 @@ const productosData = {
         imagen: "imagenes/FU-00023.png",
         descripcion: "Tevez. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
     }
+    f24: {
+        titulo: "Estudiantes",
+        categoria: "categoria",
+        imagen: "imagenes/FU-00024.png",
+        descripcion: "Estudiantes. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
+        },
 
     // Amor
     A1: {
