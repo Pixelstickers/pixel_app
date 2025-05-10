@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Generador de Producto HTML</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fffaf0;
+      padding: 20px;
+      color: #4a2e1c;
+    }
+    input, button, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    textarea {
+      height: 200px;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .preview {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Generador de Producto HTML</h1>
+
+  <label for="nombre">Nombre del producto</label>
+  <input type="text" id="nombre" placeholder="Ej: Monumental">
+
+  <label for="codigo">Código (ej: FU-00017)</label>
+  <input type="text" id="codigo" placeholder="Ej: FU-00017">
+
+  <label for="id">ID único (ej: f17)</label>
+  <input type="text" id="id" placeholder="Ej: f17">
+
+  <button onclick="generarBloques()">Generar HTML y JS</button>
+
+  <div class="preview">
+    <label for="bloqueHTML">Bloque HTML (pegá en tu .html)</label>
+    <textarea id="bloqueHTML" readonly></textarea>
+
+    <label for="bloqueJS">Bloque JS (pegá en funciones.js)</label>
+    <textarea id="bloqueJS" readonly></textarea>
+  </div>
+
+  <script>
+    function generarBloques() {
+      const nombre = document.getElementById('nombre').value.trim();
+      const codigo = document.getElementById('codigo').value.trim();
+      const id = document.getElementById('id').value.trim();
+      const imgPath = `imagenes/${codigo}.png`;
+
+      const bloqueHTML = `<!-- ${nombre} -->\n` +
+        `<div class="product-card"\n` +
+        `  data-product-id="${id}"\n` +
+        `  data-product-name="${nombre}"\n` +
+        `  data-product-img="${codigo}.png">\n` +
+        `  <div class="product-img" onclick="abrirModal('${imgPath}', '${nombre}')">\n` +
+        `    <img src="../${imgPath}" alt="${nombre}" />\n` +
+        `  </div>\n` +
+        `  <div class="cantidad-control">\n` +
+        `    <button class="btn-restar" onclick="restarDelCarrito('${id}')">−</button>\n` +
+        `    <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"\n` +
+        `    data-product-id="${id}"\n` +
+        `    data-product-name="${nombre}"\n` +
+        `    data-product-img="${codigo}.png"\n` +
+        `    data-product-code="${codigo}">+</button>\n` +
+        `  </div>\n` +
+        `  <h3>${nombre}</h3>\n` +
+        `  <p class="product-code">Código: ${codigo}</p>\n` +
+        `</div>`;
+
+      const bloqueJS = `${id}: {\n` +
+        `  titulo: "${nombre}",\n` +
+        `  categoria: "categoria",\n` +
+        `  imagen: "${imgPath}",\n` +
+        `  descripcion: "${nombre}. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"\n` +
+        `},`;
+
+      document.getElementById('bloqueHTML').value = bloqueHTML;
+      document.getElementById('bloqueJS').value = bloqueJS;
+    }
+  </script>
+</body>
+</html>
