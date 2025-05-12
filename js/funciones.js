@@ -223,86 +223,104 @@ const productosData = {
         categoria: "categoria",
         imagen: "imagenes/FU-00012.png",
         descripcion: "Marcos Rojo gritando. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f13: {
         titulo: "Escudo de Banfield",
         categoria: "categoria",
         imagen: "imagenes/FU-00013.png",
         descripcion: "Escudo de Banfield. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f14: {
         titulo: "Escudo de Defensa y Justicia",
         categoria: "categoria",
         imagen: "imagenes/FU-00014.png",
         descripcion: "Escudo de Defensa y Justicia. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f15: {
         titulo: "Escudo de Racing",
         categoria: "categoria",
         imagen: "imagenes/FU-00015.png",
         descripcion: "Escudo de Racing. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f16: {
         titulo: "River Libertadores",
         categoria: "categoria",
         imagen: "imagenes/FU-00016.png",
         descripcion: "River Libertadores. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f17: {
         titulo: "Monumental",
         categoria: "categoria",
         imagen: "imagenes/FU-00017.png",
         descripcion: "Monumental. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f18: {
         titulo: "Escudo de Gimnasia",
         categoria: "categoria",
         imagen: "imagenes/FU-00018.png",
         descripcion: "Escudo de Gimnasia. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f19: {
         titulo: "Julian y Enzo",
         categoria: "categoria",
         imagen: "imagenes/FU-00019.png",
         descripcion: "Julian y Enzo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f20: {
         titulo: "Riquelme",
         categoria: "categoria",
         imagen: "imagenes/FU-00020.png",
         descripcion: "Riquelme. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f21: {
         titulo: "Estudiantes",
         categoria: "categoria",
         imagen: "imagenes/FU-00021.png",
         descripcion: "Estudiantes. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f22: {
         titulo: "Atletico Belgrano",
         categoria: "categoria",
         imagen: "imagenes/FU-00022.png",
         descripcion: "Atletico Belgrano. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f23: {
         titulo: "Tevez",
         categoria: "categoria",
         imagen: "imagenes/FU-00023.png",
         descripcion: "Tevez. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
     f24: {
         titulo: "Estudiantes",
         categoria: "categoria",
         imagen: "imagenes/FU-00024.png",
         descripcion: "Estudiantes. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico"
-    }
+    },
 
     // Amor
     A1: {
         titulo: "Corazon rosado",
-        categoria: "Corazones",
+        categoria: "categoria",
         imagen: "imagenes/AM-00001.png",
         descripcion: "Corazon Rosa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    A2: {
+        titulo: "Beso",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00002.png",
+        descripcion: "Corazon Rosa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    A3: {
+        titulo: "Sobre corazon",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00003.png",
+        descripcion: "Corazon Rosa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    A4: {
+        titulo: "Patente te amo",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00004.png",
+        descripcion: "patente te amo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
 };
 
