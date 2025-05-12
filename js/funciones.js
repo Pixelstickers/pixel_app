@@ -322,6 +322,12 @@ const productosData = {
         imagen: "imagenes/AM-00004.png",
         descripcion: "patente te amo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    A5: {
+        titulo: "LOVE",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00005.png",
+        descripcion: "LOVE. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
