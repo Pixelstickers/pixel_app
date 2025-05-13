@@ -413,6 +413,12 @@ const productosData = {
         imagen: "imagenes/LI-00009.png",
         descripcion: "Libro Rosado. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    L10: {
+        titulo: "Estante libro",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00010.png",
+        descripcion: "Estante libro. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal

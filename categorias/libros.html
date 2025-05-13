@@ -232,6 +232,26 @@
          </div>
          <h3>Libro Rosado</h3>
          <p class="product-code">Código: LI-00009</p>
+       </div>
+       
+            <!-- Estante libro -->
+            <div class="product-card" 
+            data-product-id="L10" 
+            data-product-name="Estante libro" 
+            data-product-img="LI-00010.png">
+         <div class="product-img" onclick="abrirModal('imagenes/LI-00010.png', 'Estante libro')">
+           <img src="../imagenes/LI-00010.png" alt="Estante libro" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('L10')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="L10"
+           data-product-name="Estante libro"
+           data-product-img="LI-00010.png"
+           data-product-code="LI-00010">+</button>
+         </div>
+         <h3>Estante libro</h3>
+         <p class="product-code">Código: LI-00010</p>
        </div> 
 
     </div>
