@@ -372,10 +372,10 @@ const productosData = {
         descripcion: "Pila de libros. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     L3: {
-        titulo: "Pila de libros",
+        titulo: "Chica leyendo",
         categoria: "categoria",
         imagen: "imagenes/LI-00003.png",
-        descripcion: "Pila de libros. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Chica leyendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
 };
 
