@@ -395,6 +395,12 @@ const productosData = {
         imagen: "imagenes/LI-00006.png",
         descripcion: "Libro y lampara. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    L7: {
+        titulo: "Lectora",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00007.png",
+        descripcion: "Lectora. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
