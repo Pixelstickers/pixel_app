@@ -352,6 +352,12 @@ const productosData = {
         imagen: "imagenes/AM-00009.png",
         descripcion: "Sobre con corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    A10: {
+        titulo: "Perra y gato corazon",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00010.png",
+        descripcion: "Perra y gato corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
