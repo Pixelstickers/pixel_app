@@ -340,6 +340,12 @@ const productosData = {
         imagen: "imagenes/AM-00007.png",
         descripcion: "Muchos besos. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    A8: {
+        titulo: "Dados corazon",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00008.png",
+        descripcion: "Dados corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
