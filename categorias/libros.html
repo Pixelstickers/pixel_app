@@ -192,7 +192,27 @@
          </div>
          <h3>Lectora</h3>
          <p class="product-code">Código: LI-00007</p>
-       </div>        
+       </div>  
+       
+            <!-- Libro antiguo -->
+            <div class="product-card" 
+            data-product-id="L8" 
+            data-product-name="Libro antiguo" 
+            data-product-img="LI-00008.png">
+         <div class="product-img" onclick="abrirModal('imagenes/LI-00008.png', 'Libro antiguo')">
+           <img src="../imagenes/LI-00008.png" alt="Libro antiguo" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('L8')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="L8"
+           data-product-name="Libro antiguo"
+           data-product-img="LI-00008.png"
+           data-product-code="LI-00008">+</button>
+         </div>
+         <h3>Libro antiguo</h3>
+         <p class="product-code">Código: LI-00008</p>
+       </div> 
 
     </div>
   </div>

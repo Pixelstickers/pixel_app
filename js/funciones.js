@@ -401,6 +401,12 @@ const productosData = {
         imagen: "imagenes/LI-00007.png",
         descripcion: "Lectora. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    L8: {
+        titulo: "Libro antiguo",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00008.png",
+        descripcion: "Libro antiguo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
