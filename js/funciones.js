@@ -377,6 +377,18 @@ const productosData = {
         imagen: "imagenes/LI-00003.png",
         descripcion: "Chica leyendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    L4: {
+        titulo: "Libro abierto",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00004.png",
+        descripcion: "Libro abierto. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    L5: {
+        titulo: "Frasco de libros",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00005.png",
+        descripcion: "Frasco de libros. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
