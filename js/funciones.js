@@ -365,6 +365,12 @@ const productosData = {
         imagen: "imagenes/LI-00001.png",
         descripcion: "Gato sobre libros. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    L1: {
+        titulo: "Pila de libros",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00002.png",
+        descripcion: "Pila de libros. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal

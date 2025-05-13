@@ -74,6 +74,26 @@
          <p class="product-code">Código: LI-00001</p>
        </div>  
 
+            <!-- Pila de libros -->
+            <div class="product-card" 
+            data-product-id="L2" 
+            data-product-name="Pila de libros" 
+            data-product-img="LI-00002.png">
+         <div class="product-img" onclick="abrirModal('imagenes/LI-00002.png', 'Pila de libros')">
+           <img src="../imagenes/LI-00002.png" alt="Pila de libros" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('L2')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="L2"
+           data-product-name="Pila de libros"
+           data-product-img="LI-00002.png"
+           data-product-code="LI-00002">+</button>
+         </div>
+         <h3>Pila de libros</h3>
+         <p class="product-code">Código: LI-00002</p>
+       </div>        
+
     </div>
   </div>
 </section>
