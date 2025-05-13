@@ -328,6 +328,12 @@ const productosData = {
         imagen: "imagenes/AM-00005.png",
         descripcion: "LOVE. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    A6: {
+        titulo: "Decir Amor",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00006.png",
+        descripcion: "Decir Amor. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
