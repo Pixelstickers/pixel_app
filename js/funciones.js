@@ -389,6 +389,12 @@ const productosData = {
         imagen: "imagenes/LI-00005.png",
         descripcion: "Frasco de libros. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    L6: {
+        titulo: "Libro y lampara",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00006.png",
+        descripcion: "Libro y lampara. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
