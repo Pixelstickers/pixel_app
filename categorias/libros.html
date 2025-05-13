@@ -92,7 +92,27 @@
          </div>
          <h3>Pila de libros</h3>
          <p class="product-code">Código: LI-00002</p>
-       </div>        
+       </div>   
+       
+            <!-- Chica leyendo -->
+            <div class="product-card" 
+            data-product-id="L3" 
+            data-product-name="Chica leyendo" 
+            data-product-img="LI-00003.png">
+         <div class="product-img" onclick="abrirModal('imagenes/LI-00003.png', 'Chica leyendo')">
+           <img src="../imagenes/LI-00003.png" alt="Chica leyendo" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('L3')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="L3"
+           data-product-name="Chica leyendo"
+           data-product-img="LI-00003.png"
+           data-product-code="LI-00003">+</button>
+         </div>
+         <h3>Chica leyendo</h3>
+         <p class="product-code">Código: LI-00003</p>
+       </div> 
 
     </div>
   </div>
