@@ -1,19 +1,19 @@
             <!-- nombre-ejemplo -->
             <div class="product-card" 
-            data-product-id="A1ejemplo" 
+            data-product-id="L1ejemplo" 
             data-product-name="nombre-ejemplo" 
-            data-product-img="AM-0001ejemplo.png">
-         <div class="product-img" onclick="abrirModal('imagenes/AM-0001ejemplo.png', 'nombre-ejemplo')">
-           <img src="../imagenes/AM-0001ejemplo.png" alt="nombre-ejemplo" />
+            data-product-img="LI-0001ejemplo.png">
+         <div class="product-img" onclick="abrirModal('imagenes/LI-0001ejemplo.png', 'nombre-ejemplo')">
+           <img src="../imagenes/LI-0001ejemplo.png" alt="nombre-ejemplo" />
          </div>
          <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('A1ejemplo')">−</button>
+           <button class="btn-restar" onclick="restarDelCarrito('L1ejemplo')">−</button>
            <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="A1ejemplo"
+           data-product-id="L1ejemplo"
            data-product-name="nombre-ejemplo"
-           data-product-img="AM-0001ejemplo.png"
-           data-product-code="AM-0001ejemplo">+</button>
+           data-product-img="LI-0001ejemplo.png"
+           data-product-code="LI-0001ejemplo">+</button>
          </div>
          <h3>nombre-ejemplo</h3>
-         <p class="product-code">Código: AM-0001ejemplo</p>
+         <p class="product-code">Código: LI-0001ejemplo</p>
        </div> 

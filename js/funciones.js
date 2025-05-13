@@ -358,6 +358,13 @@ const productosData = {
         imagen: "imagenes/AM-00010.png",
         descripcion: "Perra y gato corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+        // Libros
+    L1: {
+        titulo: "Gato sobre libros",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00001.png",
+        descripcion: "Gato sobre libros. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
