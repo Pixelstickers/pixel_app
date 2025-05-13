@@ -407,6 +407,12 @@ const productosData = {
         imagen: "imagenes/LI-00008.png",
         descripcion: "Libro antiguo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    L9: {
+        titulo: "Libro Rosado",
+        categoria: "categoria",
+        imagen: "imagenes/LI-00009.png",
+        descripcion: "Libro Rosado. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
