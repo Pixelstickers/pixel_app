@@ -346,6 +346,12 @@ const productosData = {
         imagen: "imagenes/AM-00008.png",
         descripcion: "Dados corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    A9: {
+        titulo: "Sobre con corazon",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00009.png",
+        descripcion: "Sobre con corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
