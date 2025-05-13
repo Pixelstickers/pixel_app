@@ -334,6 +334,12 @@ const productosData = {
         imagen: "imagenes/AM-00006.png",
         descripcion: "Decir Amor. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    A7: {
+        titulo: "Muchos besos",
+        categoria: "categoria",
+        imagen: "imagenes/AM-00007.png",
+        descripcion: "Muchos besos. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
