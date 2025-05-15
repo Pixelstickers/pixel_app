@@ -603,7 +603,7 @@ const productosData = {
         descripcion: "Stich con rosa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     // Capybara
-    Catálogo1: {
+    C1: {
         titulo: "Capybara mochila tortuga",
         categoria: "categoria",
         imagen: "imagenes/CA-00001.png",
@@ -643,7 +643,7 @@ const productosData = {
         titulo: "Capy vaso",
         categoria: "categoria",
         imagen: "imagenes/CA-00007.png",
-        descripcion: "Capy vaso". Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Capy vaso. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     C8: {
         titulo: "Capybara unicornio",
@@ -663,6 +663,67 @@ const productosData = {
         imagen: "imagenes/CA-00010.png",
         descripcion: "Capybara skate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },    
+    // Frases
+    F1: {
+        titulo: "Capybara mochila tortuga",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00001.png",
+        descripcion: "Capybara mochila tortuga. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F2: {
+        titulo: "Capybara tomando mate",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00002.png",
+        descripcion: "Capybara tomando mate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F3: {
+        titulo: "Capybara con corazon",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00003.png",
+        descripcion: "Capybara con corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F4: {
+        titulo: "Capydino",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00004.png",
+        descripcion: "Capydino. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F5: {
+        titulo: "Capybara taekwondista",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00005.png",
+        descripcion: "Capybara taekwondista. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F6: {
+        titulo: "Capy guirnaldas",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00006.png",
+        descripcion: "Capy guirnaldas. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F7: {
+        titulo: "Capy vaso",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00007.png",
+        descripcion: "Capy vaso. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F8: {
+        titulo: "Capybara unicornio",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00008.png",
+        descripcion: "Capybara unicornio. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C9: {
+        titulo: "Capybara bailarina",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00009.png",
+        descripcion: "Capybara bailarina. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F10: {
+        titulo: "Capybara skate",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00010.png",
+        descripcion: "Capybara skate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },      
 };
 
 // Funciones de modal
