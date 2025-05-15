@@ -419,6 +419,13 @@ const productosData = {
         imagen: "imagenes/LI-00010.png",
         descripcion: "Estante libro. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    // Harry Potter
+    H1: {
+        titulo: "Gryffindor",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00001.png",
+        descripcion: "Gryffindor. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
