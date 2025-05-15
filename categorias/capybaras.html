@@ -304,35 +304,37 @@
       <p>No hay productos en el carrito.</p>
     </div>
   
-    <div id="mensajeAgregado" style="
-    display: none;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4C2e1c;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 12px;
-    font-weight: bold;
-    z-index: 9999;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  ">
-    ¡Sticker agregado!
   </div>
-  
-  <button id="btnVolverArriba" style="
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 9999;
-  ">
-    <img src="../imagenes/flecha-arriba.png" alt="Volver arriba" style="width: 40px; height: 40px;">
-  </button>
+
+  <div id="mensajeAgregado" style="
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4a2e1c;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+">
+  ¡Sticker agregado!
+</div>
+
+<button id="btnVolverArriba" style="
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+">
+  <img src="../imagenes/flecha-arriba.png" alt="Volver arriba" style="width: 40px; height: 40px;">
+</button>
 
 <!-- Footer -->
 <footer class="footer" style="background-color: #f3e5f5; padding: 12px 10px; text-align: center; font-size: 14px;">
@@ -344,7 +346,7 @@
        style="margin: 0 10px; color: #b18acc; text-decoration: none;" 
        target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
   </div>
-  <p style="margin: 4px 0 0; color: #4C2e1c;">&copy; 2025 Pixel - Todos los derechos reservados</p>
+  <p style="margin: 4px 0 0; color: #4a2e1c;">&copy; 2025 Pixel - Todos los derechos reservados</p>
 </footer>
 
   <!-- Scripts -->
@@ -451,7 +453,7 @@
       bottom: "20px",
       left: "50%",
       transform: "translateX(-50%)",
-      background: "#4C2e1c",
+      background: "#4a2e1c",
       color: "white",
       padding: "10px 20px",
       borderRadius: "10px",
@@ -499,7 +501,7 @@ function copiarCarritoAlPortapapeles() {
       bottom: "20px",
       left: "50%",
       transform: "translateX(-50%)",
-      background: "#4C2e1c",
+      background: "#4a2e1c",
       color: "white",
       padding: "10px 20px",
       borderRadius: "10px",
@@ -532,7 +534,7 @@ function mostrarAvisoFlotante(texto) {
     position: "fixed",
     bottom: "20px",
     right: "20px",
-    background: "#4C2e1c",
+    background: "#4a2e1c",
     color: "white",
     padding: "10px 20px",
     borderRadius: "10px",
@@ -544,18 +546,21 @@ function mostrarAvisoFlotante(texto) {
   setTimeout(() => aviso.remove(), 2000);
 }
 
+
+
   </script>
+  
   <script src="../js/funciones.js"></script>
   <script src="../js/carrito.js"></script>
-  <!-- <script src="../js/categoria-Capybaras.js"></script> -->
-  
+  <!-- <script src="../js/categoria-amor.js"></script> -->
+
 <div id="cartTip" style="
   display: none;
   position: fixed;
   bottom: 90px;
   right: 20px;
   background-color: #fff8e6;
-  color: #4C2e1c;
+  color: #4a2e1c;
   padding: 14px 20px;
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
