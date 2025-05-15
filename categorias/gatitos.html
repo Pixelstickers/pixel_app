@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gatitos - Pixel Stickers y Papelería Creativa</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/favicon.png">
+  <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="brand-name">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">Pixel</a>
+      </h1>
+      <button id="hamburger" class="hamburger">☰</button>
+      <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Categorías</a>
+          <div class="dropdown-menu">
+            <a href="futbol.html">Fútbol</a>
+            <a href="amor.html">Amor</a>
+            <a href="pronto.html">Animales</a>
+            <a href="pronto.html">Bebidas</a>
+            <a href="pronto.html">Disney</a>
+            <a href="pronto.html">Frases</a>
+            <a href="libros.html">Libros</a>
+            <a href="harrypotter.html class="active"">Harry Potter</a>
+            <a href="gatitos.html" class="active">Gatitos</a>
+          </div>
+        </li>
+        <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
+        <li><a href="../nosotros.html">Nosotros</a></li>
+        <li><button class="carrito-btn" id="abrirCarrito">🛒 <span id="carritoContador" class="carrito-contador">0</span></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Categoría Banner -->
+  <section class="category-banner">
+    <div class="container">
+      <h1>Stickers de Gatitos</h1>
+      <p>Todos los stickers de Gatitos que podés encontrar</p>
+    </div>
+  </section>
+
+<!-- Productos -->
+<section class="category-products">
+  <div class="container">
+    <div class="products-grid">
+
+          <!-- Gryffindor -->
+            <div class="product-card" 
+            data-product-id="H1" 
+            data-product-name="Gryffindor" 
+            data-product-img="HP-00001.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00001.png', 'Gryffindor')">
+           <img src="../imagenes/HP-00001.png" alt="Gryffindor" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H1')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H1"
+           data-product-name="Gryffindor"
+           data-product-img="HP-00001.png"
+           data-product-code="HP-00001">+</button>
+         </div>
+         <h3>Gryffindor</h3>
+         <p class="product-code">Código: HP-00001</p>
+       </div>
+       
+            <!-- Slytherin -->
+            <div class="product-card" 
+            data-product-id="H2" 
+            data-product-name="Slytherin" 
+            data-product-img="HP-00002.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00002.png', 'Slytherin')">
+           <img src="../imagenes/HP-00002.png" alt="Slytherin" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H2')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H2"
+           data-product-name="Slytherin"
+           data-product-img="HP-00002.png"
+           data-product-code="HP-00002">+</button>
+         </div>
+         <h3>Slytherin</h3>
+         <p class="product-code">Código: HP-00002</p>
+       </div> 
+       
+            <!-- Ravenclaw -->
+            <div class="product-card" 
+            data-product-id="H3" 
+            data-product-name="Ravenclaw" 
+            data-product-img="HP-00003.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00003.png', 'Ravenclaw')">
+           <img src="../imagenes/HP-00003.png" alt="Ravenclaw" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H3')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H3"
+           data-product-name="Ravenclaw"
+           data-product-img="HP-00003.png"
+           data-product-code="HP-00003">+</button>
+         </div>
+         <h3>Ravenclaw</h3>
+         <p class="product-code">Código: HP-00003</p>
+       </div> 
+       
+            <!-- Hufflepuff -->
+            <div class="product-card" 
+            data-product-id="H4" 
+            data-product-name="Hufflepuff" 
+            data-product-img="HP-00004.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00004.png', 'Hufflepuff')">
+           <img src="../imagenes/HP-00004.png" alt="Hufflepuff" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H4')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H4"
+           data-product-name="Hufflepuff"
+           data-product-img="HP-00004.png"
+           data-product-code="HP-00004">+</button>
+         </div>
+         <h3>Hufflepuff</h3>
+         <p class="product-code">Código: HP-00004</p>
+       </div> 
+
+            <!-- Sobre Hogwarts -->
+            <div class="product-card" 
+            data-product-id="H5" 
+            data-product-name="Sobre Hogwarts" 
+            data-product-img="HP-00005.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00005.png', 'Sobre Hogwarts')">
+           <img src="../imagenes/HP-00005.png" alt="Sobre Hogwarts" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H5')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H5"
+           data-product-name="Sobre Hogwarts"
+           data-product-img="HP-00005.png"
+           data-product-code="HP-00005">+</button>
+         </div>
+         <h3>Sobre Hogwarts</h3>
+         <p class="product-code">Código: HP-00005</p>
+       </div> 
+
+            <!-- Hedwig -->
+            <div class="product-card" 
+            data-product-id="H6" 
+            data-product-name="Hedwig" 
+            data-product-img="HP-00006.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00006.png', 'Hedwig')">
+           <img src="../imagenes/HP-00006.png" alt="Hedwig" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H6')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H6"
+           data-product-name="Hedwig"
+           data-product-img="HP-00006.png"
+           data-product-code="HP-00006">+</button>
+         </div>
+         <h3>Hedwig</h3>
+         <p class="product-code">Código: HP-00006</p>
+       </div> 
+
+            <!-- Sombrero seleccionador -->
+            <div class="product-card" 
+            data-product-id="H7" 
+            data-product-name="Sombrero seleccionador" 
+            data-product-img="HP-00007.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00007.png', 'Sombrero seleccionador')">
+           <img src="../imagenes/HP-00007.png" alt="Sombrero seleccionador" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H7')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H7"
+           data-product-name="Sombrero seleccionador"
+           data-product-img="HP-00007.png"
+           data-product-code="HP-00007">+</button>
+         </div>
+         <h3>Sombrero seleccionador</h3>
+         <p class="product-code">Código: HP-00007</p>
+       </div> 
+
+           <!-- Hogwarts -->
+            <div class="product-card" 
+            data-product-id="H8" 
+            data-product-name="Hogwarts" 
+            data-product-img="HP-00008.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00008.png', 'Hogwarts')">
+           <img src="../imagenes/HP-00008.png" alt="Hogwarts" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H8')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H8"
+           data-product-name="Hogwarts"
+           data-product-img="HP-00008.png"
+           data-product-code="HP-00008">+</button>
+         </div>
+         <h3>Hogwarts</h3>
+         <p class="product-code">Código: HP-00008</p>
+       </div> 
+
+            <!-- Hapee Birthdae -->
+            <div class="product-card" 
+            data-product-id="H9" 
+            data-product-name="Hapee Birthdae" 
+            data-product-img="HP-00009.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00009.png', 'Hapee Birthdae')">
+           <img src="../imagenes/HP-00009.png" alt="Hapee Birthdae" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H9')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H9"
+           data-product-name="Hapee Birthdae"
+           data-product-img="HP-00009.png"
+           data-product-code="HP-00009">+</button>
+         </div>
+         <h3>Hapee Birthdae</h3>
+         <p class="product-code">Código: HP-00009</p>
+       </div> 
+
+            <!-- Auto encantado -->
+            <div class="product-card" 
+            data-product-id="H10" 
+            data-product-name="Auto encantado" 
+            data-product-img="HP-00010.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00010.png', 'Auto encantado')">
+           <img src="../imagenes/HP-00010.png" alt="Auto encantado" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H10')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H10"
+           data-product-name="Auto encantado"
+           data-product-img="HP-00010.png"
+           data-product-code="HP-00010">+</button>
+         </div>
+         <h3>Auto encantado</h3>
+         <p class="product-code">Código: HP-00010</p>
+       </div> 
+
+    </div>
+  </div>
+</section>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modalProductImage" src="" alt="Imagen del producto">
+      <h2 id="modalProductTitle"></h2>
+      <p id="modalProductCategory"></p>
+      <p id="modalProductDescription"></p>
+    </div>
+  </div>
+
+  <!-- Carrito -->
+  <div class="carrito-panel" id="carritoPanel">
+
+    <!-- HEADER con total y botones -->
+    <div class="carrito-instrucciones" style="
+          padding: 12px 16px;
+          background-color: #fff2e6;
+          font-size: 15px;
+          color: #4a2e1c;
+          font-weight: 500;
+          border-bottom: 1px solid #e0c9b6;">
+      📋 Copiá los códigos de tus stickers y compartilos por WhatsApp, Instagram o usalos al hacer tu compra en la Tienda
+      Online.
+    </div>
+
+    <div class="carrito-header">
+      <div style="flex-grow: 1;">
+        <p style="margin: 0; font-weight: bold;">Total del pedido: <strong id="carritoTotal">0</strong></p>
+        <div style="margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+          <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
+        </div>
+      </div>
+      <button class="btn-cerrar" id="cerrarCarrito" style="align-self: start;">&times;</button>
+    </div>
+  
+    <!-- CONTENIDO del carrito -->
+    <div class="carrito-contenido" id="carritoContenido">
+      <p>No hay productos en el carrito.</p>
+    </div>
+  
+    <div id="mensajeAgregado" style="
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4a2e1c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    z-index: 9999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  ">
+    ¡Sticker agregado!
+  </div>
+  
+  <button id="btnVolverArriba" style="
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+  ">
+    <img src="../imagenes/flecha-arriba.png" alt="Volver arriba" style="width: 40px; height: 40px;">
+  </button>
+
+<!-- Footer -->
+<footer class="footer" style="background-color: #f3e5f5; padding: 12px 10px; text-align: center; font-size: 14px;">
+  <div style="margin-bottom: 6px;">
+    <a href="https://instagram.com/pixel.stickerss"
+       style="margin: 0 10px; color: #b18acc; text-decoration: none;" 
+       target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+    <a href="https://tiktok.com/@pixel.stickerss"
+       style="margin: 0 10px; color: #b18acc; text-decoration: none;" 
+       target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+  </div>
+  <p style="margin: 4px 0 0; color: #4a2e1c;">&copy; 2025 Pixel - Todos los derechos reservados</p>
+</footer>
+
+  <!-- Scripts -->
+  <script>
+  function agregarAlCarritoDesdeElemento(boton) {
+  const id = boton.dataset.productId;
+  const nombre = boton.dataset.productName;
+  const imagen = '../imagenes/' + boton.dataset.productImg;
+  const codigo = boton.dataset.productCode; // NUEVO
+
+  if (!id || !nombre || !imagen || !codigo) {
+    console.warn('Datos faltantes en producto:', { id, nombre, imagen, codigo });
+    return;
+  }
+
+  const producto = {
+    id,
+    nombre,
+    imagen,
+    codigo,
+    cantidad: 1
+  };
+
+  agregarAlCarrito(producto);
+  mostrarMensajeAgregado();
+
+}
+
+  function mostrarMensajeAgregado() {
+    const mensaje = document.getElementById("mensajeAgregado");
+    if (mensaje) {
+      mensaje.style.display = "block";
+      setTimeout(() => {
+        mensaje.style.display = "none";
+      }, 1500);
+    }
+  }
+
+  function abrirModal(imagenSrc, titulo) {
+    document.getElementById('modalProductImage').src = '../' + imagenSrc;
+    document.getElementById('modalProductTitle').textContent = titulo;
+    document.getElementById('productModal').classList.add('show');
+  }
+
+  document.querySelector('.close-modal').addEventListener('click', function () {
+    document.getElementById('productModal').classList.remove('show');
+  });
+
+    const hamburger = document.getElementById("hamburger");
+  const nav = document.querySelector(".main-nav");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+      nav.classList.remove("open");
+    }
+  });
+  const abrirCarritoBtn = document.getElementById("abrirCarrito");
+  const cerrarCarritoBtn = document.getElementById("cerrarCarrito");
+  const panelCarrito = document.getElementById("carritoPanel");
+
+  abrirCarritoBtn.addEventListener("click", () => {
+    panelCarrito.classList.add("active");
+  });
+
+  cerrarCarritoBtn.addEventListener("click", () => {
+    panelCarrito.classList.remove("active");
+  });
+
+  // Para abrir/cerrar menú desplegable en móviles
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".dropdown-toggle");
+    const menu = document.querySelector(".dropdown-menu");
+
+    if (toggle && menu) {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        menu.classList.toggle("show");
+      });
+    }
+  });
+  
+  function copiarCarritoAlPortapapeles() {
+  const carrito = window.carrito;
+  if (!carrito || carrito.length === 0) {
+    alert("El carrito está vacío.");
+    return;
+  }
+
+  let texto = "Pedido de Pixel Stickers:\n\n";
+  carrito.forEach(item => {
+    texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
+  });
+  texto += `\nTotal: ${carrito.reduce((acc, item) => acc + item.cantidad, 0)} producto(s)`;
+
+  navigator.clipboard.writeText(texto).then(() => {
+    const aviso = document.createElement("div");
+    aviso.textContent = "¡Pedido copiado!";
+    Object.assign(aviso.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      background: "#4a2e1c",
+      color: "white",
+      padding: "10px 20px",
+      borderRadius: "10px",
+      zIndex: "10000",
+      fontWeight: "bold",
+    });
+    document.body.appendChild(aviso);
+    setTimeout(() => aviso.remove(), 2000);
+  }).catch(() => alert("Error al copiar el pedido."));
+}
+
+// Mostrar u ocultar el botón al hacer scroll
+window.addEventListener("scroll", function () {
+  const btn = document.getElementById("btnVolverArriba");
+  if (window.scrollY > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+});
+
+// Función para volver arriba
+document.getElementById("btnVolverArriba").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+function copiarCarritoAlPortapapeles() {
+  const carrito = window.carrito;
+  if (!carrito || carrito.length === 0) {
+    alert("El carrito está vacío.");
+    return;
+  }
+
+  let texto = "Pedido de Pixel Stickers:\n\n";
+  carrito.forEach(item => {
+    texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
+  });
+  texto += `\nTotal: ${carrito.reduce((acc, item) => acc + item.cantidad, 0)} producto(s)`;
+
+  navigator.clipboard.writeText(texto).then(() => {
+    const aviso = document.createElement("div");
+    aviso.textContent = "¡Pedido copiado!";
+    Object.assign(aviso.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      background: "#4a2e1c",
+      color: "white",
+      padding: "10px 20px",
+      borderRadius: "10px",
+      zIndex: "10000",
+      fontWeight: "bold",
+    });
+    document.body.appendChild(aviso);
+    setTimeout(() => aviso.remove(), 2000);
+
+    // 👇 Mostrar cartel flotante de sugerencia
+    mostrarCartTip();
+  }).catch(() => alert("Error al copiar el pedido."));
+}
+
+// ✅ Función para mostrar el cartel flotante
+function mostrarCartTip() {
+  const tip = document.getElementById("cartTip");
+  if (tip) {
+    tip.style.display = "block";
+    setTimeout(() => {
+      tip.style.display = "none";
+    }, 5000); // visible 5 segundos
+  }
+}
+
+function mostrarAvisoFlotante(texto) {
+  const aviso = document.createElement("div");
+  aviso.textContent = texto;
+  Object.assign(aviso.style, {
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    background: "#4a2e1c",
+    color: "white",
+    padding: "10px 20px",
+    borderRadius: "10px",
+    zIndex: "10000",
+    fontWeight: "bold",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+  });
+  document.body.appendChild(aviso);
+  setTimeout(() => aviso.remove(), 2000);
+}
+
+  </script>
+  <script src="../js/funciones.js"></script>
+  <script src="../js/carrito.js"></script>
+  <!-- <script src="../js/categoria-amor.js"></script> -->
+  
+<div id="cartTip" style="
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #fff8e6;
+  color: #4a2e1c;
+  padding: 14px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  z-index: 9999;
+  max-width: 280px;
+  font-size: 14px;
+  border-left: 5px solid #f28c28;
+">
+  Copiá los códigos y envialos por WhatsApp, Instagram o cuando hagas tu compra en la Tienda Online.
+</div>
+
+</body>
+</html>
