@@ -665,64 +665,64 @@ const productosData = {
     },    
     // Frases
     F1: {
-        titulo: "Capybara mochila tortuga",
+        titulo: "No quiero recursar pero tampoco quiero estudiar",
         categoria: "categoria",
         imagen: "imagenes/FA-00001.png",
-        descripcion: "Capybara mochila tortuga. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "No quiero recursar pero tampoco quiero estudiar. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     F2: {
-        titulo: "Capybara tomando mate",
+        titulo: "Tu no eres bebecita, eres bebesota",
         categoria: "categoria",
         imagen: "imagenes/FA-00002.png",
-        descripcion: "Capybara tomando mate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Tu no eres bebecita, eres bebesota. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     F3: {
-        titulo: "Capybara con corazon",
+        titulo: "O madrugo o soy simpatica",
         categoria: "categoria",
         imagen: "imagenes/FA-00003.png",
-        descripcion: "Capybara con corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "O madrugo o soy simpatica. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     F4: {
-        titulo: "Capydino",
+        titulo: "Llegue tarde por que no queria venir",
         categoria: "categoria",
         imagen: "imagenes/FA-00004.png",
-        descripcion: "Capydino. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Llegue tarde por que no queria venir. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     F5: {
-        titulo: "Capybara taekwondista",
+        titulo: "No te metas con mi siesta",
         categoria: "categoria",
         imagen: "imagenes/FA-00005.png",
-        descripcion: "Capybara taekwondista. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "No te metas con mi siesta. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     F6: {
-        titulo: "Capy guirnaldas",
+        titulo: "Hoy me quiero un poquito mas",
         categoria: "categoria",
         imagen: "imagenes/FA-00006.png",
-        descripcion: "Capy guirnaldas. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Hoy me quiero un poquito mas. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     F7: {
-        titulo: "Capy vaso",
+        titulo: "Deja que la vida te sorprenda",
         categoria: "categoria",
         imagen: "imagenes/FA-00007.png",
-        descripcion: "Capy vaso. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Deja que la vida te sorprenda. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     F8: {
-        titulo: "Capybara unicornio",
+        titulo: "Disfruta cada momento",
         categoria: "categoria",
         imagen: "imagenes/FA-00008.png",
-        descripcion: "Capybara unicornio. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Disfruta cada momento. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     C9: {
-        titulo: "Capybara bailarina",
+        titulo: "No estoy loca, soy mentalmente divertida",
         categoria: "categoria",
         imagen: "imagenes/FA-00009.png",
-        descripcion: "Capybara bailarina. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "No estoy loca, soy mentalmente divertida. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     F10: {
-        titulo: "Capybara skate",
+        titulo: "Sobreviviendo a mi etapa universitaria",
         categoria: "categoria",
         imagen: "imagenes/FA-00010.png",
-        descripcion: "Capybara skate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Sobreviviendo a mi etapa universitaria. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },      
 };
 
