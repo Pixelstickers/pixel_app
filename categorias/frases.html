@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Disney - Pixel Stickers y Papelería Creativa</title>
+  <title>Frases - Pixel Stickers y Papelería Creativa</title>
   <link rel="stylesheet" href="../css/estilos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -30,12 +30,11 @@
             <a href="pronto.html">Animales</a>
             <a href="capybaras.html">Capybaras</a>
             <a href="pronto.html">Disney</a>
-            <a href="frases.html">Frases</a>
+            <a href="frases.html" class="active">Frases</a>
             <a href="libros.html">Libros</a>
             <a href="harrypotter.html">Harry Potter</a>
-            <a href="gatitos.html" >Gatitos</a>
-            <a href="disney.html" class="active">Disney</a>
-            <a href="snoopy.html">Snoopy</a>
+            <a href="gatitos.html">Gatitos</a>
+            <a href="disney.html">Disney</a>
           </div>
         </li>
         <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
@@ -48,8 +47,8 @@
   <!-- Categoría Banner -->
   <section class="category-banner">
     <div class="container">
-      <h1>Stickers de Disney</h1>
-      <p>Todos los stickers de Disney que podés encontrar</p>
+      <h1>Stickers de Frases</h1>
+      <p>Todos los stickers de frases que podés encontrar</p>
     </div>
   </section>
 
@@ -58,204 +57,204 @@
   <div class="container">
     <div class="products-grid">
 
-          <!-- Mickey Mouse -->
+      <!-- No quiero recursar pero tampoco quiero estudiar -->
+      <div class="product-card" 
+           data-product-id="F1" 
+           data-product-name="No quiero recursar pero tampoco quiero estudiar" 
+           data-product-img="FR-00001.png">
+        <div class="product-img" onclick="abrirModal('imagenes/FR-00001.png', 'No quiero recursar pero tampoco quiero estudiar')">
+          <img src="../imagenes/FR-00001.png" alt="No quiero recursar pero tampoco quiero estudiar" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('f1')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="F1"
+          data-product-name="No quiero recursar pero tampoco quiero estudiar"
+          data-product-img="FR-00001.png"
+          data-product-code="FR-00001">+</button>
+        </div>
+        <h3>No quiero recursar pero tampoco quiero estudiar</h3>
+        <p class="product-code">Código: FR-00001</p>
+      </div>
+
+      <!-- Tu no eres bebecita, eres bebesota -->
+      <div class="product-card" 
+           data-product-id="F2" 
+           data-product-name="Tu no eres bebecita, eres bebesota" 
+           data-product-img="FR-00002.png">
+        <div class="product-img" onclick="abrirModal('imagenes/FR-00002.png', 'Tu no eres bebecita, eres bebesota')">
+          <img src="../imagenes/FR-00002.png" alt="Escudo club Tu no eres bebecita, eres bebesotaa" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('f2')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="F2"
+          data-product-name="Tu no eres bebecita, eres bebesota"
+          data-product-img="FR-00002.png"
+          data-product-code="FR-00002">+</button>
+        </div>
+        <h3>Tu no eres bebecita, eres bebesota</h3>
+        <p class="product-code">Código: FR-00002</p>
+      </div>
+
+      <!-- O madrugo o soy simpatica -->
+      <div class="product-card" 
+           data-product-id="F3" 
+           data-product-name="O madrugo o soy simpatica" 
+           data-product-img="FR-00003.png">
+        <div class="product-img" onclick="abrirModal('imagenes/FR-00003.png', 'O madrugo o soy simpatica')">
+          <img src="../imagenes/FR-00003.png" alt="O madrugo o soy simpatica" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('f3')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="F3"
+          data-product-name="O madrugo o soy simpatica"
+          data-product-img="FR-00003.png"
+          data-product-code="FR-00003">+</button>
+        </div>
+        <h3>O madrugo o soy simpatica</h3>
+        <p class="product-code">Código: FR-00003</p>
+      </div>
+
+            <!-- Llegue tarde por que no queria venir -->
             <div class="product-card" 
-            data-product-id="D1" 
-            data-product-name="Mickey Mouse" 
-            data-product-img="DI-00001.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00001.png', 'Mickey Mouse')">
-           <img src="../imagenes/DI-00001.png" alt="Mickey Mouse" />
+            data-product-id="F4" 
+            data-product-name="Llegue tarde por que no queria venir" 
+            data-product-img="FR-00004.png">
+         <div class="product-img" onclick="abrirModal('imagenes/FR-00004.png', 'Llegue tarde por que no queria venir')">
+           <img src="../imagenes/FR-00004.png" alt="Llegue tarde por que no queria venir" />
          </div>
          <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D1')">−</button>
+           <button class="btn-restar" onclick="restarDelCarrito('F4')">−</button>
            <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D1"
-           data-product-name="Mickey Mouse"
-           data-product-img="DI-00001.png"
-           data-product-code="DI-00001">+</button>
+           data-product-id="F4"
+           data-product-name="Llegue tarde por que no queria venir"
+           data-product-img="FR-00004.png"
+           data-product-code="FR-00004">+</button>
          </div>
-         <h3>Mickey Mouse</h3>
-         <p class="product-code">Código: DI-00001</p>
-       </div>
+         <h3>Llegue tarde por que no queria venir</h3>
+         <p class="product-code">Código: FR-00004</p>
+       </div> 
+
+            <!-- No te metas con mi siesta -->
+            <div class="product-card" 
+            data-product-id="F5" 
+            data-product-name="No te metas con mi siesta" 
+            data-product-img="FR-00005.png">
+         <div class="product-img" onclick="abrirModal('imagenes/FR-00005.png', 'No te metas con mi siesta')">
+           <img src="../imagenes/FR-00005.png" alt="No te metas con mi siesta" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('F5')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="F5"
+           data-product-name="No te metas con mi siesta"
+           data-product-img="FR-00005.png"
+           data-product-code="FR-00005">+</button>
+         </div>
+         <h3>No te metas con mi siesta</h3>
+         <p class="product-code">Código: FR-00005</p>
+       </div> 
+
+            <!-- Hoy me quiero un poquito mas -->
+            <div class="product-card" 
+            data-product-id="F6" 
+            data-product-name="Hoy me quiero un poquito mas" 
+            data-product-img="FR-00006.png">
+         <div class="product-img" onclick="abrirModal('imagenes/FR-00006.png', 'Hoy me quiero un poquito mas')">
+           <img src="../imagenes/FR-00006.png" alt="Hoy me quiero un poquito mas" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('F6')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="F6"
+           data-product-name="Hoy me quiero un poquito mas"
+           data-product-img="FR-00006.png"
+           data-product-code="FR-00006">+</button>
+         </div>
+         <h3>Hoy me quiero un poquito mas</h3>
+         <p class="product-code">Código: FR-00006</p>
+       </div> 
+
+            <!-- Deja que la vida te sorprenda -->
+            <div class="product-card" 
+            data-product-id="F7" 
+            data-product-name="Deja que la vida te sorprenda" 
+            data-product-img="FR-00007.png">
+         <div class="product-img" onclick="abrirModal('imagenes/FR-00007.png', 'Deja que la vida te sorprenda')">
+           <img src="../imagenes/FR-00007.png" alt="Deja que la vida te sorprenda" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('F7')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="F7"
+           data-product-name="Deja que la vida te sorprenda"
+           data-product-img="FR-00007.png"
+           data-product-code="FR-00007">+</button>
+         </div>
+         <h3>Deja que la vida te sorprenda</h3>
+         <p class="product-code">Código: FR-00007</p>
+       </div> 
+
+            <!-- Disfruta cada momento -->
+            <div class="product-card" 
+            data-product-id="F8" 
+            data-product-name="Disfruta cada momento" 
+            data-product-img="FR-00008.png">
+         <div class="product-img" onclick="abrirModal('imagenes/FR-00008.png', 'Disfruta cada momento')">
+           <img src="../imagenes/FR-00008.png" alt="Disfruta cada momento" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('F8')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="F8"
+           data-product-name="Disfruta cada momento"
+           data-product-img="FR-00008.png"
+           data-product-code="FR-00008">+</button>
+         </div>
+         <h3>Disfruta cada momento</h3>
+         <p class="product-code">Código: FR-00008</p>
+       </div> 
+
+            <!-- No estoy loca, soy mentalmente divertida -->
+            <div class="product-card" 
+            data-product-id="F9" 
+            data-product-name="No estoy loca, soy mentalmente divertida" 
+            data-product-img="FR-00009.png">
+         <div class="product-img" onclick="abrirModal('imagenes/FR-00009.png', 'No estoy loca, soy mentalmente divertida')">
+           <img src="../imagenes/FR-00009.png" alt="No estoy loca, soy mentalmente divertida" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('F9')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="F9"
+           data-product-name="No estoy loca, soy mentalmente divertida"
+           data-product-img="FR-00009.png"
+           data-product-code="FR-00009">+</button>
+         </div>
+         <h3>No estoy loca, soy mentalmente divertida</h3>
+         <p class="product-code">Código: FR-00009</p>
+       </div> 
        
-            <!-- Intensamente -->
+            <!-- Sobreviviendo a mi etapa universitaria -->
             <div class="product-card" 
-            data-product-id="D2" 
-            data-product-name="Intensamente" 
-            data-product-img="DI-00002.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00002.png', 'Intensamente')">
-           <img src="../imagenes/DI-00002.png" alt="Intensamente" />
+            data-product-id="F10" 
+            data-product-name="Sobreviviendo a mi etapa universitaria" 
+            data-product-img="FR-00010.png">
+         <div class="product-img" onclick="abrirModal('imagenes/FR-00010.png', 'Sobreviviendo a mi etapa universitaria')">
+           <img src="../imagenes/FR-00010.png" alt="Sobreviviendo a mi etapa universitaria" />
          </div>
          <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D2')">−</button>
+           <button class="btn-restar" onclick="restarDelCarrito('F10')">−</button>
            <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D2"
-           data-product-name="Intensamente"
-           data-product-img="DI-00002.png"
-           data-product-code="DI-00002">+</button>
+           data-product-id="F10"
+           data-product-name="Sobreviviendo a mi etapa universitaria"
+           data-product-img="FR-00010.png"
+           data-product-code="FR-00010">+</button>
          </div>
-         <h3>Intensamente</h3>
-         <p class="product-code">Código: DI-00002</p>
-       </div> 
-       
-            <!-- Tigger -->
-            <div class="product-card" 
-            data-product-id="D3" 
-            data-product-name="Tigger" 
-            data-product-img="DI-00003.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00003.png', 'Tigger')">
-           <img src="../imagenes/DI-00003.png" alt="Tigger" />
-         </div>
-         <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D3')">−</button>
-           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D3"
-           data-product-name="Tigger"
-           data-product-img="DI-00003.png"
-           data-product-code="DI-00003">+</button>
-         </div>
-         <h3>Tigger</h3>
-         <p class="product-code">Código: DI-00003</p>
-       </div> 
-       
-            <!-- Bella y Bestia -->
-            <div class="product-card" 
-            data-product-id="D4" 
-            data-product-name="Bella y Bestia" 
-            data-product-img="DI-00004.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00004.png', 'Bella y Bestia')">
-           <img src="../imagenes/DI-00004.png" alt="Bella y Bestia" />
-         </div>
-         <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D4')">−</button>
-           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D4"
-           data-product-name="Bella y Bestia"
-           data-product-img="DI-00004.png"
-           data-product-code="DI-00004">+</button>
-         </div>
-         <h3>Bella y Bestia</h3>
-         <p class="product-code">Código: DI-00004</p>
-       </div> 
-
-            <!-- Jazmin -->
-            <div class="product-card" 
-            data-product-id="D5" 
-            data-product-name="Jazmin" 
-            data-product-img="DI-00005.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00005.png', 'Jazmin')">
-           <img src="../imagenes/DI-00005.png" alt="Jazmin" />
-         </div>
-         <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D5')">−</button>
-           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D5"
-           data-product-name="Jazmin"
-           data-product-img="DI-00005.png"
-           data-product-code="DI-00005">+</button>
-         </div>
-         <h3>Jazmin</h3>
-         <p class="product-code">Código: DI-00005</p>
-       </div> 
-
-            <!-- Dory -->
-            <div class="product-card" 
-            data-product-id="D6" 
-            data-product-name="Dory" 
-            data-product-img="DI-00006.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00006.png', 'Dory')">
-           <img src="../imagenes/DI-00006.png" alt="Dory" />
-         </div>
-         <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D6')">−</button>
-           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D6"
-           data-product-name="Dory"
-           data-product-img="DI-00006.png"
-           data-product-code="DI-00006">+</button>
-         </div>
-         <h3>Dory</h3>
-         <p class="product-code">Código: DI-00006</p>
-       </div> 
-
-            <!-- Igor -->
-            <div class="product-card" 
-            data-product-id="D7" 
-            data-product-name="Igor" 
-            data-product-img="DI-00007.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00007.png', 'Igor')">
-           <img src="../imagenes/DI-00007.png" alt="Igor" />
-         </div>
-         <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D7')">−</button>
-           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D7"
-           data-product-name="Igor"
-           data-product-img="DI-00007.png"
-           data-product-code="DI-00007">+</button>
-         </div>
-         <h3>Igor</h3>
-         <p class="product-code">Código: DI-00007</p>
-       </div> 
-
-           <!-- Alicia -->
-            <div class="product-card" 
-            data-product-id="D8" 
-            data-product-name="Alicia" 
-            data-product-img="DI-00008.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00008.png', 'Alicia')">
-           <img src="../imagenes/DI-00008.png" alt="Alicia" />
-         </div>
-         <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D8')">−</button>
-           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D8"
-           data-product-name="Alicia"
-           data-product-img="DI-00008.png"
-           data-product-code="DI-00008">+</button>
-         </div>
-         <h3>Alicia</h3>
-         <p class="product-code">Código: DI-00008</p>
-       </div> 
-
-            <!-- Nemo -->
-            <div class="product-card" 
-            data-product-id="D9" 
-            data-product-name="Nemo" 
-            data-product-img="DI-00009.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00009.png', 'Nemo')">
-           <img src="../imagenes/DI-00009.png" alt="Nemo" />
-         </div>
-         <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D9')">−</button>
-           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D9"
-           data-product-name="Nemo"
-           data-product-img="DI-00009.png"
-           data-product-code="DI-00009">+</button>
-         </div>
-         <h3>Nemo</h3>
-         <p class="product-code">Código: DI-00009</p>
-       </div> 
-
-            <!-- Stich con rosa -->
-            <div class="product-card" 
-            data-product-id="D10" 
-            data-product-name="Stich con rosa" 
-            data-product-img="DI-00010.png">
-         <div class="product-img" onclick="abrirModal('imagenes/DI-00010.png', 'Stich con rosa')">
-           <img src="../imagenes/DI-00010.png" alt="Stich con rosa" />
-         </div>
-         <div class="cantidad-control">
-           <button class="btn-restar" onclick="restarDelCarrito('D10')">−</button>
-           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
-           data-product-id="D10"
-           data-product-name="Stich con rosa"
-           data-product-img="DI-00010.png"
-           data-product-code="DI-00010">+</button>
-         </div>
-         <h3>Stich con rosa</h3>
-         <p class="product-code">Código: DI-00010</p>
+         <h3>Sobreviviendo a mi etapa universitaria</h3>
+         <p class="product-code">Código: FR-00010</p>
        </div> 
 
     </div>
@@ -281,7 +280,7 @@
           padding: 12px 16px;
           background-color: #fff2e6;
           font-size: 15px;
-          color: #4a2e1c;
+          color: #4F2e1c;
           font-weight: 500;
           border-bottom: 1px solid #e0c9b6;">
       📋 Copiá los códigos de tus stickers y compartilos por WhatsApp, Instagram o usalos al hacer tu compra en la Tienda
@@ -310,7 +309,7 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #4a2e1c;
+    background-color: #4F2e1c;
     color: white;
     padding: 12px 24px;
     border-radius: 12px;
@@ -344,7 +343,7 @@
        style="margin: 0 10px; color: #b18acc; text-decoration: none;" 
        target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
   </div>
-  <p style="margin: 4px 0 0; color: #4a2e1c;">&copy; 2025 Pixel - Todos los derechos reservados</p>
+  <p style="margin: 4px 0 0; color: #4F2e1c;">&copy; 2025 Pixel - Todos los derechos reservados</p>
 </footer>
 
   <!-- Scripts -->
@@ -451,7 +450,7 @@
       bottom: "20px",
       left: "50%",
       transform: "translateX(-50%)",
-      background: "#4a2e1c",
+      background: "#4F2e1c",
       color: "white",
       padding: "10px 20px",
       borderRadius: "10px",
@@ -499,7 +498,7 @@ function copiarCarritoAlPortapapeles() {
       bottom: "20px",
       left: "50%",
       transform: "translateX(-50%)",
-      background: "#4a2e1c",
+      background: "#4F2e1c",
       color: "white",
       padding: "10px 20px",
       borderRadius: "10px",
@@ -532,7 +531,7 @@ function mostrarAvisoFlotante(texto) {
     position: "fixed",
     bottom: "20px",
     right: "20px",
-    background: "#4a2e1c",
+    background: "#4F2e1c",
     color: "white",
     padding: "10px 20px",
     borderRadius: "10px",
@@ -555,7 +554,7 @@ function mostrarAvisoFlotante(texto) {
   bottom: 90px;
   right: 20px;
   background-color: #fff8e6;
-  color: #4a2e1c;
+  color: #4F2e1c;
   padding: 14px 20px;
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

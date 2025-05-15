@@ -481,61 +481,61 @@ const productosData = {
         descripcion: "Auto encantado. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     // Gatitos
-    H1: {
+    G1: {
         titulo: "Gato mariposa",
         categoria: "categoria",
         imagen: "imagenes/GA-00001.png",
         descripcion: "Gato mariposa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H2: {
+    G2: {
         titulo: "Hada felina",
         categoria: "categoria",
         imagen: "imagenes/GA-00002.png",
         descripcion: "Hada felina. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H3: {
+    G3: {
         titulo: "Gato Love",
         categoria: "categoria",
         imagen: "imagenes/GA-00003.png",
         descripcion: "Gato Love. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H4: {
+    G4: {
         titulo: "Gato programador",
         categoria: "categoria",
         imagen: "imagenes/GA-00004.png",
         descripcion: "Gato programador. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H5: {
+    G5: {
         titulo: "Gato dormilón",
         categoria: "categoria",
         imagen: "imagenes/GA-00005.png",
         descripcion: "Gato dormilón. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H6: {
+    G6: {
         titulo: "Gato blanco",
         categoria: "categoria",
         imagen: "imagenes/GA-00006.png",
         descripcion: "Gato blanco. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H7: {
+    G7: {
         titulo: "Gato brujo",
         categoria: "categoria",
         imagen: "imagenes/GA-00007.png",
         descripcion: "Gato brujo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H8: {
+    G8: {
         titulo: "Gato Leyendo",
         categoria: "categoria",
         imagen: "imagenes/GA-00008.png",
         descripcion: "Gato Leyendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H9: {
+    G9: {
         titulo: "Gato Himalayo",
         categoria: "categoria",
         imagen: "imagenes/GA-00009.png",
         descripcion: "Gato Himalayo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
-    H10: {
+    G10: {
         titulo: "Gato maceta",
         categoria: "categoria",
         imagen: "imagenes/GA-00010.png",
@@ -602,6 +602,189 @@ const productosData = {
         imagen: "imagenes/DI-00010.png",
         descripcion: "Stich con rosa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    // Capybara
+    C1: {
+        titulo: "Capybara mochila tortuga",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00001.png",
+        descripcion: "Capybara mochila tortuga. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C2: {
+        titulo: "Capybara tomando mate",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00002.png",
+        descripcion: "Capybara tomando mate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C3: {
+        titulo: "Capybara con corazon",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00003.png",
+        descripcion: "Capybara con corazon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C4: {
+        titulo: "Capydino",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00004.png",
+        descripcion: "Capydino. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C5: {
+        titulo: "Capybara taekwondista",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00005.png",
+        descripcion: "Capybara taekwondista. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C6: {
+        titulo: "Capy guirnaldas",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00006.png",
+        descripcion: "Capy guirnaldas. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C7: {
+        titulo: "Capy vaso",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00007.png",
+        descripcion: "Capy vaso. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C8: {
+        titulo: "Capybara unicornio",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00008.png",
+        descripcion: "Capybara unicornio. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C9: {
+        titulo: "Capybara bailarina",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00009.png",
+        descripcion: "Capybara bailarina. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C10: {
+        titulo: "Capybara skate",
+        categoria: "categoria",
+        imagen: "imagenes/CA-00010.png",
+        descripcion: "Capybara skate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },    
+    // Frases
+    F1: {
+        titulo: "No quiero recursar pero tampoco quiero estudiar",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00001.png",
+        descripcion: "No quiero recursar pero tampoco quiero estudiar. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F2: {
+        titulo: "Tu no eres bebecita, eres bebesota",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00002.png",
+        descripcion: "Tu no eres bebecita, eres bebesota. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F3: {
+        titulo: "O madrugo o soy simpatica",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00003.png",
+        descripcion: "O madrugo o soy simpatica. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F4: {
+        titulo: "Llegue tarde por que no queria venir",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00004.png",
+        descripcion: "Llegue tarde por que no queria venir. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F5: {
+        titulo: "No te metas con mi siesta",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00005.png",
+        descripcion: "No te metas con mi siesta. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F6: {
+        titulo: "Hoy me quiero un poquito mas",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00006.png",
+        descripcion: "Hoy me quiero un poquito mas. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F7: {
+        titulo: "Deja que la vida te sorprenda",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00007.png",
+        descripcion: "Deja que la vida te sorprenda. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F8: {
+        titulo: "Disfruta cada momento",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00008.png",
+        descripcion: "Disfruta cada momento. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    C9: {
+        titulo: "No estoy loca, soy mentalmente divertida",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00009.png",
+        descripcion: "No estoy loca, soy mentalmente divertida. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    F10: {
+        titulo: "Sobreviviendo a mi etapa universitaria",
+        categoria: "categoria",
+        imagen: "imagenes/FA-00010.png",
+        descripcion: "Sobreviviendo a mi etapa universitaria. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    }, 
+    // Snoopy
+    S1: {
+        titulo: "Snoopy con flores",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00001.png",
+        descripcion: "Snoopy con flores. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S2: {
+        titulo: "Snoopy en casita",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00002.png",
+        descripcion: "Snoopy en casita, eres bebesota. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S3: {
+        titulo: "Snoopy rey",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00003.png",
+        descripcion: "Snoopy rey. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S4: {
+        titulo: "Snoopy dormido",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00004.png",
+        descripcion: "Snoopy dormido. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S5: {
+        titulo: "Snoopy riendo",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00005.png",
+        descripcion: "Snoopy riendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S6: {
+        titulo: "Snoopy hamburguesa",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00006.png",
+        descripcion: "Snoopy hamburguesa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S7: {
+        titulo: "Snoopy skate",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00007.png",
+        descripcion: "Snoopy skate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S8: {
+        titulo: "Snoopy dinosaurio",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00008.png",
+        descripcion: "Snoopy dinosaurio. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S9: {
+        titulo: "Snoopy leyendo",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00009.png",
+        descripcion: "Snoopy leyendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S10: {
+        titulo: "Snoopy tiburon",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00010.png",
+        descripcion: "Snoopy tiburon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },          
 };
 
 // Funciones de modal
