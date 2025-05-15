@@ -541,6 +541,67 @@ const productosData = {
         imagen: "imagenes/GA-00010.png",
         descripcion: "Gato maceta. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    // Disney
+    D1: {
+        titulo: "Mickey Mouse",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00001.png",
+        descripcion: "Mickey Mouse. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D2: {
+        titulo: "Intensamente",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00002.png",
+        descripcion: "Intensamente. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D3: {
+        titulo: "Tigger",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00003.png",
+        descripcion: "Tigger. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D4: {
+        titulo: "Bella y Bestia",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00004.png",
+        descripcion: "Bella y Bestia. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D5: {
+        titulo: "Jazmin",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00005.png",
+        descripcion: "Jazmin. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D6: {
+        titulo: "Dory",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00006.png",
+        descripcion: "Dory. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D7: {
+        titulo: "Igor",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00007.png",
+        descripcion: "Igor. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D8: {
+        titulo: "Alicia",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00008.png",
+        descripcion: "Alicia. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D9: {
+        titulo: "Nemo",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00009.png",
+        descripcion: "Nemo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    D10: {
+        titulo: "Stich con rosa",
+        categoria: "categoria",
+        imagen: "imagenes/DI-00010.png",
+        descripcion: "Stich con rosa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
