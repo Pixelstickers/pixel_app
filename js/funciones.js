@@ -432,6 +432,54 @@ const productosData = {
         imagen: "imagenes/HP-00002.png",
         descripcion: "Slytherin. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    H3: {
+        titulo: "Ravenclaw",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00003.png",
+        descripcion: "Ravenclaw. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H4: {
+        titulo: "Hufflepuff",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00004.png",
+        descripcion: "Hufflepuff. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H5: {
+        titulo: "Sobre Hogwarts",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00005.png",
+        descripcion: "Sobre Hogwarts. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H6: {
+        titulo: "Hedwig",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00006.png",
+        descripcion: "Hedwig. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H7: {
+        titulo: "Sombrero seleccionador",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00007.png",
+        descripcion: "Sombrero seleccionador. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H8: {
+        titulo: "Hogwarts",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00008.png",
+        descripcion: "Hogwarts. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H9: {
+        titulo: "Hapee Birthdae",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00009.png",
+        descripcion: "Hapee Birthdae. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H10: {
+        titulo: "Auto encantado",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00010.png",
+        descripcion: "Auto encantado. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
