@@ -723,7 +723,68 @@ const productosData = {
         categoria: "categoria",
         imagen: "imagenes/FA-00010.png",
         descripcion: "Sobreviviendo a mi etapa universitaria. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
-    },      
+    }, 
+    // Snoopy
+    S1: {
+        titulo: "Snoopy con flores",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00001.png",
+        descripcion: "Snoopy con flores. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S2: {
+        titulo: "Snoopy en casita",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00002.png",
+        descripcion: "Snoopy en casita, eres bebesota. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S3: {
+        titulo: "Snoopy rey",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00003.png",
+        descripcion: "Snoopy rey. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S4: {
+        titulo: "Snoopy dormido",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00004.png",
+        descripcion: "Snoopy dormido. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S5: {
+        titulo: "Snoopy riendo",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00005.png",
+        descripcion: "Snoopy riendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S6: {
+        titulo: "Snoopy hamburguesa",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00006.png",
+        descripcion: "Snoopy hamburguesa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S7: {
+        titulo: "Snoopy skate",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00007.png",
+        descripcion: "Snoopy skate. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S8: {
+        titulo: "Snoopy dinosaurio",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00008.png",
+        descripcion: "Snoopy dinosaurio. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S9: {
+        titulo: "Snoopy leyendo",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00009.png",
+        descripcion: "Snoopy leyendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    S10: {
+        titulo: "Snoopy tiburon",
+        categoria: "categoria",
+        imagen: "imagenes/SN-00010.png",
+        descripcion: "Snoopy tiburon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },          
 };
 
 // Funciones de modal
