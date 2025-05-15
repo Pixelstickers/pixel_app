@@ -480,6 +480,67 @@ const productosData = {
         imagen: "imagenes/HP-00010.png",
         descripcion: "Auto encantado. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    // Gatitos
+    H1: {
+        titulo: "Gato mariposa",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00001.png",
+        descripcion: "Gato mariposa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H2: {
+        titulo: "Hada felina",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00002.png",
+        descripcion: "Hada felina. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H3: {
+        titulo: "Gato Love",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00003.png",
+        descripcion: "Gato Love. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H4: {
+        titulo: "Gato programador",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00004.png",
+        descripcion: "Gato programador. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H5: {
+        titulo: "Gato dormilón",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00005.png",
+        descripcion: "Gato dormilón. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H6: {
+        titulo: "Gato blanco",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00006.png",
+        descripcion: "Gato blanco. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H7: {
+        titulo: "Gato brujo",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00007.png",
+        descripcion: "Gato brujo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H8: {
+        titulo: "Gato Leyendo",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00008.png",
+        descripcion: "Gato Leyendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H9: {
+        titulo: "Gato Himalayo",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00009.png",
+        descripcion: "Gato Himalayo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    H10: {
+        titulo: "Gato maceta",
+        categoria: "categoria",
+        imagen: "imagenes/GA-00010.png",
+        descripcion: "Gato maceta. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal
