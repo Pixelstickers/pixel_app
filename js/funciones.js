@@ -426,6 +426,12 @@ const productosData = {
         imagen: "imagenes/HP-00001.png",
         descripcion: "Gryffindor. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
+    H2: {
+        titulo: "Slytherin",
+        categoria: "categoria",
+        imagen: "imagenes/HP-00002.png",
+        descripcion: "Slytherin. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
 };
 
 // Funciones de modal

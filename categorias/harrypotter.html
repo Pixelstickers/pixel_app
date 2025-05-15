@@ -73,6 +73,26 @@
          </div>
          <h3>Gryffindor</h3>
          <p class="product-code">Código: HP-00001</p>
+       </div>
+       
+            <!-- Slytherin -->
+            <div class="product-card" 
+            data-product-id="H2" 
+            data-product-name="Slytherin" 
+            data-product-img="HP-00002.png">
+         <div class="product-img" onclick="abrirModal('imagenes/HP-00002.png', 'Slytherin')">
+           <img src="../imagenes/HP-00002.png" alt="Slytherin" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('H2')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="H2"
+           data-product-name="Slytherin"
+           data-product-img="HP-00002.png"
+           data-product-code="HP-00002">+</button>
+         </div>
+         <h3>Slytherin</h3>
+         <p class="product-code">Código: HP-00002</p>
        </div> 
 
     </div>
