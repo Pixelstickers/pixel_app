@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stitch - Pixel Stickers y Papelería Creativa</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/favicon.png">
+  <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/png">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+<h1 class="brand-name">
+  <a href="../index.html" style="text-decoration: none; color: inherit;">Pixel</a>
+</h1>
+      <button id="hamburger" class="hamburger">☰</button>
+      <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Categorías</a>
+          <div class="dropdown-menu">
+            <a href="futbol.html" class="active">Fútbol</a>
+            <a href="amor.html">Amor</a>
+            <a href="pronto.html">Animales</a>
+            <a href="capybaras.html">Capybaras</a>
+            <a href="pronto.html">Disney</a>
+            <a href="frases.html">Frases</a>
+            <a href="libros.html">Libros</a>
+            <a href="harrypotter.html">Harry Potter</a>
+            <a href="gatitos.html">Gatitos</a>
+            <a href="disney.html">Disney</a>
+            <a href="snoopy.html">Snoopy</a>
+            <a href="viajes.html">Viajes</a>
+            <a href="stitch.html">Stitch</a>
+          </div>
+        </li>
+        <li><a href="https://pixelstickers.empretienda.com.ar/">Tienda Online</a></li>
+        <li><a href="../nosotros.html">Nosotros</a></li>
+        <li><button class="carrito-btn" id="abrirCarrito">🛒 <span id="carritoContador" class="carrito-contador">0</span></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Categoría Banner -->
+  <section class="category-banner">
+    <div class="container">
+      <h1>Stickers de Stitch</h1>
+      <p>Todos los stickers de Stitch que podés encontrar</p>
+    </div>
+  </section>
+
+<!-- Productos -->
+<section class="category-products">
+  <div class="container">
+    <div class="products-grid">
+
+          <!-- Stitch harto -->
+          <div class="product-card" 
+           data-product-id="ST1" 
+           data-product-name="Stitch harto" 
+           data-product-img="ST-00001.png">
+        <div class="product-img" onclick="abrirModal('imagenes/ST-00001.png', 'Stitch harto')">
+          <img src="../imagenes/ST-00001.png" alt="Stitch harto" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('f1')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="F1"
+          data-product-name="Stitch harto"
+          data-product-img="ST-00001.png"
+          data-product-code="ST-00001">+</button>
+        </div>
+        <h3>Stitch harto</h3>
+        <p class="product-code">Código: ST-00001</p>
+      </div>
+
+          <!-- Stitch surf -->
+          <div class="product-card" 
+           data-product-id="ST2" 
+           data-product-name="Stitch surf" 
+           data-product-img="ST-00002.png">
+        <div class="product-img" onclick="abrirModal('imagenes/ST-00002.png', 'Stitch surf')">
+          <img src="../imagenes/ST-00002.png" alt="Escudo club Stitch surf" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('ST2')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="ST2"
+          data-product-name="Stitch surf"
+          data-product-img="ST-00002.png"
+          data-product-code="ST-00002">+</button>
+        </div>
+        <h3>Stitch surf</h3>
+        <p class="product-code">Código: ST-00002</p>
+      </div>
+
+          <!-- Stitch mochila -->
+          <div class="product-card" 
+           data-product-id="ST3" 
+           data-product-name="Stitch mochila" 
+           data-product-img="ST-00004.png">
+        <div class="product-img" onclick="abrirModal('imagenes/ST-00004.png', 'Stitch mochila')">
+          <img src="../imagenes/ST-00004.png" alt="Escudo club Stitch mochila" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('ST3')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="ST3"
+          data-product-name="Stitch mochila"
+          data-product-img="ST-00004.png"
+          data-product-code="ST-00004">+</button>
+        </div>
+        <h3>Stitch mochila</h3>
+        <p class="product-code">Código: ST-00004</p>
+      </div>
+
+          <!-- Stitch Rana -->
+          <div class="product-card" 
+           data-product-id="ST4" 
+           data-product-name="Stitch Rana" 
+           data-product-img="ST-00003.png">
+        <div class="product-img" onclick="abrirModal('imagenes/ST-00003.png', 'Stitch Rana')">
+          <img src="../imagenes/ST-00003.png" alt="Stitch Rana" />
+        </div>
+        <div class="cantidad-control">
+          <button class="btn-restar" onclick="restarDelCarrito('ST4')">−</button>
+          <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+          data-product-id="ST4"
+          data-product-name="Stitch Rana"
+          data-product-img="ST-00003.png"
+          data-product-code="ST-00003">+</button>
+        </div>
+        <h3>Stitch Rana</h3>
+        <p class="product-code">Código: ST-00003</p>
+      </div>
+
+            <!-- Sorpresa Stitch -->
+            <div class="product-card" 
+            data-product-id="ST5" 
+            data-product-name="Sorpresa Stitch" 
+            data-product-img="ST-00005.png">
+         <div class="product-img" onclick="abrirModal('imagenes/ST-00005.png', 'Sorpresa Stitch')">
+           <img src="../imagenes/ST-00005.png" alt="Sorpresa Stitch" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('ST5')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="ST5"
+           data-product-name="Sorpresa Stitch"
+           data-product-img="ST-00005.png"
+           data-product-code="ST-00005">+</button>
+         </div>
+         <h3>Sorpresa Stitch</h3>
+         <p class="product-code">Código: ST-00005</p>
+       </div>
+
+            <!-- Stitch riendo -->
+            <div class="product-card" 
+            data-product-id="ST6" 
+            data-product-name="Stitch riendo" 
+            data-product-img="ST-00006.png">
+         <div class="product-img" onclick="abrirModal('imagenes/ST-00006.png', 'Stitch riendo')">
+           <img src="../imagenes/ST-00006.png" alt="Stitch riendo" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('ST6')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="ST6"
+           data-product-name="Stitch riendo"
+           data-product-img="ST-00006.png"
+           data-product-code="ST-00006">+</button>
+         </div>
+         <h3>Stitch riendo</h3>
+         <p class="product-code">Código: ST-00006</p>
+       </div>
+
+            <!-- Stitch durmiendo -->
+            <div class="product-card" 
+            data-product-id="ST7" 
+            data-product-name="Stitch durmiendo" 
+            data-product-img="ST-00007.png">
+         <div class="product-img" onclick="abrirModal('imagenes/ST-00007.png', 'Stitch durmiendo')">
+           <img src="../imagenes/ST-00007.png" alt="Stitch durmiendo" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('ST7')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="ST7"
+           data-product-name="Stitch durmiendo"
+           data-product-img="ST-00007.png"
+           data-product-code="ST-00007">+</button>
+         </div>
+         <h3>Stitch durmiendo</h3>
+         <p class="product-code">Código: ST-00007</p>
+       </div>
+
+            <!-- Stitch estrellas -->
+            <div class="product-card" 
+            data-product-id="ST8" 
+            data-product-name="Stitch estrellas" 
+            data-product-img="ST-00008.png">
+         <div class="product-img" onclick="abrirModal('imagenes/ST-00008.png', 'Stitch estrellas')">
+           <img src="../imagenes/ST-00008.png" alt="Stitch estrellas" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('ST8')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="ST8"
+           data-product-name="Stitch estrellas"
+           data-product-img="ST-00008.png"
+           data-product-code="ST-00008">+</button>
+         </div>
+         <h3>Stitch estrellas</h3>
+         <p class="product-code">Código: ST-00008</p>
+       </div>
+
+            <!-- Stitch anteojos -->
+            <div class="product-card" 
+            data-product-id="ST9" 
+            data-product-name="Stitch anteojos" 
+            data-product-img="ST-00009.png">
+         <div class="product-img" onclick="abrirModal('imagenes/ST-00009.png', 'Stitch anteojos')">
+           <img src="../imagenes/ST-00009.png" alt="Stitch anteojos" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('ST9')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="ST9"
+           data-product-name="Stitch anteojos"
+           data-product-img="ST-00009.png"
+           data-product-code="ST-00009">+</button>
+         </div>
+         <h3>Stitch anteojos</h3>
+         <p class="product-code">Código: ST-00009</p>
+       </div>
+
+            <!-- Stitch enamorado -->
+            <div class="product-card" 
+            data-product-id="ST10" 
+            data-product-name="Stitch enamorado" 
+            data-product-img="ST-00010.png">
+         <div class="product-img" onclick="abrirModal('imagenes/ST-00010.png', 'Stitch enamorado')">
+           <img src="../imagenes/ST-00010.png" alt="Stitch enamorado" />
+         </div>
+         <div class="cantidad-control">
+           <button class="btn-restar" onclick="restarDelCarrito('ST10')">−</button>
+           <button class="btn-agregar" onclick="agregarAlCarritoDesdeElemento(this)"
+           data-product-id="ST10"
+           data-product-name="Stitch enamorado"
+           data-product-img="ST-00010.png"
+           data-product-code="ST-00010">+</button>
+         </div>
+         <h3>Stitch enamorado</h3>
+         <p class="product-code">Código: ST-00010</p>
+       </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modalProductImage" src="" alt="Imagen del producto">
+      <h2 id="modalProductTitle"></h2>
+      <p id="modalProductCategory"></p>
+      <p id="modalProductDescription"></p>
+    </div>
+  </div>
+  
+
+  <!-- Carrito -->
+  <div class="carrito-panel" id="carritoPanel">
+
+    <!-- HEADER con total y botones -->
+    <div class="carrito-instrucciones" style="
+          padding: 12px 16px;
+          background-color: #ffST2e6;
+          font-size: 15px;
+          color: #4a2e1c;
+          font-weight: 500;
+          border-bottom: 1px solid #e0c9b6;">
+      📋 Copiá los códigos de tus stickers y compartilos por WhatsApp, Instagram o usalos al hacer tu compra en la Tienda
+      Online.
+    </div>
+
+    <div class="carrito-header">
+      <div style="flex-grow: 1;">
+        <p style="margin: 0; font-weight: bold;">Total del pedido: <strong id="carritoTotal">0</strong></p>
+        <div style="margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+          <button class="btn-exportar" onclick="copiarCarritoAlPortapapeles()">Copiar pedido</button>
+        </div>
+      </div>
+      <button class="btn-cerrar" id="cerrarCarrito" style="align-self: start;">&times;</button>
+    </div>
+  
+    <!-- CONTENIDO del carrito -->
+    <div class="carrito-contenido" id="carritoContenido">
+      <p>No hay productos en el carrito.</p>
+    </div>
+  
+  </div>
+
+  <div id="mensajeAgregado" style="
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4a2e1c;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+">
+  ¡Sticker agregado!
+</div>
+
+<button id="btnVolverArriba" style="
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+">
+  <img src="../imagenes/flecha-arriba.png" alt="Volver arriba" style="width: 40px; height: 40px;">
+</button>
+
+<!-- Footer -->
+<footer class="footer" style="background-color: #ST3e5ST5; padding: 12px 10px; text-align: center; font-size: 14px;">
+  <div style="margin-bottom: 6px;">
+    <a href="https://instagram.com/pixel.stickerss"
+       style="margin: 0 10px; color: #b18acc; text-decoration: none;" 
+       target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+    <a href="https://tiktok.com/@pixel.stickerss"
+       style="margin: 0 10px; color: #b18acc; text-decoration: none;" 
+       target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+  </div>
+  <p style="margin: 4px 0 0; color: #4a2e1c;">&copy; 2025 Pixel - Todos los derechos reservados</p>
+</footer>
+
+  <!-- Scripts -->
+  <script>
+  function agregarAlCarritoDesdeElemento(boton) {
+  const id = boton.dataset.productId;
+  const nombre = boton.dataset.productName;
+  const imagen = '../imagenes/' + boton.dataset.productImg;
+  const codigo = boton.dataset.productCode; // NUEVO
+
+  if (!id || !nombre || !imagen || !codigo) {
+    console.warn('Datos faltantes en producto:', { id, nombre, imagen, codigo });
+    return;
+  }
+
+  const producto = {
+    id,
+    nombre,
+    imagen,
+    codigo,
+    cantidad: 1
+  };
+
+  agregarAlCarrito(producto);
+  mostrarMensajeAgregado();
+
+}
+
+  function mostrarMensajeAgregado() {
+    const mensaje = document.getElementById("mensajeAgregado");
+    if (mensaje) {
+      mensaje.style.display = "block";
+      setTimeout(() => {
+        mensaje.style.display = "none";
+      }, 1500);
+    }
+  }
+
+  function abrirModal(imagenSrc, titulo) {
+    document.getElementById('modalProductImage').src = '../' + imagenSrc;
+    document.getElementById('modalProductTitle').textContent = titulo;
+    document.getElementById('productModal').classList.add('show');
+  }
+
+  document.querySelector('.close-modal').addEventListener('click', function () {
+    document.getElementById('productModal').classList.remove('show');
+  });
+
+    const hamburger = document.getElementById("hamburger");
+  const nav = document.querySelector(".main-nav");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+      nav.classList.remove("open");
+    }
+  });
+  const abrirCarritoBtn = document.getElementById("abrirCarrito");
+  const cerrarCarritoBtn = document.getElementById("cerrarCarrito");
+  const panelCarrito = document.getElementById("carritoPanel");
+
+  abrirCarritoBtn.addEventListener("click", () => {
+    panelCarrito.classList.add("active");
+  });
+
+  cerrarCarritoBtn.addEventListener("click", () => {
+    panelCarrito.classList.remove("active");
+  });
+
+  // Para abrir/cerrar menú desplegable en móviles
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".dropdown-toggle");
+    const menu = document.querySelector(".dropdown-menu");
+
+    if (toggle && menu) {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        menu.classList.toggle("show");
+      });
+    }
+  });
+  
+  function copiarCarritoAlPortapapeles() {
+  const carrito = window.carrito;
+  if (!carrito || carrito.length === 0) {
+    alert("El carrito está vacío.");
+    return;
+  }
+
+  let texto = "Pedido de Pixel Stickers:\n\n";
+  carrito.forEach(item => {
+    texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
+  });
+  texto += `\nTotal: ${carrito.reduce((acc, item) => acc + item.cantidad, 0)} producto(s)`;
+
+  navigator.clipboard.writeText(texto).then(() => {
+    const aviso = document.createElement("div");
+    aviso.textContent = "¡Pedido copiado!";
+    Object.assign(aviso.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      background: "#4a2e1c",
+      color: "white",
+      padding: "10px 20px",
+      borderRadius: "10px",
+      zIndex: "10000",
+      fontWeight: "bold",
+    });
+    document.body.appendChild(aviso);
+    setTimeout(() => aviso.remove(), 2000);
+  }).catch(() => alert("Error al copiar el pedido."));
+}
+
+// Mostrar u ocultar el botón al hacer scroll
+window.addEventListener("scroll", function () {
+  const btn = document.getElementById("btnVolverArriba");
+  if (window.scrollY > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+});
+
+// Función para volver arriba
+document.getElementById("btnVolverArriba").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+function copiarCarritoAlPortapapeles() {
+  const carrito = window.carrito;
+  if (!carrito || carrito.length === 0) {
+    alert("El carrito está vacío.");
+    return;
+  }
+
+  let texto = "Pedido de Pixel Stickers:\n\n";
+  carrito.forEach(item => {
+    texto += `• ${item.nombre} (Código: ${item.codigo}) x${item.cantidad}\n`;
+  });
+  texto += `\nTotal: ${carrito.reduce((acc, item) => acc + item.cantidad, 0)} producto(s)`;
+
+  navigator.clipboard.writeText(texto).then(() => {
+    const aviso = document.createElement("div");
+    aviso.textContent = "¡Pedido copiado!";
+    Object.assign(aviso.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      background: "#4a2e1c",
+      color: "white",
+      padding: "10px 20px",
+      borderRadius: "10px",
+      zIndex: "10000",
+      fontWeight: "bold",
+    });
+    document.body.appendChild(aviso);
+    setTimeout(() => aviso.remove(), 2000);
+
+    // 👇 Mostrar cartel flotante de sugerencia
+    mostrarCartTip();
+  }).catch(() => alert("Error al copiar el pedido."));
+}
+
+// ✅ Función para mostrar el cartel flotante
+function mostrarCartTip() {
+  const tip = document.getElementById("cartTip");
+  if (tip) {
+    tip.style.display = "block";
+    setTimeout(() => {
+      tip.style.display = "none";
+    }, 5000); // visible 5 segundos
+  }
+}
+
+function mostrarAvisoFlotante(texto) {
+  const aviso = document.createElement("div");
+  aviso.textContent = texto;
+  Object.assign(aviso.style, {
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    background: "#4a2e1c",
+    color: "white",
+    padding: "10px 20px",
+    borderRadius: "10px",
+    zIndex: "10000",
+    fontWeight: "bold",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+  });
+  document.body.appendChild(aviso);
+  setTimeout(() => aviso.remove(), 2000);
+}
+
+
+
+  </script>
+  
+  <script src="../js/funciones.js"></script>
+  <script src="../js/carrito.js"></script>
+  <!-- <script src="../js/categoria-amor.js"></script> -->
+
+<div id="cartTip" style="
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #ffST8e6;
+  color: #4a2e1c;
+  padding: 14px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  z-index: 9999;
+  max-width: 280px;
+  font-size: 14px;
+  border-left: 5px solid #ST28c28;
+">
+  Copiá los códigos y envialos por WhatsApp, Instagram o cuando hagas tu compra en la Tienda Online.
+</div>
+
+</body>
+</html>

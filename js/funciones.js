@@ -735,7 +735,7 @@ const productosData = {
         titulo: "Snoopy en casita",
         categoria: "categoria",
         imagen: "imagenes/SN-00002.png",
-        descripcion: "Snoopy en casita, eres bebesota. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Snoopy en casita. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     S3: {
         titulo: "Snoopy rey",
@@ -796,7 +796,7 @@ const productosData = {
         titulo: "Cabina telefónica Londres",
         categoria: "categoria",
         imagen: "imagenes/VI-00002.png",
-        descripcion: "Cabina telefónica Londres, eres bebesota. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+        descripcion: "Cabina telefónica Londres. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },
     V3: {
         titulo: "New York City",
@@ -845,7 +845,68 @@ const productosData = {
         categoria: "categoria",
         imagen: "imagenes/VI-00010.png",
         descripcion: "Globo terraqueo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
-    },          
+    },
+    // Stitch
+    ST1: {
+        titulo: "Stitch harto",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00001.png",
+        descripcion: "Stitch harto. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST2: {
+        titulo: "Stitch surf",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00002.png",
+        descripcion: "Stitch surf. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST3: {
+        titulo: "Stitch mochila",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00003.png",
+        descripcion: "Stitch mochila. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST4: {
+        titulo: "Stitch Rana",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00004.png",
+        descripcion: "Stitch Rana. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST5: {
+        titulo: "Sorpresa Stitch",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00005.png",
+        descripcion: "Sorpresa Stitch. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST6: {
+        titulo: "Stitch riendo",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00006.png",
+        descripcion: "Stitch riendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST7: {
+        titulo: "Stitch durmiendo",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00007.png",
+        descripcion: "Stitch durmiendo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST8: {
+        titulo: "Stitch estrellas",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00008.png",
+        descripcion: "Stitch estrellas. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST9: {
+        titulo: "Stitch anteojos",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00009.png",
+        descripcion: "Stitch anteojos. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    ST10: {
+        titulo: "Stitch enamorado",
+        categoria: "categoria",
+        imagen: "imagenes/ST-00010.png",
+        descripcion: "Stitch enamorado. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },           
 };
 
 // Funciones de modal
