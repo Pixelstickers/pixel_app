@@ -784,6 +784,67 @@ const productosData = {
         categoria: "categoria",
         imagen: "imagenes/SN-00010.png",
         descripcion: "Snoopy tiburon. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    // Viajes
+    V1: {
+        titulo: "Puente de Brooklyn",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00001.png",
+        descripcion: "Puente de Brooklyn. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V2: {
+        titulo: "Cabina telefónica Londres",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00002.png",
+        descripcion: "Cabina telefónica Londres, eres bebesota. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V3: {
+        titulo: "New York City",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00003.png",
+        descripcion: "New York City. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V4: {
+        titulo: "Pasaporte",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00004.png",
+        descripcion: "Pasaporte. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V5: {
+        titulo: "Torre de Pisa",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00005.png",
+        descripcion: "Torre de Pisa. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V6: {
+        titulo: "Avion",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00006.png",
+        descripcion: "Avion. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V7: {
+        titulo: "Mochila de viaje",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00007.png",
+        descripcion: "Mochila de viaje. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V8: {
+        titulo: "Coliseo de Roma",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00008.png",
+        descripcion: "Coliseo de Roma. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V9: {
+        titulo: "Big Ben",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00009.png",
+        descripcion: "Big Ben. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
+    },
+    V10: {
+        titulo: "Globo terraqueo",
+        categoria: "categoria",
+        imagen: "imagenes/VI-00010.png",
+        descripcion: "Globo terraqueo. Tamaño: 4x4cm. Resistente al agua, adhesivo u holográfico."
     },          
 };
 
